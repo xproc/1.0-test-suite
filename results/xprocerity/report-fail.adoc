@@ -1,0 +1,2575 @@
+
+= XProc Test Results for XProcerity
+
+Passed 559 of 720 tests (77.64%) on 03 Dec 2010 at 04:35p.
+
+:toc: right
+
+This report only shows failing tests.
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|XProcerity|Language|en_US
+|Vendor|Richard Bartelt|XProc version|1.0
+|Vendor URI|urn:richard.bartelt|XPath version|1.0
+|Version|1.0|PSVI Supported|false
+|=============================================
+
+
+== Required tests (Revision 585)
+
+Passed 485 of 583 tests (83.19%).
+
+[role="fail"]
+=== FAIL Test p:add-attribute #007
+http://tests.xproc.org/tests/required/add-attribute-007.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<document> 
+  <element xmlns:bar2="http://bar2.com/" xmlns:bar="http://bar.com/" bar2:foo="bar" bar:baz="baz"></element> 
+</document>
+l|<document> 
+  <element xmlns:bar="http://bar.com/" bar:baz="baz" xmlns:bar="http://bar2.com/" bar:foo="bar"></element> 
+</document>
+|====================
+
+
+==== Error message
+
+
+* Attribute "bar" bound to namespace "http://www.w3.org/2000/xmlns/" was already specified for element "element".
+
+[role="fail"]
+=== FAIL Test add-xml-base-001
+http://tests.xproc.org/tests/required/add-xml-base-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <div...> at /doc[1]/div[1] to <div...> at /doc[1]/div[1]
+
+[role="fail"]
+=== FAIL Test add-xml-base-002
+http://tests.xproc.org/tests/required/add-xml-base-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has one base URI: 
+    <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> 
+    <p xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">This has a different base URI: 
+      <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has the original base URI.</p> 
+</doc>
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has one base URI: 
+    <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+    <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has a different base URI: 
+      <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'http://tests.xproc.org/tests/doc/xml-base-chap.xml' but was 'http://tests.xproc.org/tests/doc/xml-base-test.xml' - comparing <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"...> at /doc[1]/div[1]/@base to <div xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"...> at /doc[1]/div[1]/@base
+
+[role="fail"]
+=== FAIL Test add-xml-base-003
+http://tests.xproc.org/tests/required/add-xml-base-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="xml-base-chap.xml"> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <div...> at /doc[1]/div[1] to <div...> at /doc[1]/div[1]
+
+[role="fail"]
+=== FAIL Test add-xml-base-004
+http://tests.xproc.org/tests/required/add-xml-base-004.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://test.com/doc"> 
+  <p/> 
+</doc>
+l|<doc> 
+  <p/> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <doc...> at /doc[1] to <doc...> at /doc[1]
+
+[role="fail"]
+=== FAIL Test add-xml-base-005
+http://tests.xproc.org/tests/required/add-xml-base-005.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <div...> at /doc[1]/div[1] to <div...> at /doc[1]/div[1]
+
+[role="fail"]
+=== FAIL Test add-xml-base-006
+http://tests.xproc.org/tests/required/add-xml-base-006.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div xml:base="xml-base-chap.xml"> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+l|<doc xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> 
+  <p>This has one base URI: 
+    <uri>xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <div...> at /doc[1]/div[1] to <div...> at /doc[1]/div[1]
+
+[role="fail"]
+=== FAIL Test base-uri #001
+http://tests.xproc.org/tests/required/base-uri-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://example.org/base/uri/"> 
+  <title xml:base="http://example.org/other/uri/">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://example.org/other/uri/</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+l|<doc xml:base="http://example.org/base/uri/"> 
+  <title xml:base="http://example.org/other/uri/">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://tests.xproc.org/tests/required/base-uri-001.xml</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://example.org/other/uri/' but was 'http://tests.xproc.org/tests/required/base-uri-001.xml' - comparing <para ...>http://example.org/other/uri/</para> at /doc[1]/para[2]/text()[1] to <para ...>http://tests.xproc.org/tests/required/base-uri-001.xml</para> at /doc[1]/para[2]/text()[1]
+
+[role="fail"]
+=== FAIL Test base-uri #002
+http://tests.xproc.org/tests/required/base-uri-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://example.org/base/uri/"> 
+  <title xml:base="http://example.org/other/uri/">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://example.org/base/uri/</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+l|<doc xml:base="http://example.org/base/uri/"> 
+  <title xml:base="http://example.org/other/uri/">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://tests.xproc.org/tests/required/base-uri-002.xml</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://example.org/base/uri/' but was 'http://tests.xproc.org/tests/required/base-uri-002.xml' - comparing <para ...>http://example.org/base/uri/</para> at /doc[1]/para[2]/text()[1] to <para ...>http://tests.xproc.org/tests/required/base-uri-002.xml</para> at /doc[1]/para[2]/text()[1]
+
+[role="fail"]
+=== FAIL Test base-uri #003
+http://tests.xproc.org/tests/required/base-uri-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<result>http://example.org/doc.xml</result>
+l|<result>http://tests.xproc.org/tests/required/base-uri-003.xml</result>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://example.org/doc.xml' but was 'http://tests.xproc.org/tests/required/base-uri-003.xml' - comparing <result ...>http://example.org/doc.xml</result> at /result[1]/text()[1] to <result ...>http://tests.xproc.org/tests/required/base-uri-003.xml</result> at /result[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test p:data #002
+http://tests.xproc.org/tests/required/data-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain; charset=&quot;utf-8&quot;">Toman a lesní panna František Ladislav Čelakovský Večer před svatým Janem mluví sestra s Tomanem: "Kam pojedeš, bratře milý, v této pozdní na noc chvíli na koníčku sedlaném, čistě vyšperkovaném?" "Do Podhájí k myslivci musím ke své děvčici; znenadání nemám stání, zas mě čekej o svítání. Dej, sestřičko, dej novou košiličku kmentovou, kamizolku růžovou." Jiskra padla pod koníčkem, sestra volá za bratříčkem: "Slyš, Tománku, radou mou, nedávej se doubravou: objeď dolem k Svaté hoře, ať nemám po tobě hoře, dej se raděj v zápoli, ať mě srdce nebolí." Nejel Toman doubravou, dal se cestičkou pravou; a v Podhájí u myslivce nový domek jedna svíce, hostí mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen patří s koně do oken děvče láskou jen rozplývá, na ženicha se usmívá; otec jedná námluvy, matka hledí obsluhy. Jedli, pili, rozprávěli, dobrou vůli spolu měli, žádný na to nic nedbal, kůň že venku zařehtal, a mládenec zavzdychal. Panna jenom snoubená najednou se zarděla; svědomí ji přece tlačí, šeptá cosi sestře mladší. Sestřička od večeře vyšla rychle za dvéře: "Na věky se, Tomane, milá s tebou rozstane, jinému se dostane. Najezdil jsi se k nám dosti, dnes tu máme bližší hosti, hledej sobě jinde štěstí." Toman koněm zatočil, v šíré pole poskočil, zaťal zuby, smračil čelo, kolem všecko neveselo. Půlnoc byla, měsíc zašel, sotva jezdec cestu našel; prudce hned, pak loudavě ubíral se k doubravě. "Všecky krásné hvězdičky ze tmy jsou se prosypaly, proč vy, moje mladé dni, ve tmách jste se zasypaly!" Jede, jede doubravou, les šumí mu nad hlavou, větřík chladný z noci fouká, nad ouvalem sova houká; koník blýská očima, koník stříhá ušima. Cupy dupy z houštiny letí jelen v mejtiny, na jelínku podkasaná sedí sobě Lesní panna; šaty půl má zelené, půl kadeřmi černěné, a ze svatojanských broučků svítí pásek na kloboučku. Třikrát kolem jak střela v běhu koně objela, pak Tomanovi po boku vyrovnává v plavném skoku: "Švarný hochu, nezoufej, bujným větrům žalost dej, jedna-li tě opustila, nahradí to stokrát jiná. Švarný hochu, nezoufej, bujným větrům žalost dej!" To když sladce zpívala, v oči se mu dívala Lesní panna na jelenu, Toman cítí v srdci změnu. Jedou, jedou pospolu měkkým mechem do dolu, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, skloň se, skloň, jenom dále se mnou hoň; líbí-li se ti mé líce, dám radostí na tisíce. Švarný hochu, skloň se, skloň, jenom dále se mnou hoň!" To kdy panna zpívala, za ruku ho ujala; Tomanovi rozkoš proudem prolila se každým oudem. Jedou, jedou dál a dál podlé řeky, podlé skal, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, můj jsi, můj! K mému bytu se mnou pluj; světla denního v mém domě věčně nezachce se tobě. Švarný hochu, můj jsi, můj - k mému bytu se mnou pluj!" To kdy panna zpívala, v ústa jezdce líbala, v náručí ho objala. Tomanovi srdce plesá, uzdu pouští, s koně klesá pod skalami prostřed lesa. Slunce vyšlo nad horu, skáče koník do dvoru, smutně hrabe podkovou, řehce zprávu nedobrou. Sestra k oknu přiskočila, a rukama zalomila "Bratře můj, bratříčku můj, kde skonal jsi život svůj!"</c:data>
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain;charset=utf-8">Toman a lesní panna František Ladislav Čelakovský Večer před svatým Janem mluví sestra s Tomanem: "Kam pojedeš, bratře milý, v této pozdní na noc chvíli na koníčku sedlaném, čistě vyšperkovaném?" "Do Podhájí k myslivci musím ke své děvčici; znenadání nemám stání, zas mě čekej o svítání. Dej, sestřičko, dej novou košiličku kmentovou, kamizolku růžovou." Jiskra padla pod koníčkem, sestra volá za bratříčkem: "Slyš, Tománku, radou mou, nedávej se doubravou: objeď dolem k Svaté hoře, ať nemám po tobě hoře, dej se raděj v zápoli, ať mě srdce nebolí." Nejel Toman doubravou, dal se cestičkou pravou; a v Podhájí u myslivce nový domek jedna svíce, hostí mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen patří s koně do oken děvče láskou jen rozplývá, na ženicha se usmívá; otec jedná námluvy, matka hledí obsluhy. Jedli, pili, rozprávěli, dobrou vůli spolu měli, žádný na to nic nedbal, kůň že venku zařehtal, a mládenec zavzdychal. Panna jenom snoubená najednou se zarděla; svědomí ji přece tlačí, šeptá cosi sestře mladší. Sestřička od večeře vyšla rychle za dvéře: "Na věky se, Tomane, milá s tebou rozstane, jinému se dostane. Najezdil jsi se k nám dosti, dnes tu máme bližší hosti, hledej sobě jinde štěstí." Toman koněm zatočil, v šíré pole poskočil, zaťal zuby, smračil čelo, kolem všecko neveselo. Půlnoc byla, měsíc zašel, sotva jezdec cestu našel; prudce hned, pak loudavě ubíral se k doubravě. "Všecky krásné hvězdičky ze tmy jsou se prosypaly, proč vy, moje mladé dni, ve tmách jste se zasypaly!" Jede, jede doubravou, les šumí mu nad hlavou, větřík chladný z noci fouká, nad ouvalem sova houká; koník blýská očima, koník stříhá ušima. Cupy dupy z houštiny letí jelen v mejtiny, na jelínku podkasaná sedí sobě Lesní panna; šaty půl má zelené, půl kadeřmi černěné, a ze svatojanských broučků svítí pásek na kloboučku. Třikrát kolem jak střela v běhu koně objela, pak Tomanovi po boku vyrovnává v plavném skoku: "Švarný hochu, nezoufej, bujným větrům žalost dej, jedna-li tě opustila, nahradí to stokrát jiná. Švarný hochu, nezoufej, bujným větrům žalost dej!" To když sladce zpívala, v oči se mu dívala Lesní panna na jelenu, Toman cítí v srdci změnu. Jedou, jedou pospolu měkkým mechem do dolu, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, skloň se, skloň, jenom dále se mnou hoň; líbí-li se ti mé líce, dám radostí na tisíce. Švarný hochu, skloň se, skloň, jenom dále se mnou hoň!" To kdy panna zpívala, za ruku ho ujala; Tomanovi rozkoš proudem prolila se každým oudem. Jedou, jedou dál a dál podlé řeky, podlé skal, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, můj jsi, můj! K mému bytu se mnou pluj; světla denního v mém domě věčně nezachce se tobě. Švarný hochu, můj jsi, můj - k mému bytu se mnou pluj!" To kdy panna zpívala, v ústa jezdce líbala, v náručí ho objala. Tomanovi srdce plesá, uzdu pouští, s koně klesá pod skalami prostřed lesa. Slunce vyšlo nad horu, skáče koník do dvoru, smutně hrabe podkovou, řehce zprávu nedobrou. Sestra k oknu přiskočila, a rukama zalomila "Bratře můj, bratříčku můj, kde skonal jsi život svůj!"</c:data>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'text/plain; charset="utf-8"' but was 'text/plain;charset=utf-8' - comparing <c:data content-type="text/plain; charset="utf-8""...> at /data[1]/@content-type to <c:data content-type="text/plain;charset=utf-8"...> at /data[1]/@content-type
+
+[role="fail"]
+=== FAIL Test p:data #006
+http://tests.xproc.org/tests/required/data-006.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain; charset=&quot;utf-8&quot;">Toman a lesní panna František Ladislav Čelakovský Večer před svatým Janem mluví sestra s Tomanem: "Kam pojedeš, bratře milý, v této pozdní na noc chvíli na koníčku sedlaném, čistě vyšperkovaném?" "Do Podhájí k myslivci musím ke své děvčici; znenadání nemám stání, zas mě čekej o svítání. Dej, sestřičko, dej novou košiličku kmentovou, kamizolku růžovou." Jiskra padla pod koníčkem, sestra volá za bratříčkem: "Slyš, Tománku, radou mou, nedávej se doubravou: objeď dolem k Svaté hoře, ať nemám po tobě hoře, dej se raděj v zápoli, ať mě srdce nebolí." Nejel Toman doubravou, dal se cestičkou pravou; a v Podhájí u myslivce nový domek jedna svíce, hostí mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen patří s koně do oken děvče láskou jen rozplývá, na ženicha se usmívá; otec jedná námluvy, matka hledí obsluhy. Jedli, pili, rozprávěli, dobrou vůli spolu měli, žádný na to nic nedbal, kůň že venku zařehtal, a mládenec zavzdychal. Panna jenom snoubená najednou se zarděla; svědomí ji přece tlačí, šeptá cosi sestře mladší. Sestřička od večeře vyšla rychle za dvéře: "Na věky se, Tomane, milá s tebou rozstane, jinému se dostane. Najezdil jsi se k nám dosti, dnes tu máme bližší hosti, hledej sobě jinde štěstí." Toman koněm zatočil, v šíré pole poskočil, zaťal zuby, smračil čelo, kolem všecko neveselo. Půlnoc byla, měsíc zašel, sotva jezdec cestu našel; prudce hned, pak loudavě ubíral se k doubravě. "Všecky krásné hvězdičky ze tmy jsou se prosypaly, proč vy, moje mladé dni, ve tmách jste se zasypaly!" Jede, jede doubravou, les šumí mu nad hlavou, větřík chladný z noci fouká, nad ouvalem sova houká; koník blýská očima, koník stříhá ušima. Cupy dupy z houštiny letí jelen v mejtiny, na jelínku podkasaná sedí sobě Lesní panna; šaty půl má zelené, půl kadeřmi černěné, a ze svatojanských broučků svítí pásek na kloboučku. Třikrát kolem jak střela v běhu koně objela, pak Tomanovi po boku vyrovnává v plavném skoku: "Švarný hochu, nezoufej, bujným větrům žalost dej, jedna-li tě opustila, nahradí to stokrát jiná. Švarný hochu, nezoufej, bujným větrům žalost dej!" To když sladce zpívala, v oči se mu dívala Lesní panna na jelenu, Toman cítí v srdci změnu. Jedou, jedou pospolu měkkým mechem do dolu, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, skloň se, skloň, jenom dále se mnou hoň; líbí-li se ti mé líce, dám radostí na tisíce. Švarný hochu, skloň se, skloň, jenom dále se mnou hoň!" To kdy panna zpívala, za ruku ho ujala; Tomanovi rozkoš proudem prolila se každým oudem. Jedou, jedou dál a dál podlé řeky, podlé skal, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, můj jsi, můj! K mému bytu se mnou pluj; světla denního v mém domě věčně nezachce se tobě. Švarný hochu, můj jsi, můj - k mému bytu se mnou pluj!" To kdy panna zpívala, v ústa jezdce líbala, v náručí ho objala. Tomanovi srdce plesá, uzdu pouští, s koně klesá pod skalami prostřed lesa. Slunce vyšlo nad horu, skáče koník do dvoru, smutně hrabe podkovou, řehce zprávu nedobrou. Sestra k oknu přiskočila, a rukama zalomila "Bratře můj, bratříčku můj, kde skonal jsi život svůj!"</c:data>
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain;charset=utf-8">Toman a lesní panna František Ladislav Čelakovský Večer před svatým Janem mluví sestra s Tomanem: "Kam pojedeš, bratře milý, v této pozdní na noc chvíli na koníčku sedlaném, čistě vyšperkovaném?" "Do Podhájí k myslivci musím ke své děvčici; znenadání nemám stání, zas mě čekej o svítání. Dej, sestřičko, dej novou košiličku kmentovou, kamizolku růžovou." Jiskra padla pod koníčkem, sestra volá za bratříčkem: "Slyš, Tománku, radou mou, nedávej se doubravou: objeď dolem k Svaté hoře, ať nemám po tobě hoře, dej se raděj v zápoli, ať mě srdce nebolí." Nejel Toman doubravou, dal se cestičkou pravou; a v Podhájí u myslivce nový domek jedna svíce, hostí mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen patří s koně do oken děvče láskou jen rozplývá, na ženicha se usmívá; otec jedná námluvy, matka hledí obsluhy. Jedli, pili, rozprávěli, dobrou vůli spolu měli, žádný na to nic nedbal, kůň že venku zařehtal, a mládenec zavzdychal. Panna jenom snoubená najednou se zarděla; svědomí ji přece tlačí, šeptá cosi sestře mladší. Sestřička od večeře vyšla rychle za dvéře: "Na věky se, Tomane, milá s tebou rozstane, jinému se dostane. Najezdil jsi se k nám dosti, dnes tu máme bližší hosti, hledej sobě jinde štěstí." Toman koněm zatočil, v šíré pole poskočil, zaťal zuby, smračil čelo, kolem všecko neveselo. Půlnoc byla, měsíc zašel, sotva jezdec cestu našel; prudce hned, pak loudavě ubíral se k doubravě. "Všecky krásné hvězdičky ze tmy jsou se prosypaly, proč vy, moje mladé dni, ve tmách jste se zasypaly!" Jede, jede doubravou, les šumí mu nad hlavou, větřík chladný z noci fouká, nad ouvalem sova houká; koník blýská očima, koník stříhá ušima. Cupy dupy z houštiny letí jelen v mejtiny, na jelínku podkasaná sedí sobě Lesní panna; šaty půl má zelené, půl kadeřmi černěné, a ze svatojanských broučků svítí pásek na kloboučku. Třikrát kolem jak střela v běhu koně objela, pak Tomanovi po boku vyrovnává v plavném skoku: "Švarný hochu, nezoufej, bujným větrům žalost dej, jedna-li tě opustila, nahradí to stokrát jiná. Švarný hochu, nezoufej, bujným větrům žalost dej!" To když sladce zpívala, v oči se mu dívala Lesní panna na jelenu, Toman cítí v srdci změnu. Jedou, jedou pospolu měkkým mechem do dolu, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, skloň se, skloň, jenom dále se mnou hoň; líbí-li se ti mé líce, dám radostí na tisíce. Švarný hochu, skloň se, skloň, jenom dále se mnou hoň!" To kdy panna zpívala, za ruku ho ujala; Tomanovi rozkoš proudem prolila se každým oudem. Jedou, jedou dál a dál podlé řeky, podlé skal, panna Tomanu po boku vyrovnává v plavném skoku: "Švarný hochu, můj jsi, můj! K mému bytu se mnou pluj; světla denního v mém domě věčně nezachce se tobě. Švarný hochu, můj jsi, můj - k mému bytu se mnou pluj!" To kdy panna zpívala, v ústa jezdce líbala, v náručí ho objala. Tomanovi srdce plesá, uzdu pouští, s koně klesá pod skalami prostřed lesa. Slunce vyšlo nad horu, skáče koník do dvoru, smutně hrabe podkovou, řehce zprávu nedobrou. Sestra k oknu přiskočila, a rukama zalomila "Bratře můj, bratříčku můj, kde skonal jsi život svůj!"</c:data>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'text/plain; charset="utf-8"' but was 'text/plain;charset=utf-8' - comparing <c:data content-type="text/plain; charset="utf-8""...> at /data[1]/@content-type to <c:data content-type="text/plain;charset=utf-8"...> at /data[1]/@content-type
+
+[role="fail"]
+=== FAIL Test directory-list-001
+http://tests.xproc.org/tests/required/directory-list-001.xml
+
+
+==== Error message
+
+
+* URI scheme is not "file"
+
+[role="fail"]
+=== FAIL Test directory-list-002
+http://tests.xproc.org/tests/required/directory-list-002.xml
+
+
+==== Error message
+
+
+* URI scheme is not "file"
+
+[role="fail"]
+=== FAIL Test err:XC0012 (p:directory-list on an inaccessible directory).
+http://tests.xproc.org/tests/required/err-c0012-001.xml
+
+
+==== Error message
+
+
+* URI scheme is not "file"
+
+[role="fail"]
+=== FAIL Test err:XC0017 (p:directory-list with a non-directory path).
+http://tests.xproc.org/tests/required/err-c0017-001.xml
+
+
+==== Error message
+
+
+* URI scheme is not "file"
+
+[role="fail"]
+=== FAIL Test err:XC0030 #001
+http://tests.xproc.org/tests/required/err-c0030-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cea14bfb [name: XC0030 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0013 #001
+http://tests.xproc.org/tests/required/err-d0013-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf233d [name: XD0013 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0013 #002
+http://tests.xproc.org/tests/required/err-d0013-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf233d [name: XD0013 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XD0014 #001
+http://tests.xproc.org/tests/required/err-d0014-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf233c [name: XD0014 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XD0014 #002
+http://tests.xproc.org/tests/required/err-d0014-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf233c [name: XD0014 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XD0019 - 002
+http://tests.xproc.org/tests/required/err-d0019-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2327 [name: XD0019 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0020 #001
+http://tests.xproc.org/tests/required/err-d0020-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2319 [name: XD0020 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XD0022 #001
+http://tests.xproc.org/tests/required/err-d0022-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf231f [name: XD0022 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #005
+http://tests.xproc.org/tests/required/err-d0023-005.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf231e [name: XD0023 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err-d0026-001
+http://tests.xproc.org/tests/required/err-d0026-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2303 [name: XD0026 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0026 #003
+http://tests.xproc.org/tests/required/err-d0026-003.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2303 [name: XD0026 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0026 #004
+http://tests.xproc.org/tests/required/err-d0026-004.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2303 [name: XD0026 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XD0026 #005
+http://tests.xproc.org/tests/required/err-d0026-005.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2303 [name: XD0026 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XD0027 #001
+http://tests.xproc.org/tests/required/err-d0027-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2302 [name: XD0027 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XC0028 #002
+http://tests.xproc.org/tests/required/err-d0028-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2301 [name: XD0028 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XC0028 #003
+http://tests.xproc.org/tests/required/err-d0028-003.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2301 [name: XD0028 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XC0028 #004
+http://tests.xproc.org/tests/required/err-d0028-004.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2301 [name: XD0028 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0008
+http://tests.xproc.org/tests/required/err-primary-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3b0 [name: XS0008 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0004 #002
+http://tests.xproc.org/tests/required/err-s0004-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c34c [name: XS0004 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0008 - 001
+http://tests.xproc.org/tests/required/err-s0008-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3b0 [name: XS0008 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0018 - 002
+http://tests.xproc.org/tests/required/err-s0018-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c391 [name: XS0018 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0036 #002
+http://tests.xproc.org/tests/required/err-s0036-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3ed [name: XS0036 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0036 #003
+http://tests.xproc.org/tests/required/err-s0036-003.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3ed [name: XS0036 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0036 #004
+http://tests.xproc.org/tests/required/err-s0036-004.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3ed [name: XS0036 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:xs0036 #005
+http://tests.xproc.org/tests/required/err-s0036-005.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3ed [name: XS0036 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0039 - 001
+http://tests.xproc.org/tests/required/err-s0039-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3d2 [name: XS0039 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0039 - 002
+http://tests.xproc.org/tests/required/err-s0039-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c3d2 [name: XS0039 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c024 [name: XS0051 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c024 [name: XS0051 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0057 #001
+http://tests.xproc.org/tests/required/err-s0057-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c02e [name: XS0057 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0057 #002
+http://tests.xproc.org/tests/required/err-s0057-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c02e [name: XS0057 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0058 #001
+http://tests.xproc.org/tests/required/err-s0058-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c02d [name: XS0058 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0062 #001
+http://tests.xproc.org/tests/required/err-s0062-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c004 [name: XS0062 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test for err:XS0062 #002
+http://tests.xproc.org/tests/required/err-s0062-002.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c004 [name: XS0062 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test err:XS0063 #001
+http://tests.xproc.org/tests/required/err-s0063-001.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cd82c00b [name: XS0063 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-001
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper>&lt;doc xmlns:c="http://www.w3.org/ns/xproc-step"/&gt;</wrapper>
+l|<wrapper>&lt;doc/&gt;</wrapper>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value '<doc xmlns:c="http://www.w3.org/ns/xproc-step"/>' but was '<doc/>' - comparing <wrapper ...><doc xmlns:c="http://www.w3.org/ns/xproc-step"/></wrapper> at /wrapper[1]/text()[1] to <wrapper ...><doc/></wrapper> at /wrapper[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-004
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-004.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper>&lt;doc xmlns="http://example.com/ns/test"/&gt;</wrapper>
+l|<wrapper xmlns="http://example.com/ns/test">&lt;doc/&gt;</wrapper>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected namespace URI 'null' but was 'http://example.com/ns/test' - comparing <wrapper...> at /wrapper[1] to <wrapper...> at /wrapper[1]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-005
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-005.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<success/>
+l|<failure/>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected element tag name 'success' but was 'failure' - comparing <success...> at /success[1] to <failure...> at /failure[1]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-007
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-007.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper>&lt;c:doc xmlns:c="http://www.w3.org/ns/xproc-step"/&gt;</wrapper>
+l|<wrapper xmlns="http://example.com/ns/test">&lt;c:doc xmlns:c="http://www.w3.org/ns/xproc-step"/&gt;</wrapper>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected namespace URI 'null' but was 'http://example.com/ns/test' - comparing <wrapper...> at /wrapper[1] to <wrapper...> at /wrapper[1]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-008
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-008.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper>&lt;doc xmlns="http://example.org/ns"/&gt;</wrapper>
+l|<wrapper xmlns="http://example.org/ns">&lt;doc/&gt;</wrapper>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected namespace URI 'null' but was 'http://example.org/ns' - comparing <wrapper...> at /wrapper[1] to <wrapper...> at /wrapper[1]
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-010
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-010.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper>&lt;doc xmlns:ex2="http://example.com/steps2"/&gt;</wrapper>
+l|<wrapper>&lt;doc/&gt;</wrapper>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value '<doc xmlns:ex2="http://example.com/steps2"/>' but was '<doc/>' - comparing <wrapper ...><doc xmlns:ex2="http://example.com/steps2"/></wrapper> at /wrapper[1]/text()[1] to <wrapper ...><doc/></wrapper> at /wrapper[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test fibonacci
+http://tests.xproc.org/tests/required/fibonacci.xml
+
+[role="fail"]
+=== FAIL Test for-each #010
+http://tests.xproc.org/tests/required/for-each-010.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">0</c:result>
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">1</c:result>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value '0' but was '1' - comparing <c:result ...>0</c:result> at /result[1]/text()[1] to <c:result ...>1</c:result> at /result[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test http-request #003
+http://tests.xproc.org/tests/required/http-request-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:body xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain; charset=&quot;utf-8&quot;">Hello world!</c:body>
+l|<c:body xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain; charset=utf-8">Hello world!</c:body>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'text/plain; charset="utf-8"' but was 'text/plain; charset=utf-8' - comparing <c:body content-type="text/plain; charset="utf-8""...> at /body[1]/@content-type to <c:body content-type="text/plain; charset=utf-8"...> at /body[1]/@content-type
+
+[role="fail"]
+=== FAIL Test http-request #009
+http://tests.xproc.org/tests/required/http-request-009.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:response xmlns:c="http://www.w3.org/ns/xproc-step" status="200">
+  <c:body content-type="text/html; charset=&quot;utf-8&quot;">&lt;html xmlns='http://www.w3.org/1999/xhtml'&gt; &lt;head&gt; &lt;title&gt;Basic authentication test&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Basic authentication test&lt;/h1&gt; &lt;p&gt;Success!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</c:body>
+</c:response>
+l|<c:response xmlns:c="http://www.w3.org/ns/xproc-step" status="200">
+  <c:body content-type="text/html; charset=utf-8">&lt;html xmlns='http://www.w3.org/1999/xhtml'&gt; &lt;head&gt; &lt;title&gt;Basic authentication test&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Basic authentication test&lt;/h1&gt; &lt;p&gt;Success!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</c:body>
+</c:response>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'text/html; charset="utf-8"' but was 'text/html; charset=utf-8' - comparing <c:body content-type="text/html; charset="utf-8""...> at /response[1]/body[1]/@content-type to <c:body content-type="text/html; charset=utf-8"...> at /response[1]/body[1]/@content-type
+
+[role="fail"]
+=== FAIL Test http-request #010
+http://tests.xproc.org/tests/required/http-request-010.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:response xmlns:c="http://www.w3.org/ns/xproc-step" status="200">
+  <c:body content-type="text/html; charset=&quot;utf-8&quot;">&lt;html xmlns='http://www.w3.org/1999/xhtml'&gt; &lt;head&gt; &lt;title&gt;Basic authentication test&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Basic authentication test&lt;/h1&gt; &lt;p&gt;Success!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</c:body>
+</c:response>
+l|<c:response xmlns:c="http://www.w3.org/ns/xproc-step" status="200">
+  <c:body content-type="text/html; charset=utf-8">&lt;html xmlns='http://www.w3.org/1999/xhtml'&gt; &lt;head&gt; &lt;title&gt;Basic authentication test&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Basic authentication test&lt;/h1&gt; &lt;p&gt;Success!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</c:body>
+</c:response>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'text/html; charset="utf-8"' but was 'text/html; charset=utf-8' - comparing <c:body content-type="text/html; charset="utf-8""...> at /response[1]/body[1]/@content-type to <c:body content-type="text/html; charset=utf-8"...> at /response[1]/body[1]/@content-type
+
+[role="fail"]
+=== FAIL Test p:import #009
+http://tests.xproc.org/tests/required/import-009.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<success/>
+l|<failure/>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected element tag name 'success' but was 'failure' - comparing <success...> at /success[1] to <failure...> at /failure[1]
+
+[role="fail"]
+=== FAIL Test labelelements #009
+http://tests.xproc.org/tests/required/labelelements-009.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<document> 
+  <element xmlns:bar="http://bar.com/" xmlns:bar2="http://bar2.com/" bar:baz="baz" bar2:foo="_1"></element> 
+</document>
+l|<document> 
+  <element xmlns:bar="http://bar.com/" bar:baz="baz" xmlns:bar="http://bar2.com/" bar:foo="_1"></element> 
+</document>
+|====================
+
+
+==== Error message
+
+
+* Attribute "bar" bound to namespace "http://www.w3.org/2000/xmlns/" was already specified for element "element".
+
+[role="fail"]
+=== FAIL Test p:load #002
+http://tests.xproc.org/tests/required/load-002.xml
+
+Error: err:XC0027 was raised. 
+
+* XC0027: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0027
+
+[role="fail"]
+=== FAIL Test p:load #004
+http://tests.xproc.org/tests/required/load-004.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<address> 
+  <first>Jon</first>  
+  <last>Tester</last>  
+  <phone>5555555555</phone> 
+</address>
+l|<!DOCTYPE address SYSTEM "address.dtd">
+
+<address>
+  <first>Jon</first>
+  <last>Tester</last>
+  <phone>5555555555</phone>
+</address>
+|====================
+
+
+==== Error message
+
+
+* /home/mio/Projects/XProc/address.dtd (No such file or directory)
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #001
+http://tests.xproc.org/tests/required/make-absolute-uris-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc> 
+  <p>This has one base URI: 
+    <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+l|<doc> 
+  <p>This has one base URI: 
+    <uri>http://tests.xproc.org/tests/required/xml-base-test.xml</uri>
+  </p>  <?pi in base-test?>
+  
+  <div> 
+    <p>This has a different base URI: 
+      <uri>http://tests.xproc.org/tests/required/xml-base-chap.xml</uri>.
+    </p>  <?pi in base-chap?>
+ 
+  </div>  
+  <p>This has the original base URI.</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://tests.xproc.org/tests/doc/xml-base-test.xml' but was 'http://tests.xproc.org/tests/required/xml-base-test.xml' - comparing <uri ...>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri> at /doc[1]/p[1]/uri[1]/text()[1] to <uri ...>http://tests.xproc.org/tests/required/xml-base-test.xml</uri> at /doc[1]/p[1]/uri[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test make-sequence
+http://tests.xproc.org/tests/required/make-sequence.xml
+
+[role="fail"]
+=== FAIL Test http-request multipart #001
+http://tests.xproc.org/tests/required/multipart-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop" content-type="multipart/mixed"> 
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">text/plain; charset=utf-8</header>  
+    <body>Hello World</body> 
+  </part>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">text/plain; charset=utf-8</header>  
+    <body>Goodbye!</body> 
+  </part>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">application/xml; charset=utf-8</header>  
+    <body> 
+      <doc/> 
+    </body> 
+  </part> 
+</check-multipart>
+l|<check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop" content-type="multipart/mixed"> 
+  <header name="cookie">IKnowYou=I%20Really%20Do%21</header>  
+  <header name="cookie2">$Version=1</header>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">text/plain; charset=UTF-8</header>  
+    <body>Hello World</body> 
+  </part>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">text/plain; charset=UTF-8</header>  
+    <body>Goodbye!</body> 
+  </part>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">application/xml; charset=UTF-8</header>  
+    <body>
+      <doc/> 
+    </body> 
+  </part> 
+</check-multipart>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of child nodes '3' but was '5' - comparing <check-multipart...> at /check-multipart[1] to <check-multipart...> at /check-multipart[1]
+
+[role="fail"]
+=== FAIL Test http-request multipart #002
+http://tests.xproc.org/tests/required/multipart-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop" content-type="multipart/related"> 
+  <header name="x_mpp">mpp header</header>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">text/plain; charset=utf-8</header>  
+    <body>Hello World</body> 
+  </part>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">text/plain; charset=utf-8</header>  
+    <body>Goodbye!</body> 
+  </part>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">application/xml; charset=utf-8</header>  
+    <body> 
+      <doc/> 
+    </body> 
+  </part> 
+</check-multipart>
+l|<check-multipart boundary="" content-type="multipart/related"> 
+  <header name="cookie">IKnowYou=I%20Really%20Do%21</header>  
+  <header name="cookie2">$Version=1</header>  
+  <header name="x_mpp">mpp header</header> 
+</check-multipart>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected attribute value 'aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop' but was '' - comparing <check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop"...> at /check-multipart[1]/@boundary to <check-multipart boundary=""...> at /check-multipart[1]/@boundary
+
+[role="fail"]
+=== FAIL Test http-request multipart #003
+http://tests.xproc.org/tests/required/multipart-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop" content-type="multipart/mixed"> 
+  <part> 
+    <header name="Content-ID">firstpart</header>  
+    <header name="Content-Type">text/plain; charset=utf8</header>  
+    <body>Hello World</body> 
+  </part>  
+  <part> 
+    <header name="Content-Transfer-Encoding">base64</header>  
+    <header name="Content-Type">text/plain; charset=iso-8859-2</header>  
+    <body>PHBhcmE+uWVk6SBteblpPC9wYXJhPg0K</body> 
+  </part>  
+  <part> 
+    <header name="Content-Description">Some descriptive text</header>  
+    <header name="Content-Type">application/xml; charset=utf-8</header>  
+    <body>
+      <!-- comment -->
+      <doc>
+        <para>Some text</para>
+      </doc> 
+    </body> 
+  </part> 
+</check-multipart>
+l|<check-multipart boundary="aaaabbbbccccddddeeefffggghhhiiijjjkkkllmmmnop" content-type="multipart/mixed"> 
+  <header name="cookie">IKnowYou=I%20Really%20Do%21</header>  
+  <header name="cookie2">$Version=1</header>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">text/plain; charset=utf8; charset=UTF-8</header>  
+    <body>Hello World</body> 
+  </part>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">text/plain; charset=iso-8859-2; charset=ISO-8859-2</header>  
+    <body>PHBhcmE+uWVk6SBteblpPC9wYXJhPg0K</body> 
+  </part>  
+  <part> 
+    <header name="Content-Disposition">form-data; name=""</header>  
+    <header name="Content-Transfer-Encoding">8bit</header>  
+    <header name="Content-Type">application/xml; charset=UTF-8</header>  
+    <body>
+      <!-- comment -->
+      <doc>
+        <para>Some text</para>
+      </doc> 
+    </body> 
+  </part> 
+</check-multipart>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of child nodes '3' but was '5' - comparing <check-multipart...> at /check-multipart[1] to <check-multipart...> at /check-multipart[1]
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #013
+http://tests.xproc.org/tests/required/namespace-rename-013.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<d:doc xmlns:d="http://bar.com" xmlns:foo="http://foo.com" foo:attr="val"></d:doc>
+l|<d:doc xmlns:d="http://bar.com" xmlns:d="http://foo.com" d:attr="val"/>
+|====================
+
+
+==== Error message
+
+
+* Attribute "d" bound to namespace "http://www.w3.org/2000/xmlns/" was already specified for element "d:doc".
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #014
+http://tests.xproc.org/tests/required/namespace-rename-014.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<d:doc xmlns:d="http://foo.com" xmlns:bar="http://bar.com" bar:attr="val"></d:doc>
+l|<d:doc xmlns:d="http://foo.com" xmlns:d="http://bar.com" d:attr="val"></d:doc>
+|====================
+
+
+==== Error message
+
+
+* Attribute "d" bound to namespace "http://www.w3.org/2000/xmlns/" was already specified for element "d:doc".
+
+[role="fail"]
+=== FAIL Test p:namespaces #004
+http://tests.xproc.org/tests/required/namespaces-004.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<message>Catch caught XPath failure.</message>
+l|<html xmlns="http://www.w3.org/1999/xhtml">  
+  <head> 
+    <title>Some title</title> 
+  </head>  
+  <body> 
+    <h1>Some title</h1>  
+    <p>Some text.</p> 
+  </body> 
+</html>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected namespace URI 'null' but was 'http://www.w3.org/1999/xhtml' - comparing <message...> at /message[1] to <html...> at /html[1]
+
+[role="fail"]
+=== FAIL Test p:namespaces #006
+http://tests.xproc.org/tests/required/namespaces-006.xml
+
+
+==== Error message
+
+
+* Exception occurred evaluting XPath: h:del. Exception: XPath expression uses unbound namespace prefix h
+
+[role="fail"]
+=== FAIL Test param-002
+http://tests.xproc.org/tests/required/param-002.xml
+
+[role="fail"]
+=== FAIL Test p:pipeinfo-001
+http://tests.xproc.org/tests/required/pipeinfo-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<p:pipeinfo xmlns:p="http://www.w3.org/ns/xproc" xml:id="foo"> 
+  <config>This is for the processor</config> 
+</p:pipeinfo>
+l|<?xml-stylesheet type="text/xsl" href="/style/testcase.xsl"?>
+
+<t:test xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error">  
+  <t:title>Test p:pipeinfo-001</t:title>  
+  <t:pipeline> 
+    <p:declare-step version="1.0" name="main"> 
+      <p:output port="result"/>  
+      <p:documentation>
+        <para xmlns="http://docbook.org/ns/docbook">This is just documentation, it will be ignored by the processor.</para> 
+      </p:documentation>  
+      <p:pipeinfo xml:id="foo"> 
+        <config>This is for the processor</config> 
+      </p:pipeinfo>  
+      <p:identity name="identity"> 
+        <p:input port="source"> 
+          <p:document href="#foo"/> 
+        </p:input> 
+      </p:identity> 
+    </p:declare-step> 
+  </t:pipeline>  
+  <t:output port="result"> 
+    <p:pipeinfo xml:id="foo"> 
+      <config>This is for the processor</config> 
+    </p:pipeinfo> 
+  </t:output> 
+</t:test>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected namespace URI 'http://www.w3.org/ns/xproc' but was 'http://xproc.org/ns/testsuite' - comparing <p:pipeinfo...> at /pipeinfo[1] to <t:test...> at /test[1]
+
+[role="fail"]
+=== FAIL Test preserving base URI #001
+http://tests.xproc.org/tests/required/preserve-base-uri-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc> 
+  <chap> 
+    <para>http://example.com/base/chaps/</para> 
+  </chap> 
+</doc>
+l|<doc> 
+  <chap> 
+    <para></para> 
+  </chap> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected presence of child nodes to be 'true' but was 'false' - comparing <para...> at /doc[1]/chap[1]/para[1] to <para...> at /doc[1]/chap[1]/para[1]
+
+[role="fail"]
+=== FAIL Test preserving base URI #002
+http://tests.xproc.org/tests/required/preserve-base-uri-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc foo="http://example.com/base/"> 
+  <chap foo="http://example.com/base/chaps/"> 
+    <para>http://example.com/base/chaps/</para> 
+  </chap> 
+</doc>
+l|<doc foo="http://example.com/base/"> 
+  <chap foo="http://example.com/base/chaps/"> 
+    <para></para> 
+  </chap> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected presence of child nodes to be 'true' but was 'false' - comparing <para...> at /doc[1]/chap[1]/para[1] to <para...> at /doc[1]/chap[1]/para[1]
+
+[role="fail"]
+=== FAIL Test rename-007
+http://tests.xproc.org/tests/required/rename-007.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<document> 
+  <element xmlns:bar="http://bar.com/" xmlns:bar2="http://bar2.com/" bar:baz="baz" bar2:attr="value"></element> 
+</document>
+l|<document> 
+  <element xmlns:bar="http://bar.com/" bar:baz="baz" xmlns:bar="http://bar2.com/" bar:attr="value"></element> 
+</document>
+|====================
+
+
+==== Error message
+
+
+* Attribute "bar" bound to namespace "http://www.w3.org/2000/xmlns/" was already specified for element "element".
+
+[role="fail"]
+=== FAIL Test resolve-uri #001
+http://tests.xproc.org/tests/required/resolve-uri-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://example.org/base/uri"> 
+  <title xml:base="http://example.org/other/uri">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://example.org/base/test</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+l|<doc xml:base="http://example.org/base/uri"> 
+  <title xml:base="http://example.org/other/uri">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://tests.xproc.org/tests/required/test</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://example.org/base/test' but was 'http://tests.xproc.org/tests/required/test' - comparing <para ...>http://example.org/base/test</para> at /doc[1]/para[2]/text()[1] to <para ...>http://tests.xproc.org/tests/required/test</para> at /doc[1]/para[2]/text()[1]
+
+[role="fail"]
+=== FAIL Test resolve-uri #002
+http://tests.xproc.org/tests/required/resolve-uri-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xml:base="http://example.org/base/uri"> 
+  <title xml:base="http://example.org/other/uri">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://example.org/other/test</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+l|<doc xml:base="http://example.org/base/uri"> 
+  <title xml:base="http://example.org/other/uri">Some title</title>  
+  <para>Some paragraph.</para>  
+  <para class="replaceme">http://tests.xproc.org/tests/required/test</para>  
+  <para>Some paragraph.</para>  
+  <para>Some paragraph.</para> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'http://example.org/other/test' but was 'http://tests.xproc.org/tests/required/test' - comparing <para ...>http://example.org/other/test</para> at /doc[1]/para[2]/text()[1] to <para ...>http://tests.xproc.org/tests/required/test</para> at /doc[1]/para[2]/text()[1]
+
+[role="fail"]
+=== FAIL Test step-available #001
+http://tests.xproc.org/tests/required/step-available-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test step-available #005
+http://tests.xproc.org/tests/required/step-available-005.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>Success.</doc>
+l|<doc>Failure.</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'Success.' but was 'Failure.' - comparing <doc ...>Success.</doc> at /doc[1]/text()[1] to <doc ...>Failure.</doc> at /doc[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test try/catch #003
+http://tests.xproc.org/tests/required/try-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<message>Catch caught XSLT failure.</message>
+l|<message>Catch caught XSLT failure, but not the message.</message>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'Catch caught XSLT failure.' but was 'Catch caught XSLT failure, but not the message.' - comparing <message ...>Catch caught XSLT failure.</message> at /message[1]/text()[1] to <message ...>Catch caught XSLT failure, but not the message.</message> at /message[1]/text()[1]
+
+[role="fail"]
+=== FAIL Test use-when #001
+http://tests.xproc.org/tests/required/use-when-001.xml
+
+Error: err:XS0010 was raised. 
+
+* XS0010: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0010
+
+[role="fail"]
+=== FAIL Test use-when #003
+http://tests.xproc.org/tests/required/use-when-003.xml
+
+Error: err:XS0044 was raised. 
+
+* XS0044: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0044
+
+[role="fail"]
+=== FAIL Test versioning #001
+http://tests.xproc.org/tests/required/versioning-001.xml
+
+Error: err:XS0022 was raised. 
+
+* XS0022: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0022
+
+[role="fail"]
+=== FAIL Test versioning #004
+http://tests.xproc.org/tests/required/versioning-004.xml
+
+Error: err:XS0010 was raised. 
+
+* XS0010: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0010
+
+[role="fail"]
+=== FAIL Test versioning #005
+http://tests.xproc.org/tests/required/versioning-005.xml
+
+Error: err:XS0010 was raised. 
+
+* XS0010: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0010
+
+[role="fail"]
+=== FAIL Test versioning #006
+http://tests.xproc.org/tests/required/versioning-006.xml
+
+Error: err:XS0010 was raised. 
+
+* XS0010: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0010
+
+[role="fail"]
+=== FAIL Test versioning #007
+http://tests.xproc.org/tests/required/versioning-007.xml
+
+Error: err:XS0010 was raised. 
+
+* XS0010: 
+
+==== Error message
+
+
+* No exception expected, but got err:XS0010
+
+[role="fail"]
+=== FAIL Test wrap-008
+http://tests.xproc.org/tests/required/wrap-008.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+  <test:wrapper xmlns:test="http://www.example.com/test"> </test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test"> text
+    <!-- foo --> text
+  </test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test"> text2</test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test"> text
+    <!-- foo --> text
+  </test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test"> </test:wrapper>
+</doc>
+l|<doc>
+  <test:wrapper xmlns:test="http://www.example.com/test"></test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test">text text</test:wrapper>
+  <!-- foo -->
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test">text2</test:wrapper>
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test">text text</test:wrapper>
+  <!-- foo -->
+  <!-- foo -->
+  <test:wrapper xmlns:test="http://www.example.com/test"></test:wrapper>
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of child nodes '9' but was '11' - comparing <doc...> at /doc[1] to <doc...> at /doc[1]
+
+[role="fail"]
+=== FAIL Test p:xinclude #004
+http://tests.xproc.org/tests/required/xinclude-004.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test p:xinclude #005
+http://tests.xproc.org/tests/required/xinclude-005.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test literal xml:id support #001
+http://tests.xproc.org/tests/required/xml-id-001.xml
+
+Error: err:XD0007 was raised. 
+
+* XD0007: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0007
+
+[role="fail"]
+=== FAIL Test added xml:id support #002
+http://tests.xproc.org/tests/required/xml-id-002.xml
+
+Error: err:XD0007 was raised. 
+
+* XD0007: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0007
+
+[role="fail"]
+=== FAIL Test xslt-006
+http://tests.xproc.org/tests/required/xslt-006.xml
+
+Error: err:XD0006 was raised. 
+
+* XD0006: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0006
+
+
+== Optional tests (Revision 585)
+
+Passed 72 of 111 tests (64.86%).
+
+[role="fail"]
+=== FAIL Test p:document-template-003
+http://tests.xproc.org/tests/optional/document-template-003.xml
+
+
+==== Error message
+
+
+* Exception occurred evaluting XPath: concat("{", string-join((/*/@a, /*/@b), ","), "}"). Exception: Expected: )
+
+[role="fail"]
+=== FAIL Test p:document-template-011
+http://tests.xproc.org/tests/optional/document-template-011.xml
+
+
+==== Error message
+
+
+* Exception occurred evaluting XPath: $ex1:var. Exception: Undefined variable var
+
+[role="fail"]
+=== FAIL Test p:document-template-014
+http://tests.xproc.org/tests/optional/document-template-014.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@ceaf2303 [name: XD0026 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test exec-001
+http://tests.xproc.org/tests/optional/exec-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-002
+http://tests.xproc.org/tests/optional/exec-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-003
+http://tests.xproc.org/tests/optional/exec-003.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-004
+http://tests.xproc.org/tests/optional/exec-004.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-005
+http://tests.xproc.org/tests/optional/exec-005.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-006
+http://tests.xproc.org/tests/optional/exec-006.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-007
+http://tests.xproc.org/tests/optional/exec-007.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-008
+http://tests.xproc.org/tests/optional/exec-008.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-009
+http://tests.xproc.org/tests/optional/exec-009.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-010
+http://tests.xproc.org/tests/optional/exec-010.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-012
+http://tests.xproc.org/tests/optional/exec-012.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-013
+http://tests.xproc.org/tests/optional/exec-013.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-014
+http://tests.xproc.org/tests/optional/exec-014.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-016
+http://tests.xproc.org/tests/optional/exec-016.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test exec-017
+http://tests.xproc.org/tests/optional/exec-017.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Test psvi-required-001.xml
+http://tests.xproc.org/tests/optional/psvi-required-001.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-003
+http://tests.xproc.org/tests/optional/validrng-003.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-004
+http://tests.xproc.org/tests/optional/validrng-004.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-005
+http://tests.xproc.org/tests/optional/validrng-005.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-006
+http://tests.xproc.org/tests/optional/validrng-006.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-008
+http://tests.xproc.org/tests/optional/validrng-008.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validrng-009
+http://tests.xproc.org/tests/optional/validrng-009.xml
+
+Error: err:XD0030 was raised. 
+
+* XD0030: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0030
+
+[role="fail"]
+=== FAIL Test validxsd-004
+http://tests.xproc.org/tests/optional/validxsd-004.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cea1483a [name: XC0053 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test validxsd-005
+http://tests.xproc.org/tests/optional/validxsd-005.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-attribute="defaulted" xsi:noNamespaceSchemaLocation="document.xsd">
+  <p>This is a test document</p>
+</doc>
+l|<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="document.xsd">  
+  <p>This is a test document</p> 
+</doc>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected number of element attributes '1' but was '0' - comparing <doc...> at /doc[1] to <doc...> at /doc[1]
+
+[role="fail"]
+=== FAIL Test validxsd-010
+http://tests.xproc.org/tests/optional/validxsd-010.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cea1483a [name: XC0053 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test validxsd-011
+http://tests.xproc.org/tests/optional/validxsd-011.xml
+
+
+==== Error message
+
+
+* Pipeline processed, but expected org.dom4j.QName@cea1483a [name: XC0053 namespace: "org.dom4j.Namespace@5751eb56 [Namespace: prefix err mapped to URI "http://www.w3.org/ns/xproc-error"]"]
+
+[role="fail"]
+=== FAIL Test validxsd-012
+http://tests.xproc.org/tests/optional/validxsd-012.xml
+
+Error: err:XC0053 was raised. 
+
+* XC0053: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0053
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #001
+http://tests.xproc.org/tests/optional/xinclude-001.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #002
+http://tests.xproc.org/tests/optional/xinclude-002.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #003
+http://tests.xproc.org/tests/optional/xinclude-003.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #004
+http://tests.xproc.org/tests/optional/xinclude-004.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #005
+http://tests.xproc.org/tests/optional/xinclude-005.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #006
+http://tests.xproc.org/tests/optional/xinclude-006.xml
+
+Error: err:XC0029 was raised. 
+
+* XC0029: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0029
+
+[role="fail"]
+=== FAIL Test xquery-006
+http://tests.xproc.org/tests/optional/xquery-006.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<result> 
+  <document> 
+    <title>Some Title</title>  
+    <para>Some paragraph.</para> 
+  </document>  
+  <document> 
+    <title>Some Other Title</title>  
+    <para>Some other paragraph.</para> 
+  </document> 
+</result>
+l|<result/>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected presence of child nodes to be 'true' but was 'false' - comparing <result...> at /result[1] to <result...> at /result[1]
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #002
+http://tests.xproc.org/tests/optional/xslt2-002.xml
+
+Error: err:XD0007 was raised. 
+
+* XD0007: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0007
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #003
+http://tests.xproc.org/tests/optional/xslt2-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<div> 
+  <p>There are 4 documents in the default collection.</p>  
+  <p>Only 3 are &lt;doc&gt; documents.</p> 
+</div>
+l|<div>
+  <p>There are 0 documents in the default collection.</p>
+  <p>Only 0 are &lt;doc&gt; documents.</p>
+</div>
+|====================
+
+
+==== Error message
+
+
+* org.custommonkey.xmlunit.Diff [different] Expected text value 'There are 4 documents in the default collection.' but was 'There are 0 documents in the default collection.' - comparing <p ...>There are 4 documents in the default collection.</p> at /div[1]/p[1]/text()[1] to <p ...>There are 0 documents in the default collection.</p> at /div[1]/p[1]/text()[1]
+
+
+== Serialization tests (Revision 585)
+
+Passed 1 of 25 tests (4.00%).
+
+[role="fail"]
+=== FAIL Serialization test byte-order-mark-001
+http://tests.xproc.org/tests/serialization/byte-order-mark-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test byte-order-mark-002
+http://tests.xproc.org/tests/serialization/byte-order-mark-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test cdata-section-elements-001
+http://tests.xproc.org/tests/serialization/cdata-section-elements-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test cdata-section-elements-002
+http://tests.xproc.org/tests/serialization/cdata-section-elements-002.xml
+
+Error: err:XC0050 was raised. 
+
+* XC0050: 
+
+==== Error message
+
+
+* No exception expected, but got err:XC0050
+
+[role="fail"]
+=== FAIL Serialization test doctype-public-001
+http://tests.xproc.org/tests/serialization/doctype-public-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test doctype-system-001
+http://tests.xproc.org/tests/serialization/doctype-system-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test encoding-001
+http://tests.xproc.org/tests/serialization/encoding-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test escape-uri-attributes-001
+http://tests.xproc.org/tests/serialization/escape-uri-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test escape-uri-attributes-002
+http://tests.xproc.org/tests/serialization/escape-uri-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test include-content-type #001
+http://tests.xproc.org/tests/serialization/include-content-type-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test include-content-type #002
+http://tests.xproc.org/tests/serialization/include-content-type-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test indent #001
+http://tests.xproc.org/tests/serialization/indent-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test indent #002
+http://tests.xproc.org/tests/serialization/indent-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test media-type #001
+http://tests.xproc.org/tests/serialization/media-type-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test normalization-form-001
+http://tests.xproc.org/tests/serialization/normalization-form-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test normalization-form-002
+http://tests.xproc.org/tests/serialization/normalization-form-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test normalization-form-003
+http://tests.xproc.org/tests/serialization/normalization-form-003.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test omit-xml-declaration-001
+http://tests.xproc.org/tests/serialization/omit-xml-declaration-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test omit-xml-declaration-002
+http://tests.xproc.org/tests/serialization/omit-xml-declaration-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test standalone-001
+http://tests.xproc.org/tests/serialization/standalone-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test standalone-002
+http://tests.xproc.org/tests/serialization/standalone-002.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test standalone-003
+http://tests.xproc.org/tests/serialization/standalone-003.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test undeclare-prefixes-001
+http://tests.xproc.org/tests/serialization/undeclare-prefixes-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+[role="fail"]
+=== FAIL Serialization test version-001
+http://tests.xproc.org/tests/serialization/version-001.xml
+
+Error: err:XD0017 was raised. 
+
+* XD0017: 
+
+==== Error message
+
+
+* No exception expected, but got err:XD0017
+
+
+== Extension tests (Revision 585)
+
+Passed 1 of 1 tests (100.00%).
+

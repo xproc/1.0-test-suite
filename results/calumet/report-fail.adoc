@@ -1,0 +1,392 @@
+
+= EMC Documentum XProc Engine (Codename: Calumet)
+
+Passed 295 of 325 tests (90.77%) on 30 Dec 2008 at 11:47a.
+
+:toc: right
+
+This report only shows failing tests.
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|Calumet|Language|en
+|Vendor|EMC Corporation|XProc version|1.0
+|Vendor URI|http://www.emc.com|XPath version|1.0
+|Version|1.0.0|PSVI Supported|false
+|=============================================
+
+
+== Required tests
+
+Passed 271 of 283 tests (95.76%).
+
+[role="fail"]
+=== FAIL Test err:XS0008
+http://tests.xproc.org/tests/required/err-primary-001.xml
+
+
+==== Error message
+
+
+* The test was expected to fail with error: {http://www.w3.org/ns/xproc-error}XS0008
+
+[role="fail"]
+=== FAIL Test for err:XS0008 - 001
+http://tests.xproc.org/tests/required/err-s0008-001.xml
+
+
+==== Error message
+
+
+* The test was expected to fail with error: {http://www.w3.org/ns/xproc-error}XS0008
+
+[role="fail"]
+=== FAIL Test http-request #005
+http://tests.xproc.org/tests/required/http-request-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: NOT_IMPLEMENTED: Multipart entities not yet supported
+
+[role="fail"]
+=== FAIL Test http-request #006
+http://tests.xproc.org/tests/required/http-request-006.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: NOT_IMPLEMENTED: Multipart entities not yet supported
+
+[role="fail"]
+=== FAIL Test http-request #012
+http://tests.xproc.org/tests/required/http-request-012.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+  <IKnowYou>I Really Do!</IKnowYou>
+</doc>
+l|<doc>
+<IKnowYou></IKnowYou>
+</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #001
+http://tests.xproc.org/tests/required/make-absolute-uris-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+<p>This has one base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div>
+<p>This has a different base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+l|<doc>
+<p>This has one base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">
+<p>This has a different base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #002
+http://tests.xproc.org/tests/required/make-absolute-uris-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+<p>This has one base URI: <uri>http://example.com/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div>
+<p>This has a different base URI: <uri>http://example.com/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+l|<doc>
+<p>This has one base URI: <uri>http://example.com/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">
+<p>This has a different base URI: <uri>http://example.com/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test preserving base URI #001
+http://tests.xproc.org/tests/required/preserve-base-uri-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+  <chap>
+    <para>http://example.com/base/chaps/</para>
+  </chap>
+</doc>
+l|<doc>
+  <chap>
+    <para></para>
+  </chap>
+</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test step-available #003
+http://tests.xproc.org/tests/required/step-available-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>Success.</doc>
+l|<doc xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xmlns:t="http://xproc.org/ns/testsuite" xmlns:ex="http://example.com/ns/xproc-extensions">Failure.</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test unescapemarkup-002
+http://tests.xproc.org/tests/required/unescapemarkup-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper><doc xmlns="http://www.example.org/ns/"><p>foo</p></doc></wrapper>
+l|<wrapper xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xmlns:t="http://xproc.org/ns/testsuite" xmlns="http://www.example.org/ns/"><doc><p>foo</p></doc></wrapper>
+|====================
+
+[role="fail"]
+=== FAIL Test xsl-t004
+http://tests.xproc.org/tests/required/xslt-004.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test xsl-t005
+http://tests.xproc.org/tests/required/xslt-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0056: It is a dynamic error if the specified initial mode or named template cannot be applied to the specified stylesheet.
+
+
+== Optional tests
+
+Passed 23 of 41 tests (56.10%).
+
+[role="fail"]
+=== FAIL Test exec-001
+http://tests.xproc.org/tests/optional/exec-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test psvi-required-001.xml
+http://tests.xproc.org/tests/optional/psvi-required-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test uuid-001
+http://tests.xproc.org/tests/optional/uuid-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test uuid-002
+http://tests.xproc.org/tests/optional/uuid-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test uuid-003
+http://tests.xproc.org/tests/optional/uuid-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test uuid-005
+http://tests.xproc.org/tests/optional/uuid-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test validrng-001
+http://tests.xproc.org/tests/optional/validrng-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validsch-001
+http://tests.xproc.org/tests/optional/validsch-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-001
+http://tests.xproc.org/tests/optional/validxsd-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-002
+http://tests.xproc.org/tests/optional/validxsd-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-003
+http://tests.xproc.org/tests/optional/validxsd-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-004
+http://tests.xproc.org/tests/optional/validxsd-004.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-005
+http://tests.xproc.org/tests/optional/validxsd-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-006
+http://tests.xproc.org/tests/optional/validxsd-006.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test www-form-urldecode-001
+http://tests.xproc.org/tests/optional/www-form-urldecode-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:param-set xmlns:c="http://www.w3.org/ns/xproc-step">
+   <c:param name="p3" value="three"></c:param>
+   <c:param name="p2" value="two"></c:param>
+   <c:param name="p1" value="one%26zero"></c:param>
+</c:param-set>
+l|<c:param-set xmlns:c="http://www.w3.org/ns/xproc-step"><c:param name="p3" value="three"></c:param><c:param name="p2" value="two"></c:param><c:param name="p1" value="one&zero"></c:param></c:param-set>
+|====================
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #001
+http://tests.xproc.org/tests/optional/xslt2-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #002
+http://tests.xproc.org/tests/optional/xslt2-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #003
+http://tests.xproc.org/tests/optional/xslt2-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+
+== Extension tests
+
+Passed 1 of 1 tests (100.00%).
+

@@ -1,0 +1,1638 @@
+
+= EMC Documentum XProc Engine (Codename: Calumet)
+
+Passed 295 of 325 tests (90.77%) on 30 Dec 2008 at 11:47a.
+
+:toc: right
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|Calumet|Language|en
+|Vendor|EMC Corporation|XProc version|1.0
+|Vendor URI|http://www.emc.com|XPath version|1.0
+|Version|1.0.0|PSVI Supported|false
+|=============================================
+
+
+== Required tests
+
+Passed 271 of 283 tests (95.76%).
+
+[role="pass"]
+=== PASS Test p:add-attribute #001
+http://tests.xproc.org/tests/required/add-attribute-001.xml
+
+[role="pass"]
+=== PASS Test p:add-attribute #002
+http://tests.xproc.org/tests/required/add-attribute-002.xml
+
+[role="pass"]
+=== PASS Test add-xml-base-001
+http://tests.xproc.org/tests/required/add-xml-base-001.xml
+
+[role="pass"]
+=== PASS Test add-xml-base-002
+http://tests.xproc.org/tests/required/add-xml-base-002.xml
+
+[role="pass"]
+=== PASS Test add-xml-base-003
+http://tests.xproc.org/tests/required/add-xml-base-003.xml
+
+[role="pass"]
+=== PASS Test add-xml-base-004
+http://tests.xproc.org/tests/required/add-xml-base-004.xml
+
+[role="pass"]
+=== PASS Test addattribute001
+http://tests.xproc.org/tests/required/addattribute-001.xml
+
+[role="pass"]
+=== PASS Test base-uri #001
+http://tests.xproc.org/tests/required/base-uri-001.xml
+
+[role="pass"]
+=== PASS Test base-uri #002
+http://tests.xproc.org/tests/required/base-uri-002.xml
+
+[role="pass"]
+=== PASS Test choose #001
+http://tests.xproc.org/tests/required/choose-001.xml
+
+[role="pass"]
+=== PASS Test choose #002
+http://tests.xproc.org/tests/required/choose-002.xml
+
+[role="pass"]
+=== PASS Test choose #003
+http://tests.xproc.org/tests/required/choose-003.xml
+
+[role="pass"]
+=== PASS Test compare
+http://tests.xproc.org/tests/required/compare-001.xml
+
+[role="pass"]
+=== PASS Test compare
+http://tests.xproc.org/tests/required/compare-002.xml
+
+[role="pass"]
+=== PASS Test compare
+http://tests.xproc.org/tests/required/compare-003.xml
+
+[role="pass"]
+=== PASS Test compare
+http://tests.xproc.org/tests/required/compare-004.xml
+
+[role="pass"]
+=== PASS Test compare
+http://tests.xproc.org/tests/required/compare-005.xml
+
+[role="pass"]
+=== PASS Test of the p:count Step
+http://tests.xproc.org/tests/required/count-001.xml
+
+[role="pass"]
+=== PASS Test of the p:count Step #002
+http://tests.xproc.org/tests/required/count-002.xml
+
+[role="pass"]
+=== PASS Test p:data #001
+http://tests.xproc.org/tests/required/data-001.xml
+
+[role="pass"]
+=== PASS Test p:data #002
+http://tests.xproc.org/tests/required/data-002.xml
+
+[role="pass"]
+=== PASS Test p:data #003
+http://tests.xproc.org/tests/required/data-003.xml
+
+[role="pass"]
+=== PASS Test p:data #004
+http://tests.xproc.org/tests/required/data-004.xml
+
+[role="pass"]
+=== PASS Test p:declare-step-001
+http://tests.xproc.org/tests/required/declare-step-001.xml
+
+[role="pass"]
+=== PASS Test p:declare-step-002
+http://tests.xproc.org/tests/required/declare-step-002.xml
+
+[role="pass"]
+=== PASS Test p:declare-step-003
+http://tests.xproc.org/tests/required/declare-step-003.xml
+
+[role="pass"]
+=== PASS Test p:declare-step-004
+http://tests.xproc.org/tests/required/declare-step-004.xml
+
+[role="pass"]
+=== PASS Test p:declare-step-005
+http://tests.xproc.org/tests/required/declare-step-005.xml
+
+[role="pass"]
+=== PASS Test delete-001
+http://tests.xproc.org/tests/required/delete-001.xml
+
+[role="pass"]
+=== PASS Test delete-002
+http://tests.xproc.org/tests/required/delete-002.xml
+
+[role="pass"]
+=== PASS Test delete-003
+http://tests.xproc.org/tests/required/delete-003.xml
+
+[role="pass"]
+=== PASS Test directory-list-001
+http://tests.xproc.org/tests/required/directory-list-001.xml
+
+[role="pass"]
+=== PASS Test directory-list-002
+http://tests.xproc.org/tests/required/directory-list-002.xml
+
+[role="pass partial"]
+=== PASS Test err:XC0001 #001
+http://tests.xproc.org/tests/required/err-c0001-001.xml
+
+Wrong error: expected err:XC0001 but XPROC_ERROR was raised.
+
+* XC0001: 
+* XPROC_ERROR: 
+[role="pass"]
+=== PASS Test err:XC0002 #001
+http://tests.xproc.org/tests/required/err-c0002-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0003 #001
+http://tests.xproc.org/tests/required/err-c0003-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0003 #002
+http://tests.xproc.org/tests/required/err-c0003-002.xml
+
+[role="pass"]
+=== PASS Test err:XC0004 #001
+http://tests.xproc.org/tests/required/err-c0004-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0005 #001
+http://tests.xproc.org/tests/required/err-c0005-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0005 #002
+http://tests.xproc.org/tests/required/err-c0005-002.xml
+
+[role="pass partial"]
+=== PASS Test for err:XC0011 - 001
+http://tests.xproc.org/tests/required/err-c0011-001.xml
+
+Wrong error: expected err:XC0011 but XC0026 was raised.
+
+* XC0011: 
+* XC0026: 
+[role="pass partial"]
+=== PASS Test err:XC0012 (p:directory-list on an inaccessible directory).
+http://tests.xproc.org/tests/required/err-c0012-001.xml
+
+Wrong error: expected err:XC0012 but NOT_IMPLEMENTED was raised.
+
+* XC0012: 
+* NOT_IMPLEMENTED: 
+[role="pass"]
+=== PASS Test err:XC0014 #001
+http://tests.xproc.org/tests/required/err-c0014-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0014 #002
+http://tests.xproc.org/tests/required/err-c0014-002.xml
+
+[role="pass"]
+=== PASS Test for err:XC0016 - 001
+http://tests.xproc.org/tests/required/err-c0016-001.xml
+
+[role="pass partial"]
+=== PASS Test err:XC0017 (p:directory-list with a non-directory path).
+http://tests.xproc.org/tests/required/err-c0017-001.xml
+
+Wrong error: expected err:XC0017 but NOT_IMPLEMENTED was raised.
+
+* XC0017: 
+* NOT_IMPLEMENTED: 
+[role="pass"]
+=== PASS Test err:XC0022 #001
+http://tests.xproc.org/tests/required/err-c0022-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #001
+http://tests.xproc.org/tests/required/err-c0023-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #002
+http://tests.xproc.org/tests/required/err-c0023-002.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #003
+http://tests.xproc.org/tests/required/err-c0023-003.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #004
+http://tests.xproc.org/tests/required/err-c0023-004.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #005
+http://tests.xproc.org/tests/required/err-c0023-005.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #006
+http://tests.xproc.org/tests/required/err-c0023-006.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #007
+http://tests.xproc.org/tests/required/err-c0023-007.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #008
+http://tests.xproc.org/tests/required/err-c0023-008.xml
+
+[role="pass"]
+=== PASS Test for err:XC0023 #009
+http://tests.xproc.org/tests/required/err-c0023-009.xml
+
+[role="pass"]
+=== PASS Test for err:XC0026 - 001
+http://tests.xproc.org/tests/required/err-c0026-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0026 - 002
+http://tests.xproc.org/tests/required/err-c0026-002.xml
+
+[role="pass partial"]
+=== PASS Test for err:XC0027 - 001
+http://tests.xproc.org/tests/required/err-c0027-001.xml
+
+Wrong error: expected err:XC0027 but NOT_IMPLEMENTED was raised.
+
+* XC0027: 
+* NOT_IMPLEMENTED: 
+[role="pass"]
+=== PASS Test err:XC0028 #001
+http://tests.xproc.org/tests/required/err-c0028-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0029 #001
+http://tests.xproc.org/tests/required/err-c0029-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0029 #002
+http://tests.xproc.org/tests/required/err-c0029-002.xml
+
+[role="pass"]
+=== PASS Test err:XC0030 #001
+http://tests.xproc.org/tests/required/err-c0030-001.xml
+
+[role="pass partial"]
+=== PASS Test for err:XC0033 - 001
+http://tests.xproc.org/tests/required/err-c0033-001.xml
+
+Wrong error: expected err:XC0033 but XD0017 was raised.
+
+* XC0033: 
+* XD0017: 
+[role="pass partial"]
+=== PASS Test for err:XC0033 - 002
+http://tests.xproc.org/tests/required/err-c0033-002.xml
+
+Wrong error: expected err:XC0033 but XD0017 was raised.
+
+* XC0033: 
+* XD0017: 
+[role="pass partial"]
+=== PASS Test for err:XC0035 - 001
+http://tests.xproc.org/tests/required/err-c0035-001.xml
+
+Wrong error: expected err:XC0035 but XD0017 was raised.
+
+* XC0035: 
+* XD0017: 
+[role="pass"]
+=== PASS Test for err:XC0039 - 001
+http://tests.xproc.org/tests/required/err-c0039-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0040 #001
+http://tests.xproc.org/tests/required/err-c0040-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0050 - 001
+http://tests.xproc.org/tests/required/err-c0050-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0052 #001
+http://tests.xproc.org/tests/required/err-c0052-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0056 - 001
+http://tests.xproc.org/tests/required/err-c0056-001.xml
+
+[role="pass"]
+=== PASS Test for err:XC0056 - 002
+http://tests.xproc.org/tests/required/err-c0056-002.xml
+
+[role="pass"]
+=== PASS Test for err:XC0058 - 001
+http://tests.xproc.org/tests/required/err-c0058-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0059 #001
+http://tests.xproc.org/tests/required/err-c0059-001.xml
+
+[role="pass"]
+=== PASS Test err:XC0059 #002
+http://tests.xproc.org/tests/required/err-c0059-002.xml
+
+[role="pass partial"]
+=== PASS Test not well-formed output
+http://tests.xproc.org/tests/required/err-d0001-001.xml
+
+Wrong error: expected err:XD0001 but XD0023 was raised.
+
+* XD0001: 
+* XD0023: 
+[role="pass"]
+=== PASS Test err:XD0003
+http://tests.xproc.org/tests/required/err-d0003-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0004
+http://tests.xproc.org/tests/required/err-d0004-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0005
+http://tests.xproc.org/tests/required/err-d0005-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0006
+http://tests.xproc.org/tests/required/err-d0006-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0007
+http://tests.xproc.org/tests/required/err-d0007-001.xml
+
+[role="pass partial"]
+=== PASS Test err:XD0008
+http://tests.xproc.org/tests/required/err-d0008-001.xml
+
+Wrong error: expected err:XD0008 but XD0023 was raised.
+
+* XD0008: 
+* XD0023: 
+[role="pass"]
+=== PASS Test err:XD0009
+http://tests.xproc.org/tests/required/err-d0009-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0009
+http://tests.xproc.org/tests/required/err-d0009-002.xml
+
+[role="pass"]
+=== PASS Test err:XD0010
+http://tests.xproc.org/tests/required/err-d0010-001.xml
+
+[role="pass"]
+=== PASS Test for inaccessible URIs (err:XD0011)
+http://tests.xproc.org/tests/required/err-d0011-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0012 #001
+http://tests.xproc.org/tests/required/err-d0012-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0012 #002
+http://tests.xproc.org/tests/required/err-d0012-002.xml
+
+[role="pass"]
+=== PASS Test err:XD0012 #003
+http://tests.xproc.org/tests/required/err-d0012-003.xml
+
+[role="pass"]
+=== PASS Test err:XD0013 #001
+http://tests.xproc.org/tests/required/err-d0013-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0013 #002
+http://tests.xproc.org/tests/required/err-d0013-002.xml
+
+[role="pass"]
+=== PASS Test for err:XD0014 #001
+http://tests.xproc.org/tests/required/err-d0014-001.xml
+
+[role="pass"]
+=== PASS Test for err:XD0014 #002
+http://tests.xproc.org/tests/required/err-d0014-002.xml
+
+[role="pass partial"]
+=== PASS Test for err:XD0015 #001
+http://tests.xproc.org/tests/required/err-d0015-001.xml
+
+Wrong error: expected err:XD0015 but XD0023 was raised.
+
+* XD0015: 
+* XD0023: 
+[role="pass"]
+=== PASS Test for err:XD0016 #001
+http://tests.xproc.org/tests/required/err-d0016-001.xml
+
+[role="pass"]
+=== PASS Test for err:XD0016 #002
+http://tests.xproc.org/tests/required/err-d0016-002.xml
+
+[role="pass partial"]
+=== PASS Test err:XD0019
+http://tests.xproc.org/tests/required/err-d0019-001.xml
+
+Wrong error: expected err:XD0019 but XC0016 was raised.
+
+* XD0019: 
+* XC0016: 
+[role="pass"]
+=== PASS Test err:XD0023 - #001
+http://tests.xproc.org/tests/required/err-d0023-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0023 - #002
+http://tests.xproc.org/tests/required/err-d0023-002.xml
+
+[role="pass"]
+=== PASS Test err:XD0023 - #003
+http://tests.xproc.org/tests/required/err-d0023-003.xml
+
+[role="pass"]
+=== PASS Test err:XD0023 - #004
+http://tests.xproc.org/tests/required/err-d0023-004.xml
+
+[role="pass"]
+=== PASS Test err:XD0023 - #005
+http://tests.xproc.org/tests/required/err-d0023-005.xml
+
+[role="pass"]
+=== PASS Test for err:XD0025 #001
+http://tests.xproc.org/tests/required/err-d0025-001.xml
+
+[role="pass"]
+=== PASS Test for err:XD0029 #001
+http://tests.xproc.org/tests/required/err-d0029-001.xml
+
+[role="pass"]
+=== PASS Test for err:XD0029 #002
+http://tests.xproc.org/tests/required/err-d0029-002.xml
+
+[role="fail"]
+=== FAIL Test err:XS0008
+http://tests.xproc.org/tests/required/err-primary-001.xml
+
+
+==== Error message
+
+
+* The test was expected to fail with error: {http://www.w3.org/ns/xproc-error}XS0008
+
+[role="pass partial"]
+=== PASS Test for err:XS0001
+http://tests.xproc.org/tests/required/err-s0001-001.xml
+
+Wrong error: expected err:XS0001 but XPROC_ERROR was raised.
+
+* XS0001: 
+* XPROC_ERROR: 
+[role="pass"]
+=== PASS Test for duplicate names error (err:XS0002)
+http://tests.xproc.org/tests/required/err-s0002-001.xml
+
+[role="pass"]
+=== PASS Test for duplicate names error (err:XS0002)
+http://tests.xproc.org/tests/required/err-s0002-002.xml
+
+[role="pass"]
+=== PASS Test for err:XS0004
+http://tests.xproc.org/tests/required/err-s0004-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0004
+http://tests.xproc.org/tests/required/err-s0004-002.xml
+
+[role="pass"]
+=== PASS Test for err:XS0006 - 001
+http://tests.xproc.org/tests/required/err-s0006-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0007
+http://tests.xproc.org/tests/required/err-s0007-001.xml
+
+[role="fail"]
+=== FAIL Test for err:XS0008 - 001
+http://tests.xproc.org/tests/required/err-s0008-001.xml
+
+
+==== Error message
+
+
+* The test was expected to fail with error: {http://www.w3.org/ns/xproc-error}XS0008
+
+[role="pass partial"]
+=== PASS Test for err:XS0010 - 001
+http://tests.xproc.org/tests/required/err-s0010-001.xml
+
+Wrong error: expected err:XS0010 but XS0031 was raised.
+
+* XS0010: 
+* XS0031: 
+[role="pass partial"]
+=== PASS Test for err:XS0010 - 002
+http://tests.xproc.org/tests/required/err-s0010-002.xml
+
+Wrong error: expected err:XS0010 but XS0031 was raised.
+
+* XS0010: 
+* XS0031: 
+[role="pass"]
+=== PASS Test err:XS0011 #001
+http://tests.xproc.org/tests/required/err-s0011-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0011 #002
+http://tests.xproc.org/tests/required/err-s0011-002.xml
+
+[role="pass"]
+=== PASS Test for multiple primary outputs
+http://tests.xproc.org/tests/required/err-s0014-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0015 #001
+http://tests.xproc.org/tests/required/err-s0015-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0016 - 001
+http://tests.xproc.org/tests/required/err-s0016-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0016 - 002
+http://tests.xproc.org/tests/required/err-s0016-002.xml
+
+[role="pass"]
+=== PASS Test for err:XS0017 - 001
+http://tests.xproc.org/tests/required/err-s0017-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0018 - 001
+http://tests.xproc.org/tests/required/err-s0018-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0022 #001
+http://tests.xproc.org/tests/required/err-s0022-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0022
+http://tests.xproc.org/tests/required/err-s0022-002.xml
+
+[role="pass"]
+=== PASS Test for err:XS0022
+http://tests.xproc.org/tests/required/err-s0022-003.xml
+
+[role="pass"]
+=== PASS Test for err:XS0024 #001
+http://tests.xproc.org/tests/required/err-s0024-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0026 #001
+http://tests.xproc.org/tests/required/err-s0026-001.xml
+
+[role="pass"]
+=== PASS Test for err:XS0026 #002
+http://tests.xproc.org/tests/required/err-s0026-002.xml
+
+[role="pass"]
+=== PASS Test for err:XS0027
+http://tests.xproc.org/tests/required/err-s0027-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0029 #001
+http://tests.xproc.org/tests/required/err-s0029-001.xml
+
+[role="pass"]
+=== PASS Test for multiple primary inputs
+http://tests.xproc.org/tests/required/err-s0030-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0032 #001
+http://tests.xproc.org/tests/required/err-s0032-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0036 #001
+http://tests.xproc.org/tests/required/err-s0036-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0041 #001
+http://tests.xproc.org/tests/required/err-s0041-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0042 #001
+http://tests.xproc.org/tests/required/err-s0042-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0044 #001
+http://tests.xproc.org/tests/required/err-s0044-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0044 #002
+http://tests.xproc.org/tests/required/err-s0044-002.xml
+
+[role="pass"]
+=== PASS Test err:XS0044 #0003
+http://tests.xproc.org/tests/required/err-s0044-003.xml
+
+[role="pass"]
+=== PASS Test err:XS0050 #001
+http://tests.xproc.org/tests/required/err-s0050-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-002.xml
+
+[role="pass"]
+=== PASS Test err:XS0052 #001
+http://tests.xproc.org/tests/required/err-s0052-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0052 #002
+http://tests.xproc.org/tests/required/err-s0052-002.xml
+
+[role="pass"]
+=== PASS Test err:XS0053 #001
+http://tests.xproc.org/tests/required/err-s0053-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0055 #001
+http://tests.xproc.org/tests/required/err-s0055-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0057 #001
+http://tests.xproc.org/tests/required/err-s0057-001.xml
+
+[role="pass"]
+=== PASS Test err:XS0058 #001
+http://tests.xproc.org/tests/required/err-s0058-001.xml
+
+[role="pass"]
+=== PASS Test for user-defined error conditions
+http://tests.xproc.org/tests/required/error-001.xml
+
+[role="pass"]
+=== PASS Test escape-markup #001
+http://tests.xproc.org/tests/required/escape-markup-001.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-001
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-001.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-002
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-002.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-003
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-003.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-004
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-004.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-005
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-005.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-006
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-006.xml
+
+[role="pass"]
+=== PASS Test exclude-inline-prefixes-004
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-007.xml
+
+[role="pass"]
+=== PASS Test fibonacci
+http://tests.xproc.org/tests/required/fibonacci.xml
+
+[role="pass"]
+=== PASS Test filter-001
+http://tests.xproc.org/tests/required/filter-001.xml
+
+[role="pass"]
+=== PASS Test filter-002
+http://tests.xproc.org/tests/required/filter-002.xml
+
+[role="pass"]
+=== PASS Test for-each #001
+http://tests.xproc.org/tests/required/for-each-001.xml
+
+[role="pass"]
+=== PASS Test for-each #002
+http://tests.xproc.org/tests/required/for-each-002.xml
+
+[role="pass"]
+=== PASS Test for-each #003
+http://tests.xproc.org/tests/required/for-each-003.xml
+
+[role="pass"]
+=== PASS Test for-each #004
+http://tests.xproc.org/tests/required/for-each-004.xml
+
+[role="pass"]
+=== PASS Test group #001
+http://tests.xproc.org/tests/required/group-001.xml
+
+[role="pass"]
+=== PASS Test http-request #001
+http://tests.xproc.org/tests/required/http-request-001.xml
+
+[role="pass"]
+=== PASS Test http-request #002
+http://tests.xproc.org/tests/required/http-request-002.xml
+
+[role="pass"]
+=== PASS Test http-request #003
+http://tests.xproc.org/tests/required/http-request-003.xml
+
+[role="pass"]
+=== PASS Test http-request #004
+http://tests.xproc.org/tests/required/http-request-004.xml
+
+[role="fail"]
+=== FAIL Test http-request #005
+http://tests.xproc.org/tests/required/http-request-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: NOT_IMPLEMENTED: Multipart entities not yet supported
+
+[role="fail"]
+=== FAIL Test http-request #006
+http://tests.xproc.org/tests/required/http-request-006.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: NOT_IMPLEMENTED: Multipart entities not yet supported
+
+[role="pass"]
+=== PASS Test http-request #007
+http://tests.xproc.org/tests/required/http-request-007.xml
+
+[role="pass"]
+=== PASS Test http-request #008
+http://tests.xproc.org/tests/required/http-request-008.xml
+
+[role="pass"]
+=== PASS Test http-request #009
+http://tests.xproc.org/tests/required/http-request-009.xml
+
+[role="pass"]
+=== PASS Test http-request #010
+http://tests.xproc.org/tests/required/http-request-010.xml
+
+[role="pass"]
+=== PASS Test http-request #011
+http://tests.xproc.org/tests/required/http-request-011.xml
+
+[role="fail"]
+=== FAIL Test http-request #012
+http://tests.xproc.org/tests/required/http-request-012.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+  <IKnowYou>I Really Do!</IKnowYou>
+</doc>
+l|<doc>
+<IKnowYou></IKnowYou>
+</doc>
+|====================
+
+[role="pass"]
+=== PASS Test p:identity-step-001
+http://tests.xproc.org/tests/required/identity-001.xml
+
+[role="pass"]
+=== PASS Test p:identity-step-002
+http://tests.xproc.org/tests/required/identity-002.xml
+
+[role="pass"]
+=== PASS Test p:identity-step-002
+http://tests.xproc.org/tests/required/identity-003.xml
+
+[role="pass"]
+=== PASS Test p:identity-step-004
+http://tests.xproc.org/tests/required/identity-004.xml
+
+[role="pass"]
+=== PASS Test p:identity-step-005
+http://tests.xproc.org/tests/required/identity-005.xml
+
+[role="pass"]
+=== PASS Test p:import #001
+http://tests.xproc.org/tests/required/import-001.xml
+
+[role="pass"]
+=== PASS Test p:import #002
+http://tests.xproc.org/tests/required/import-002.xml
+
+[role="pass"]
+=== PASS Test p:import #003
+http://tests.xproc.org/tests/required/import-003.xml
+
+[role="pass"]
+=== PASS Test input-001
+http://tests.xproc.org/tests/required/input-001.xml
+
+[role="pass"]
+=== PASS Test input-002
+http://tests.xproc.org/tests/required/input-002.xml
+
+[role="pass"]
+=== PASS Test input-003
+http://tests.xproc.org/tests/required/input-003.xml
+
+[role="pass"]
+=== PASS Test input-004
+http://tests.xproc.org/tests/required/input-004.xml
+
+[role="pass"]
+=== PASS Test input-005
+http://tests.xproc.org/tests/required/input-005.xml
+
+[role="pass"]
+=== PASS Test p:insert #001
+http://tests.xproc.org/tests/required/insert-001.xml
+
+[role="pass"]
+=== PASS Test p:insert #002
+http://tests.xproc.org/tests/required/insert-002.xml
+
+[role="pass"]
+=== PASS Test p:insert #003
+http://tests.xproc.org/tests/required/insert-003.xml
+
+[role="pass"]
+=== PASS Test p:insert #004
+http://tests.xproc.org/tests/required/insert-004.xml
+
+[role="pass"]
+=== PASS Test insert-005
+http://tests.xproc.org/tests/required/insert-005.xml
+
+[role="pass"]
+=== PASS Test insert-006
+http://tests.xproc.org/tests/required/insert-006.xml
+
+[role="pass"]
+=== PASS Test iteration #001
+http://tests.xproc.org/tests/required/iteration-001.xml
+
+[role="pass"]
+=== PASS Test iteration #002
+http://tests.xproc.org/tests/required/iteration-002.xml
+
+[role="pass"]
+=== PASS Test labelelements001
+http://tests.xproc.org/tests/required/labelelements-001.xml
+
+[role="pass"]
+=== PASS Test p:label-elements #002
+http://tests.xproc.org/tests/required/labelelements-002.xml
+
+[role="pass"]
+=== PASS Test load001
+http://tests.xproc.org/tests/required/load-001.xml
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #001
+http://tests.xproc.org/tests/required/make-absolute-uris-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+<p>This has one base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div>
+<p>This has a different base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+l|<doc>
+<p>This has one base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">
+<p>This has a different base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+|====================
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #002
+http://tests.xproc.org/tests/required/make-absolute-uris-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+<p>This has one base URI: <uri>http://example.com/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div>
+<p>This has a different base URI: <uri>http://example.com/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+l|<doc>
+<p>This has one base URI: <uri>http://example.com/xml-base-test.xml</uri></p>
+<?pi in base-test?>
+<div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">
+<p>This has a different base URI: <uri>http://example.com/xml-base-chap.xml</uri>.</p>
+<?pi in base-chap?>
+</div>
+
+<p>This has the original base URI.</p>
+</doc>
+|====================
+
+[role="pass"]
+=== PASS Test make-absolute-uris #003
+http://tests.xproc.org/tests/required/make-absolute-uris-003.xml
+
+[role="pass"]
+=== PASS Test make-sequence
+http://tests.xproc.org/tests/required/make-sequence.xml
+
+[role="pass"]
+=== PASS Test namespace-rename-001
+http://tests.xproc.org/tests/required/namespace-rename-001.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #002
+http://tests.xproc.org/tests/required/namespace-rename-002.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #003
+http://tests.xproc.org/tests/required/namespace-rename-003.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #004
+http://tests.xproc.org/tests/required/namespace-rename-004.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #005
+http://tests.xproc.org/tests/required/namespace-rename-005.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #006
+http://tests.xproc.org/tests/required/namespace-rename-006.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #007
+http://tests.xproc.org/tests/required/namespace-rename-007.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #008
+http://tests.xproc.org/tests/required/namespace-rename-008.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #009
+http://tests.xproc.org/tests/required/namespace-rename-009.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #010
+http://tests.xproc.org/tests/required/namespace-rename-010.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #011
+http://tests.xproc.org/tests/required/namespace-rename-011.xml
+
+[role="pass"]
+=== PASS Test p:namespace-rename #012
+http://tests.xproc.org/tests/required/namespace-rename-012.xml
+
+[role="pass"]
+=== PASS Test p:namespaces #001
+http://tests.xproc.org/tests/required/namespaces-001.xml
+
+[role="pass"]
+=== PASS Test p:namespaces #002
+http://tests.xproc.org/tests/required/namespaces-002.xml
+
+[role="pass"]
+=== PASS Test p:namespaces #003
+http://tests.xproc.org/tests/required/namespaces-003.xml
+
+[role="pass"]
+=== PASS Test p:namespaces
+http://tests.xproc.org/tests/required/namespaces-004.xml
+
+[role="pass"]
+=== PASS Test output-001
+http://tests.xproc.org/tests/required/output-001.xml
+
+[role="pass"]
+=== PASS Test output-001
+http://tests.xproc.org/tests/required/output-002.xml
+
+[role="pass"]
+=== PASS Test pack #001
+http://tests.xproc.org/tests/required/pack-001.xml
+
+[role="pass"]
+=== PASS Test pack #002
+http://tests.xproc.org/tests/required/pack-002.xml
+
+[role="pass"]
+=== PASS Test pack #003
+http://tests.xproc.org/tests/required/pack-003.xml
+
+[role="pass"]
+=== PASS Test pack #004
+http://tests.xproc.org/tests/required/pack-004.xml
+
+[role="pass"]
+=== PASS Test param-001
+http://tests.xproc.org/tests/required/param-001.xml
+
+[role="pass"]
+=== PASS Test param-002
+http://tests.xproc.org/tests/required/param-002.xml
+
+[role="pass"]
+=== PASS Test parameters-001
+http://tests.xproc.org/tests/required/parameters-001.xml
+
+[role="pass"]
+=== PASS Test p:pipe #001
+http://tests.xproc.org/tests/required/pipe-001.xml
+
+[role="fail"]
+=== FAIL Test preserving base URI #001
+http://tests.xproc.org/tests/required/preserve-base-uri-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>
+  <chap>
+    <para>http://example.com/base/chaps/</para>
+  </chap>
+</doc>
+l|<doc>
+  <chap>
+    <para></para>
+  </chap>
+</doc>
+|====================
+
+[role="pass"]
+=== PASS Test rename-001
+http://tests.xproc.org/tests/required/rename-001.xml
+
+[role="pass"]
+=== PASS Test replace001
+http://tests.xproc.org/tests/required/replace-001.xml
+
+[role="pass"]
+=== PASS Test resolve-uri #001
+http://tests.xproc.org/tests/required/resolve-uri-001.xml
+
+[role="pass"]
+=== PASS Test resolve-uri #002
+http://tests.xproc.org/tests/required/resolve-uri-002.xml
+
+[role="pass"]
+=== PASS Test set-attributes #001
+http://tests.xproc.org/tests/required/set-attributes-001.xml
+
+[role="pass"]
+=== PASS Test p:sink #001
+http://tests.xproc.org/tests/required/sink-001.xml
+
+[role="pass"]
+=== PASS Test split-sequence-001
+http://tests.xproc.org/tests/required/split-sequence-001.xml
+
+[role="pass"]
+=== PASS Test split-sequence-002
+http://tests.xproc.org/tests/required/split-sequence-002.xml
+
+[role="pass"]
+=== PASS Test split-sequence-003
+http://tests.xproc.org/tests/required/split-sequence-003.xml
+
+[role="pass"]
+=== PASS Test tail001
+http://tests.xproc.org/tests/required/split-sequence-004.xml
+
+[role="pass"]
+=== PASS Test split-sequence 005
+http://tests.xproc.org/tests/required/split-sequence-005.xml
+
+[role="pass"]
+=== PASS Test split-sequence 006
+http://tests.xproc.org/tests/required/split-sequence-006.xml
+
+[role="pass"]
+=== PASS Test step-available #001
+http://tests.xproc.org/tests/required/step-available-001.xml
+
+[role="pass"]
+=== PASS Test step-available #002
+http://tests.xproc.org/tests/required/step-available-002.xml
+
+[role="fail"]
+=== FAIL Test step-available #003
+http://tests.xproc.org/tests/required/step-available-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc>Success.</doc>
+l|<doc xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xmlns:t="http://xproc.org/ns/testsuite" xmlns:ex="http://example.com/ns/xproc-extensions">Failure.</doc>
+|====================
+
+[role="pass"]
+=== PASS Test the p:store step
+http://tests.xproc.org/tests/required/store-001.xml
+
+[role="pass"]
+=== PASS Test p:string-replace #001
+http://tests.xproc.org/tests/required/string-replace-001.xml
+
+[role="pass"]
+=== PASS Test p:string-replace #002
+http://tests.xproc.org/tests/required/string-replace-002.xml
+
+[role="pass"]
+=== PASS Test p:string-replace #003
+http://tests.xproc.org/tests/required/string-replace-003.xml
+
+[role="pass"]
+=== PASS Test p:string-replace #004
+http://tests.xproc.org/tests/required/string-replace-004.xml
+
+[role="pass"]
+=== PASS Test system-property-001
+http://tests.xproc.org/tests/required/system-property-001.xml
+
+[role="pass"]
+=== PASS Test system-property-002
+http://tests.xproc.org/tests/required/system-property-002.xml
+
+[role="pass"]
+=== PASS Test try/catch #001
+http://tests.xproc.org/tests/required/try-001.xml
+
+[role="pass"]
+=== PASS Test try/catch #002
+http://tests.xproc.org/tests/required/try-002.xml
+
+[role="pass"]
+=== PASS Test try/catch #003
+http://tests.xproc.org/tests/required/try-003.xml
+
+[role="pass"]
+=== PASS Test unescapemarkup-001
+http://tests.xproc.org/tests/required/unescapemarkup-001.xml
+
+[role="fail"]
+=== FAIL Test unescapemarkup-002
+http://tests.xproc.org/tests/required/unescapemarkup-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<wrapper><doc xmlns="http://www.example.org/ns/"><p>foo</p></doc></wrapper>
+l|<wrapper xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xmlns:t="http://xproc.org/ns/testsuite" xmlns="http://www.example.org/ns/"><doc><p>foo</p></doc></wrapper>
+|====================
+
+[role="pass"]
+=== PASS Test unescape markup-003
+http://tests.xproc.org/tests/required/unescapemarkup-003.xml
+
+[role="pass"]
+=== PASS Test unescapemarkup-004
+http://tests.xproc.org/tests/required/unescapemarkup-004.xml
+
+[role="pass"]
+=== PASS Test unwrap001
+http://tests.xproc.org/tests/required/unwrap-001.xml
+
+[role="pass"]
+=== PASS Test viewport #001
+http://tests.xproc.org/tests/required/viewport-001.xml
+
+[role="pass"]
+=== PASS Test viewport #002
+http://tests.xproc.org/tests/required/viewport-002.xml
+
+[role="pass"]
+=== PASS Test viewport #003
+http://tests.xproc.org/tests/required/viewport-003.xml
+
+[role="pass"]
+=== PASS Test viewport #004
+http://tests.xproc.org/tests/required/viewport-004.xml
+
+[role="pass"]
+=== PASS Test viewport #005
+http://tests.xproc.org/tests/required/viewport-005.xml
+
+[role="pass"]
+=== PASS Test wrap001
+http://tests.xproc.org/tests/required/wrap-001.xml
+
+[role="pass"]
+=== PASS Test wrap-002
+http://tests.xproc.org/tests/required/wrap-002.xml
+
+[role="pass"]
+=== PASS Test wrap-003
+http://tests.xproc.org/tests/required/wrap-003.xml
+
+[role="pass"]
+=== PASS Test for p:wrap #004
+http://tests.xproc.org/tests/required/wrap-004.xml
+
+[role="pass"]
+=== PASS Test for p:wrap #005
+http://tests.xproc.org/tests/required/wrap-005.xml
+
+[role="pass"]
+=== PASS Test wrap-sequence-001
+http://tests.xproc.org/tests/required/wrap-sequence-001.xml
+
+[role="pass"]
+=== PASS Test wrap-sequence-002
+http://tests.xproc.org/tests/required/wrap-sequence-002.xml
+
+[role="pass"]
+=== PASS Test p:xinclude #001
+http://tests.xproc.org/tests/required/xinclude-001.xml
+
+[role="pass"]
+=== PASS Test p:xinclude #002
+http://tests.xproc.org/tests/required/xinclude-002.xml
+
+[role="pass"]
+=== PASS Test p:xinclude #003
+http://tests.xproc.org/tests/required/xinclude-003.xml
+
+[role="pass"]
+=== PASS Test xslt-001
+http://tests.xproc.org/tests/required/xslt-001.xml
+
+[role="pass"]
+=== PASS Test xslt-002
+http://tests.xproc.org/tests/required/xslt-002.xml
+
+[role="pass"]
+=== PASS Test xslt-003
+http://tests.xproc.org/tests/required/xslt-003.xml
+
+[role="fail"]
+=== FAIL Test xsl-t004
+http://tests.xproc.org/tests/required/xslt-004.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test xsl-t005
+http://tests.xproc.org/tests/required/xslt-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0056: It is a dynamic error if the specified initial mode or named template cannot be applied to the specified stylesheet.
+
+
+== Optional tests
+
+Passed 23 of 41 tests (56.10%).
+
+[role="pass"]
+=== PASS Test err:XD0036 - #001
+http://tests.xproc.org/tests/optional/err-c0036-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0036 - #002
+http://tests.xproc.org/tests/optional/err-c0036-002.xml
+
+[role="pass"]
+=== PASS Test err:XD0036 - #003
+http://tests.xproc.org/tests/optional/err-c0036-003.xml
+
+[role="pass"]
+=== PASS Test err:XD0036 - #004
+http://tests.xproc.org/tests/optional/err-c0036-004.xml
+
+[role="pass"]
+=== PASS Test err:XD0036 - #005
+http://tests.xproc.org/tests/optional/err-c0036-005.xml
+
+[role="pass"]
+=== PASS Test err:XD0037 - #001
+http://tests.xproc.org/tests/optional/err-c0037-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0037 - #002
+http://tests.xproc.org/tests/optional/err-c0037-002.xml
+
+[role="pass"]
+=== PASS Test err:XD0037 - #003
+http://tests.xproc.org/tests/optional/err-c0037-003.xml
+
+[role="pass"]
+=== PASS Test err:XD0057 - #001
+http://tests.xproc.org/tests/optional/err-c0057-001.xml
+
+[role="pass"]
+=== PASS Test err:XD0060 - #001
+http://tests.xproc.org/tests/optional/err-c0060-001.xml
+
+[role="fail"]
+=== FAIL Test exec-001
+http://tests.xproc.org/tests/optional/exec-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="pass"]
+=== PASS Test hash-001
+http://tests.xproc.org/tests/optional/hash-001.xml
+
+[role="pass"]
+=== PASS Test hash-002
+http://tests.xproc.org/tests/optional/hash-002.xml
+
+[role="pass"]
+=== PASS Test hash-003
+http://tests.xproc.org/tests/optional/hash-003.xml
+
+[role="pass"]
+=== PASS Test hash-004
+http://tests.xproc.org/tests/optional/hash-004.xml
+
+[role="pass"]
+=== PASS Test hash-005
+http://tests.xproc.org/tests/optional/hash-005.xml
+
+[role="pass"]
+=== PASS Test hash-006
+http://tests.xproc.org/tests/optional/hash-006.xml
+
+[role="fail"]
+=== FAIL Test psvi-required-001.xml
+http://tests.xproc.org/tests/optional/psvi-required-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test uuid-001
+http://tests.xproc.org/tests/optional/uuid-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test uuid-002
+http://tests.xproc.org/tests/optional/uuid-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test uuid-003
+http://tests.xproc.org/tests/optional/uuid-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="pass"]
+=== PASS Test uuid-004
+http://tests.xproc.org/tests/optional/uuid-004.xml
+
+[role="fail"]
+=== FAIL Test uuid-005
+http://tests.xproc.org/tests/optional/uuid-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0060: It is a dynamic error if the processor does not support the specified version of the UUID algorithm.
+
+[role="fail"]
+=== FAIL Test validrng-001
+http://tests.xproc.org/tests/optional/validrng-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="pass partial"]
+=== PASS Test validrng-002
+http://tests.xproc.org/tests/optional/validrng-002.xml
+
+Wrong error: expected err:XC0053 but XD0017 was raised.
+
+* XC0053: 
+* XD0017: 
+[role="fail"]
+=== FAIL Test validsch-001
+http://tests.xproc.org/tests/optional/validsch-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="pass partial"]
+=== PASS Test validsch-002
+http://tests.xproc.org/tests/optional/validsch-002.xml
+
+Wrong error: expected err:XC0054 but XD0017 was raised.
+
+* XC0054: 
+* XD0017: 
+[role="fail"]
+=== FAIL Test validxsd-001
+http://tests.xproc.org/tests/optional/validxsd-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-002
+http://tests.xproc.org/tests/optional/validxsd-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-003
+http://tests.xproc.org/tests/optional/validxsd-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-004
+http://tests.xproc.org/tests/optional/validxsd-004.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-005
+http://tests.xproc.org/tests/optional/validxsd-005.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test validxsd-006
+http://tests.xproc.org/tests/optional/validxsd-006.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XD0017: It is a dynamic error if the running pipeline attempts to invoke a step which the processor does not know how to perform.
+
+[role="fail"]
+=== FAIL Test www-form-urldecode-001
+http://tests.xproc.org/tests/optional/www-form-urldecode-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:param-set xmlns:c="http://www.w3.org/ns/xproc-step">
+   <c:param name="p3" value="three"></c:param>
+   <c:param name="p2" value="two"></c:param>
+   <c:param name="p1" value="one%26zero"></c:param>
+</c:param-set>
+l|<c:param-set xmlns:c="http://www.w3.org/ns/xproc-step"><c:param name="p3" value="three"></c:param><c:param name="p2" value="two"></c:param><c:param name="p1" value="one&zero"></c:param></c:param-set>
+|====================
+
+[role="pass"]
+=== PASS Test www-form-urlencode-001
+http://tests.xproc.org/tests/optional/www-form-urlencode-001.xml
+
+[role="pass"]
+=== PASS Test XQuery #001
+http://tests.xproc.org/tests/optional/xquery-001.xml
+
+[role="pass"]
+=== PASS Test xquery-002
+http://tests.xproc.org/tests/optional/xquery-002.xml
+
+[role="pass"]
+=== PASS Test XSL Formatter #001
+http://tests.xproc.org/tests/optional/xsl-formatter-001.xml
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #001
+http://tests.xproc.org/tests/optional/xslt2-001.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #002
+http://tests.xproc.org/tests/optional/xslt2-002.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #003
+http://tests.xproc.org/tests/optional/xslt2-003.xml
+
+
+==== Error message
+
+
+* Unexpected error while running the test pipeline: {http://www.w3.org/ns/xproc-error}XC0038: It is a dynamic error if the specified version of XSLT is not available.
+
+
+== Extension tests
+
+Passed 1 of 1 tests (100.00%).
+
+[role="pass"]
+=== PASS Test extension elements and attributes
+http://tests.xproc.org/tests/extension/unimpl-001.xml
+
