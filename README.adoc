@@ -12,5 +12,5 @@ The actual test suite remains at tests.xproc.org
 The tests are in `tests`. To propose an amendment to a test or to propose
 a new test, please issue a pull request for the appropriate test.
 
-You can see reported processor results in `results`. To publish new results,
-issue a pull request for your processor's results.
+You can see reported processor results in `results`. To publish new
+results, issue a pull request for your processor's results.
