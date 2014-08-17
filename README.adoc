@@ -1,16 +1,6 @@
-This repository contains *the tests* from the XProc 1.0 test suite.
-The tests have been moved to this repository in order to facilitate
-discussion of the tests and proposed changes to them.
+This repository contains *the tests* from the XProc test suite.
 
-Mechanically, the test suite relies on infrastructure elements
-(files with specific permissions, server side redirects, and
-HTTP endpoints that behave in specific ways) that would be difficult
-to port to github.
+The `xproc10` branch contains the XProc 1.0 tests.
 
-The actual test suite remains at tests.xproc.org
-
-The tests are in `tests`. To propose an amendment to a test or to propose
-a new test, please issue a pull request for the appropriate test.
-
-You can see reported processor results in `results`. To publish new results,
-issue a pull request for your processor's results.
+The `master` branch will never do more than point to the other
+branches.
