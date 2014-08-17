@@ -1,0 +1,6 @@
+= README
+
+There's link:testsuite.adoc[rough documentation] for the
+test suite format.
+
+Yes, there needs to be more documentation.

@@ -1,0 +1,187 @@
+default namespace t = "http://xproc.org/ns/testsuite"
+namespace p = "http://www.w3.org/ns/xproc"
+namespace c = "http://www.w3.org/ns/xproc-step"
+namespace err = "http://www.w3.org/ns/xproc-error"
+namespace html = "http://www.w3.org/1999/xhtml"
+namespace sa = "http://xproc.org/ns/syntax-annotations"
+namespace local = ""
+
+start = TestSuite | Test
+
+TestSuite =
+   element t:test-suite {
+      attribute xinclude { xsd:boolean }?,
+      Title,
+      Test+
+   }
+
+ValidTest =
+   element t:test {
+      attribute xml:id { xsd:ID }?,
+      attribute ignore-whitespace-differences { "true" | "false" }?,
+      Title,
+      Description?,
+      (Input|Parameter|Option)*,
+      Pipeline,
+      ComparePipeline?,
+      Output*
+   }
+
+ErrorTest =
+   element t:test {
+      attribute xml:id { xsd:ID }?,
+      attribute ignore-whitespace-differences { "true" | "false" }?,
+      attribute error { xsd:QName },
+      Title,
+      Description?,
+      Input*,
+      Pipeline
+   }
+
+OutOfLineTest =
+   element t:test {
+      attribute href { xsd:anyURI },
+      empty
+   }
+
+[
+   sa:element = "test"
+]
+Test = ValidTest | ErrorTest | OutOfLineTest
+
+InlineInput =
+   element t:input {
+      attribute port { xsd:NCName },
+      (Document* | Any)
+   }
+
+DocumentInput =
+   element t:input {
+      attribute port { xsd:NCName },
+      attribute href { xsd:anyURI },
+      empty
+   }
+
+[
+   sa:element = "input"
+]
+Input = InlineInput | DocumentInput
+
+Parameter =
+   element t:parameter {
+      attribute port { xsd:NCName }?,
+      attribute name { xsd:QName },
+      attribute value { text },
+      empty
+   }
+      
+Option =
+   element t:option {
+      attribute name { xsd:QName },
+      attribute value { text },
+      empty
+   }
+      
+Output =
+   element t:output {
+      attribute port { xsd:NCName },
+      (Document* | Any)
+   }
+
+InlineDocument =
+   element t:document {
+      Any
+   }
+
+ExternalDocument =
+   element t:document {
+      attribute href { xsd:anyURI },
+      empty
+   }
+
+[
+   sa:element = "document"
+]
+Document = InlineDocument | ExternalDocument
+
+InlinePipeline =
+   element t:pipeline {
+      grammar {
+         include "xproc.rnc" 
+      }
+   }
+
+ExternalPipeline =
+   element t:pipeline {
+      attribute href { xsd:anyURI },
+      empty
+   }
+
+[
+   sa:element = "pipeline"
+]
+Pipeline = InlinePipeline | ExternalPipeline
+
+InlineComparePipeline =
+   element t:compare-pipeline {
+      Any
+   }
+
+ExternalComparePipeline =
+   element t:compare-pipeline {
+      attribute href { xsd:anyURI },
+      empty
+   }
+
+[
+   sa:element = "compare-pipeline"
+]
+ComparePipeline = InlineComparePipeline | ExternalComparePipeline
+
+[
+   sa:model = "anyElement"
+]
+Any =
+   element * {
+      (any.attribute | text | Any)*
+   }
+
+any.attribute =
+   attribute * { text }
+
+# ======================================================================
+
+Title =
+   element t:title {
+      (text|inlines)*
+   }
+
+inlines = Code|Em|Strong
+
+Code = 
+   element t:code {
+      (text|inlines)*
+   }
+
+Em = 
+   element t:em {
+      (text|inlines)*
+   }
+
+Strong = 
+   element t:strong {
+      (text|inlines)*
+   }
+
+Description =
+   element t:description {
+      AnyHtml*
+   }
+
+[
+   sa:model = "anyHtmlElement"
+]
+AnyHtml =
+   element html:* {
+      (any.attribute | text | AnyHtml)*
+   }

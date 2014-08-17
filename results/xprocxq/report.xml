@@ -1,0 +1,1041 @@
+<?xml version="1.0"?>
+<test-report xmlns="http://xproc.org/ns/testreport" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:fn="http://www.w3.org/2003/05/xpath-functions">
+	<title>XProc Test Results for eXist XProc</title>
+	<date>2010-01-02T20:47:12</date>
+	<processor>
+		<name>eXist XProc</name>
+		<vendor>James Fuller</vendor>
+		<vendor-uri>http://xproc.net/xproc</vendor-uri>
+		<version>1.5.0</version>
+		<language>en</language>
+		<xproc-version>1.0</xproc-version>
+		<xpath-version>2.0</xpath-version>
+		<psvi-supported>false</psvi-supported>
+	</processor>
+	<test-suite>
+		<title>Required tests (Revision unknown)</title>
+		<pass uri="tests/required/add-attribute-001.xml">
+			<title>add-attribute-001.xml</title>
+		</pass>
+		<fail uri="tests/required/add-attribute-002.xml">
+			<title>add-attribute-002.xml</title>
+		</fail>
+		<pass uri="tests/required/add-attribute-003.xml">
+			<title>add-attribute-003.xml</title>
+		</pass>
+		<pass uri="tests/required/add-attribute-004.xml">
+			<title>add-attribute-004.xml</title>
+		</pass>
+		<fail uri="tests/required/add-xml-base-001.xml">
+			<title>add-xml-base-001.xml</title>
+		</fail>
+		<pass uri="tests/required/add-xml-base-002.xml">
+			<title>add-xml-base-002.xml</title>
+		</pass>
+		<pass uri="tests/required/add-xml-base-003.xml">
+			<title>add-xml-base-003.xml</title>
+		</pass>
+		<pass uri="tests/required/add-xml-base-004.xml">
+			<title>add-xml-base-004.xml</title>
+		</pass>
+		<pass uri="tests/required/add-xml-base-005.xml">
+			<title>add-xml-base-005.xml</title>
+		</pass>
+		<pass uri="tests/required/add-xml-base-006.xml">
+			<title>add-xml-base-006.xml</title>
+		</pass>
+		<pass uri="tests/required/base-uri-001.xml">
+			<title>base-uri-001.xml</title>
+		</pass>
+		<fail uri="tests/required/base-uri-002.xml">
+			<title>base-uri-002.xml</title>
+		</fail>
+		<pass uri="tests/required/choose-001.xml">
+			<title>choose-001.xml</title>
+		</pass>
+		<pass uri="tests/required/choose-002.xml">
+			<title>choose-002.xml</title>
+		</pass>
+		<fail uri="tests/required/choose-003.xml">
+			<title>choose-003.xml</title>
+		</fail>
+		<pass uri="tests/required/choose-004.xml">
+			<title>choose-004.xml</title>
+		</pass>
+		<pass uri="tests/required/choose-005.xml">
+			<title>choose-005.xml</title>
+		</pass>
+		<fail uri="tests/required/choose-006.xml">
+			<title>choose-006.xml</title>
+		</fail>
+		<pass uri="tests/required/compare-001.xml">
+			<title>compare-001.xml</title>
+		</pass>
+		<pass uri="tests/required/compare-002.xml">
+			<title>compare-002.xml</title>
+		</pass>
+		<fail uri="tests/required/compare-003.xml">
+			<title>compare-003.xml</title>
+		</fail>
+		<pass uri="tests/required/compare-004.xml">
+			<title>compare-004.xml</title>
+		</pass>
+		<pass uri="tests/required/compare-005.xml">
+			<title>compare-005.xml</title>
+		</pass>
+		<pass uri="tests/required/count-001.xml">
+			<title>count-001.xml</title>
+		</pass>
+		<pass uri="tests/required/count-002.xml">
+			<title>count-002.xml</title>
+		</pass>
+		<pass uri="tests/required/count-003.xml">
+			<title>count-003.xml</title>
+		</pass>
+		<pass uri="tests/required/data-001.xml">
+			<title>data-001.xml</title>
+		</pass>
+		<pass uri="tests/required/data-002.xml">
+			<title>data-002.xml</title>
+		</pass>
+		<pass uri="tests/required/data-003.xml">
+			<title>data-003.xml</title>
+		</pass>
+		<fail uri="tests/required/data-004.xml">
+			<title>data-004.xml</title>
+		</fail>
+		<fail uri="tests/required/data-005.xml">
+			<title>data-005.xml</title>
+		</fail>
+		<pass uri="tests/required/declare-step-001.xml">
+			<title>declare-step-001.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-002.xml">
+			<title>declare-step-002.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-003.xml">
+			<title>declare-step-003.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-004.xml">
+			<title>declare-step-004.xml</title>
+		</pass>
+		<fail uri="tests/required/declare-step-005.xml">
+			<title>declare-step-005.xml</title>
+		</fail>
+		<fail uri="tests/required/declare-step-006.xml">
+			<title>declare-step-006.xml</title>
+		</fail>
+		<pass uri="tests/required/declare-step-007.xml">
+			<title>declare-step-007.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-008.xml">
+			<title>declare-step-008.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-009.xml">
+			<title>declare-step-009.xml</title>
+		</pass>
+		<pass uri="tests/required/declare-step-010.xml">
+			<title>declare-step-010.xml</title>
+		</pass>
+		<fail uri="tests/required/declare-step-011.xml">
+			<title>declare-step-011.xml</title>
+		</fail>
+		<pass uri="tests/required/delete-001.xml">
+			<title>delete-001.xml</title>
+		</pass>
+		<pass uri="tests/required/delete-002.xml">
+			<title>delete-002.xml</title>
+		</pass>
+		<pass uri="tests/required/delete-003.xml">
+			<title>delete-003.xml</title>
+		</pass>
+		<fail uri="tests/required/delete-004.xml">
+			<title>delete-004.xml</title>
+		</fail>
+		<fail uri="tests/required/directory-list-001.xml">
+			<title>directory-list-001.xml</title>
+		</fail>
+		<fail uri="tests/required/directory-list-002.xml">
+			<title>directory-list-002.xml</title>
+		</fail>
+		<fail uri="tests/required/document-001.xml">
+			<title>document-001.xml</title>
+		</fail>
+		<pass uri="tests/required/escape-markup-001.xml">
+			<title>escape-markup-001.xml</title>
+		</pass>
+		<pass uri="tests/required/evaluation-order-001.xml">
+			<title>evaluation-order-001.xml</title>
+		</pass>
+		<pass uri="tests/required/evaluation-order-002.xml">
+			<title>evaluation-order-002.xml</title>
+		</pass>
+		<pass uri="tests/required/evaluation-order-003.xml">
+			<title>evaluation-order-003.xml</title>
+		</pass>
+		<pass uri="tests/required/exclude-inline-prefixes-001.xml">
+			<title>exclude-inline-prefixes-001.xml</title>
+		</pass>
+		<pass uri="tests/required/exclude-inline-prefixes-002.xml">
+			<title>exclude-inline-prefixes-002.xml</title>
+		</pass>
+		<pass uri="tests/required/exclude-inline-prefixes-003.xml">
+			<title>exclude-inline-prefixes-003.xml</title>
+		</pass>
+		<pass uri="tests/required/exclude-inline-prefixes-004.xml">
+			<title>exclude-inline-prefixes-004.xml</title>
+		</pass>
+		<fail uri="tests/required/exclude-inline-prefixes-005.xml">
+			<title>exclude-inline-prefixes-005.xml</title>
+		</fail>
+		<fail uri="tests/required/exclude-inline-prefixes-006.xml">
+			<title>exclude-inline-prefixes-006.xml</title>
+		</fail>
+		<pass uri="tests/required/exclude-inline-prefixes-007.xml">
+			<title>exclude-inline-prefixes-007.xml</title>
+		</pass>
+		<fail uri="tests/required/fibonacci.xml">
+			<title>fibonacci.xml</title>
+		</fail>
+		<fail uri="tests/required/filter-001.xml">
+			<title>filter-001.xml</title>
+		</fail>
+		<fail uri="tests/required/filter-002.xml">
+			<title>filter-002.xml</title>
+		</fail>
+		<pass uri="tests/required/filter-003.xml">
+			<title>filter-003.xml</title>
+		</pass>
+		<pass uri="tests/required/for-each-001.xml">
+			<title>for-each-001.xml</title>
+		</pass>
+		<fail uri="tests/required/for-each-002.xml">
+			<title>for-each-002.xml</title>
+		</fail>
+		<fail uri="tests/required/for-each-003.xml">
+			<title>for-each-003.xml</title>
+		</fail>
+		<fail uri="tests/required/for-each-004.xml">
+			<title>for-each-004.xml</title>
+		</fail>
+		<pass uri="tests/required/for-each-005.xml">
+			<title>for-each-005.xml</title>
+		</pass>
+		<fail uri="tests/required/for-each-006.xml">
+			<title>for-each-006.xml</title>
+		</fail>
+		<pass uri="tests/required/for-each-007.xml">
+			<title>for-each-007.xml</title>
+		</pass>
+		<fail uri="tests/required/for-each-008.xml">
+			<title>for-each-008.xml</title>
+		</fail>
+		<fail uri="tests/required/for-each-009.xml">
+			<title>for-each-009.xml</title>
+		</fail>
+		<fail uri="tests/required/for-each-010.xml">
+			<title>for-each-010.xml</title>
+		</fail>
+		<pass uri="tests/required/group-001.xml">
+			<title>group-001.xml</title>
+		</pass>
+		<pass uri="tests/required/group-002.xml">
+			<title>group-002.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-001.xml">
+			<title>http-request-001.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-002.xml">
+			<title>http-request-002.xml</title>
+		</pass>
+		<fail uri="tests/required/http-request-003.xml">
+			<title>http-request-003.xml</title>
+		</fail>
+		<fail uri="tests/required/http-request-004.xml">
+			<title>http-request-004.xml</title>
+		</fail>
+		<fail uri="tests/required/http-request-005.xml">
+			<title>http-request-005.xml</title>
+		</fail>
+		<fail uri="tests/required/http-request-006.xml">
+			<title>http-request-006.xml</title>
+		</fail>
+		<pass uri="tests/required/http-request-007.xml">
+			<title>http-request-007.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-008.xml">
+			<title>http-request-008.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-009.xml">
+			<title>http-request-009.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-010.xml">
+			<title>http-request-010.xml</title>
+		</pass>
+		<fail uri="tests/required/http-request-011.xml">
+			<title>http-request-011.xml</title>
+		</fail>
+		<pass uri="tests/required/http-request-012.xml">
+			<title>http-request-012.xml</title>
+		</pass>
+		<pass uri="tests/required/http-request-013.xml">
+			<title>http-request-013.xml</title>
+		</pass>
+		<pass uri="tests/required/identity-001.xml">
+			<title>identity-001.xml</title>
+		</pass>
+		<pass uri="tests/required/identity-002.xml">
+			<title>identity-002.xml</title>
+		</pass>
+		<fail uri="tests/required/identity-003.xml">
+			<title>identity-003.xml</title>
+		</fail>
+		<pass uri="tests/required/identity-004.xml">
+			<title>identity-004.xml</title>
+		</pass>
+		<pass uri="tests/required/identity-005.xml">
+			<title>identity-005.xml</title>
+		</pass>
+		<fail uri="tests/required/import-001.xml">
+			<title>import-001.xml</title>
+		</fail>
+		<fail uri="tests/required/import-002.xml">
+			<title>import-002.xml</title>
+		</fail>
+		<fail uri="tests/required/import-004.xml">
+			<title>import-004.xml</title>
+		</fail>
+		<fail uri="tests/required/import-005.xml">
+			<title>import-005.xml</title>
+		</fail>
+		<pass uri="tests/required/import-006.xml">
+			<title>import-006.xml</title>
+		</pass>
+		<fail uri="tests/required/import-007.xml">
+			<title>import-007.xml</title>
+		</fail>
+		<fail uri="tests/required/import-008.xml">
+			<title>import-008.xml</title>
+		</fail>
+		<pass uri="tests/required/input-001.xml">
+			<title>input-001.xml</title>
+		</pass>
+		<fail uri="tests/required/input-002.xml">
+			<title>input-002.xml</title>
+		</fail>
+		<pass uri="tests/required/input-003.xml">
+			<title>input-003.xml</title>
+		</pass>
+		<pass uri="tests/required/input-004.xml">
+			<title>input-004.xml</title>
+		</pass>
+		<pass uri="tests/required/input-005.xml">
+			<title>input-005.xml</title>
+		</pass>
+		<pass uri="tests/required/input-006.xml">
+			<title>input-006.xml</title>
+		</pass>
+		<fail uri="tests/required/input-007.xml">
+			<title>input-007.xml</title>
+		</fail>
+		<fail uri="tests/required/input-008.xml">
+			<title>input-008.xml</title>
+		</fail>
+		<fail uri="tests/required/input-009.xml">
+			<title>input-009.xml</title>
+		</fail>
+		<fail uri="tests/required/input-010.xml">
+			<title>input-010.xml</title>
+		</fail>
+		<fail uri="tests/required/input-011.xml">
+			<title>input-011.xml</title>
+		</fail>
+		<fail uri="tests/required/input-012.xml">
+			<title>input-012.xml</title>
+		</fail>
+		<pass uri="tests/required/insert-001.xml">
+			<title>insert-001.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-002.xml">
+			<title>insert-002.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-003.xml">
+			<title>insert-003.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-004.xml">
+			<title>insert-004.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-005.xml">
+			<title>insert-005.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-006.xml">
+			<title>insert-006.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-007.xml">
+			<title>insert-007.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-008.xml">
+			<title>insert-008.xml</title>
+		</pass>
+		<pass uri="tests/required/insert-009.xml">
+			<title>insert-009.xml</title>
+		</pass>
+		<fail uri="tests/required/iteration-001.xml">
+			<title>iteration-001.xml</title>
+		</fail>
+		<pass uri="tests/required/iteration-002.xml">
+			<title>iteration-002.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-001.xml">
+			<title>labelelements-001.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-002.xml">
+			<title>labelelements-002.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-003.xml">
+			<title>labelelements-003.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-004.xml">
+			<title>labelelements-004.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-005.xml">
+			<title>labelelements-005.xml</title>
+		</pass>
+		<pass uri="tests/required/labelelements-006.xml">
+			<title>labelelements-006.xml</title>
+		</pass>
+		<fail uri="tests/required/load-001.xml">
+			<title>load-001.xml</title>
+		</fail>
+		<fail uri="tests/required/load-002.xml">
+			<title>load-002.xml</title>
+		</fail>
+		<fail uri="tests/required/load-003.xml">
+			<title>load-003.xml</title>
+		</fail>
+		<fail uri="tests/required/load-004.xml">
+			<title>load-004.xml</title>
+		</fail>
+		<fail uri="tests/required/make-absolute-uris-001.xml">
+			<title>make-absolute-uris-001.xml</title>
+		</fail>
+		<fail uri="tests/required/make-absolute-uris-002.xml">
+			<title>make-absolute-uris-002.xml</title>
+		</fail>
+		<fail uri="tests/required/make-absolute-uris-003.xml">
+			<title>make-absolute-uris-003.xml</title>
+		</fail>
+		<fail uri="tests/required/make-sequence.xml">
+			<title>make-sequence.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-001.xml">
+			<title>namespace-rename-001.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-002.xml">
+			<title>namespace-rename-002.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-003.xml">
+			<title>namespace-rename-003.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-004.xml">
+			<title>namespace-rename-004.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-005.xml">
+			<title>namespace-rename-005.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-006.xml">
+			<title>namespace-rename-006.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-007.xml">
+			<title>namespace-rename-007.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-008.xml">
+			<title>namespace-rename-008.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-009.xml">
+			<title>namespace-rename-009.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-010.xml">
+			<title>namespace-rename-010.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-011.xml">
+			<title>namespace-rename-011.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-012.xml">
+			<title>namespace-rename-012.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-013.xml">
+			<title>namespace-rename-013.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-014.xml">
+			<title>namespace-rename-014.xml</title>
+		</fail>
+		<fail uri="tests/required/namespace-rename-015.xml">
+			<title>namespace-rename-015.xml</title>
+		</fail>
+		<pass uri="tests/required/namespaces-001.xml">
+			<title>namespaces-001.xml</title>
+		</pass>
+		<fail uri="tests/required/namespaces-002.xml">
+			<title>namespaces-002.xml</title>
+		</fail>
+		<fail uri="tests/required/namespaces-003.xml">
+			<title>namespaces-003.xml</title>
+		</fail>
+		<pass uri="tests/required/namespaces-004.xml">
+			<title>namespaces-004.xml</title>
+		</pass>
+		<fail uri="tests/required/nested-pipeline-001.xml">
+			<title>nested-pipeline-001.xml</title>
+		</fail>
+		<fail uri="tests/required/option-001.xml">
+			<title>option-001.xml</title>
+		</fail>
+		<fail uri="tests/required/option-002.xml">
+			<title>option-002.xml</title>
+		</fail>
+		<fail uri="tests/required/option-004.xml">
+			<title>option-004.xml</title>
+		</fail>
+		<fail uri="tests/required/output-001.xml">
+			<title>output-001.xml</title>
+		</fail>
+		<fail uri="tests/required/output-002.xml">
+			<title>output-002.xml</title>
+		</fail>
+		<pass uri="tests/required/pack-001.xml">
+			<title>pack-001.xml</title>
+		</pass>
+		<pass uri="tests/required/pack-002.xml">
+			<title>pack-002.xml</title>
+		</pass>
+		<fail uri="tests/required/pack-003.xml">
+			<title>pack-003.xml</title>
+		</fail>
+		<fail uri="tests/required/pack-004.xml">
+			<title>pack-004.xml</title>
+		</fail>
+		<pass uri="tests/required/param-001.xml">
+			<title>param-001.xml</title>
+		</pass>
+		<fail uri="tests/required/param-002.xml">
+			<title>param-002.xml</title>
+		</fail>
+		<fail uri="tests/required/param-003.xml">
+			<title>param-003.xml</title>
+		</fail>
+		<fail uri="tests/required/parameters-001.xml">
+			<title>parameters-001.xml</title>
+		</fail>
+		<pass uri="tests/required/parameters-002.xml">
+			<title>parameters-002.xml</title>
+		</pass>
+		<pass uri="tests/required/pipe-001.xml">
+			<title>pipe-001.xml</title>
+		</pass>
+		<fail uri="tests/required/pipeinfo-001.xml">
+			<title>pipeinfo-001.xml</title>
+		</fail>
+		<pass uri="tests/required/preserve-base-uri-001.xml">
+			<title>preserve-base-uri-001.xml</title>
+		</pass>
+		<pass uri="tests/required/preserve-base-uri-002.xml">
+			<title>preserve-base-uri-002.xml</title>
+		</pass>
+		<pass uri="tests/required/rename-001.xml">
+			<title>rename-001.xml</title>
+		</pass>
+		<fail uri="tests/required/rename-002.xml">
+			<title>rename-002.xml</title>
+		</fail>
+		<fail uri="tests/required/rename-003.xml">
+			<title>rename-003.xml</title>
+		</fail>
+		<pass uri="tests/required/replace-001.xml">
+			<title>replace-001.xml</title>
+		</pass>
+		<fail uri="tests/required/resolve-uri-001.xml">
+			<title>resolve-uri-001.xml</title>
+		</fail>
+		<fail uri="tests/required/resolve-uri-002.xml">
+			<title>resolve-uri-002.xml</title>
+		</fail>
+		<pass uri="tests/required/set-attributes-001.xml">
+			<title>set-attributes-001.xml</title>
+		</pass>
+		<pass uri="tests/required/set-attributes-002.xml">
+			<title>set-attributes-002.xml</title>
+		</pass>
+		<fail uri="tests/required/sink-001.xml">
+			<title>sink-001.xml</title>
+		</fail>
+		<fail uri="tests/required/sink-002.xml">
+			<title>sink-002.xml</title>
+		</fail>
+		<fail uri="tests/required/sink-003.xml">
+			<title>sink-003.xml</title>
+		</fail>
+		<pass uri="tests/required/split-sequence-001.xml">
+			<title>split-sequence-001.xml</title>
+		</pass>
+		<fail uri="tests/required/split-sequence-002.xml">
+			<title>split-sequence-002.xml</title>
+		</fail>
+		<pass uri="tests/required/split-sequence-003.xml">
+			<title>split-sequence-003.xml</title>
+		</pass>
+		<pass uri="tests/required/split-sequence-004.xml">
+			<title>split-sequence-004.xml</title>
+		</pass>
+		<pass uri="tests/required/split-sequence-005.xml">
+			<title>split-sequence-005.xml</title>
+		</pass>
+		<pass uri="tests/required/split-sequence-006.xml">
+			<title>split-sequence-006.xml</title>
+		</pass>
+		<pass uri="tests/required/split-sequence-007.xml">
+			<title>split-sequence-007.xml</title>
+		</pass>
+		<fail uri="tests/required/step-available-001.xml">
+			<title>step-available-001.xml</title>
+		</fail>
+		<fail uri="tests/required/step-available-002.xml">
+			<title>step-available-002.xml</title>
+		</fail>
+		<fail uri="tests/required/step-available-003.xml">
+			<title>step-available-003.xml</title>
+		</fail>
+		<fail uri="tests/required/step-available-004.xml">
+			<title>step-available-004.xml</title>
+		</fail>
+		<fail uri="tests/required/step-available-005.xml">
+			<title>step-available-005.xml</title>
+		</fail>
+		<fail uri="tests/required/step-available-006.xml">
+			<title>step-available-006.xml</title>
+		</fail>
+		<fail uri="tests/required/store-001.xml">
+			<title>store-001.xml</title>
+		</fail>
+		<pass uri="tests/required/string-replace-001.xml">
+			<title>string-replace-001.xml</title>
+		</pass>
+		<pass uri="tests/required/string-replace-002.xml">
+			<title>string-replace-002.xml</title>
+		</pass>
+		<pass uri="tests/required/string-replace-003.xml">
+			<title>string-replace-003.xml</title>
+		</pass>
+		<pass uri="tests/required/string-replace-004.xml">
+			<title>string-replace-004.xml</title>
+		</pass>
+		<pass uri="tests/required/system-property-001.xml">
+			<title>system-property-001.xml</title>
+		</pass>
+		<pass uri="tests/required/system-property-002.xml">
+			<title>system-property-002.xml</title>
+		</pass>
+		<pass uri="tests/required/try-001.xml">
+			<title>try-001.xml</title>
+		</pass>
+		<pass uri="tests/required/try-002.xml">
+			<title>try-002.xml</title>
+		</pass>
+		<pass uri="tests/required/try-003.xml">
+			<title>try-003.xml</title>
+		</pass>
+		<pass uri="tests/required/try-004.xml">
+			<title>try-004.xml</title>
+		</pass>
+		<pass uri="tests/required/unescapemarkup-001.xml">
+			<title>unescapemarkup-001.xml</title>
+		</pass>
+		<pass uri="tests/required/unescapemarkup-002.xml">
+			<title>unescapemarkup-002.xml</title>
+		</pass>
+		<fail uri="tests/required/unescapemarkup-003.xml">
+			<title>unescapemarkup-003.xml</title>
+		</fail>
+		<fail uri="tests/required/unescapemarkup-004.xml">
+			<title>unescapemarkup-004.xml</title>
+		</fail>
+		<fail uri="tests/required/unescapemarkup-005.xml">
+			<title>unescapemarkup-005.xml</title>
+		</fail>
+		<pass uri="tests/required/unescapemarkup-006.xml">
+			<title>unescapemarkup-006.xml</title>
+		</pass>
+		<pass uri="tests/required/unescapemarkup-007.xml">
+			<title>unescapemarkup-007.xml</title>
+		</pass>
+		<pass uri="tests/required/unwrap-001.xml">
+			<title>unwrap-001.xml</title>
+		</pass>
+		<pass uri="tests/required/unwrap-002.xml">
+			<title>unwrap-002.xml</title>
+		</pass>
+		<pass uri="tests/required/use-when-001.xml">
+			<title>use-when-001.xml</title>
+		</pass>
+		<pass uri="tests/required/use-when-002.xml">
+			<title>use-when-002.xml</title>
+		</pass>
+		<fail uri="tests/required/use-when-003.xml">
+			<title>use-when-003.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-001.xml">
+			<title>value-available-001.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-002.xml">
+			<title>value-available-002.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-003.xml">
+			<title>value-available-003.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-004.xml">
+			<title>value-available-004.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-005.xml">
+			<title>value-available-005.xml</title>
+		</fail>
+		<fail uri="tests/required/value-available-006.xml">
+			<title>value-available-006.xml</title>
+		</fail>
+		<fail uri="tests/required/variable-001.xml">
+			<title>variable-001.xml</title>
+		</fail>
+		<fail uri="tests/required/variable-002.xml">
+			<title>variable-002.xml</title>
+		</fail>
+		<fail uri="tests/required/variable-003.xml">
+			<title>variable-003.xml</title>
+		</fail>
+		<fail uri="tests/required/variable-004.xml">
+			<title>variable-004.xml</title>
+		</fail>
+		<fail uri="tests/required/version-available-001.xml">
+			<title>version-available-001.xml</title>
+		</fail>
+		<fail uri="tests/required/version-available-002.xml">
+			<title>version-available-002.xml</title>
+		</fail>
+		<pass uri="tests/required/versioning-001.xml">
+			<title>versioning-001.xml</title>
+		</pass>
+		<fail uri="tests/required/versioning-002.xml">
+			<title>versioning-002.xml</title>
+		</fail>
+		<pass uri="tests/required/versioning-003.xml">
+			<title>versioning-003.xml</title>
+		</pass>
+		<pass uri="tests/required/versioning-004.xml">
+			<title>versioning-004.xml</title>
+		</pass>
+		<pass uri="tests/required/versioning-005.xml">
+			<title>versioning-005.xml</title>
+		</pass>
+		<fail uri="tests/required/versioning-006.xml">
+			<title>versioning-006.xml</title>
+		</fail>
+		<fail uri="tests/required/versioning-007.xml">
+			<title>versioning-007.xml</title>
+		</fail>
+		<pass uri="tests/required/viewport-001.xml">
+			<title>viewport-001.xml</title>
+		</pass>
+		<fail uri="tests/required/viewport-002.xml">
+			<title>viewport-002.xml</title>
+		</fail>
+		<pass uri="tests/required/viewport-003.xml">
+			<title>viewport-003.xml</title>
+		</pass>
+		<pass uri="tests/required/viewport-004.xml">
+			<title>viewport-004.xml</title>
+		</pass>
+		<pass uri="tests/required/viewport-005.xml">
+			<title>viewport-005.xml</title>
+		</pass>
+		<pass uri="tests/required/viewport-006.xml">
+			<title>viewport-006.xml</title>
+		</pass>
+		<fail uri="tests/required/viewport-007.xml">
+			<title>viewport-007.xml</title>
+		</fail>
+		<fail uri="tests/required/viewport-008.xml">
+			<title>viewport-008.xml</title>
+		</fail>
+		<pass uri="tests/required/viewport-009.xml">
+			<title>viewport-009.xml</title>
+		</pass>
+		<pass uri="tests/required/viewport-010.xml">
+			<title>viewport-010.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-001.xml">
+			<title>wrap-001.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-002.xml">
+			<title>wrap-002.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-003.xml">
+			<title>wrap-003.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-004.xml">
+			<title>wrap-004.xml</title>
+		</pass>
+		<fail uri="tests/required/wrap-005.xml">
+			<title>wrap-005.xml</title>
+		</fail>
+		<fail uri="tests/required/wrap-006.xml">
+			<title>wrap-006.xml</title>
+		</fail>
+		<fail uri="tests/required/wrap-007.xml">
+			<title>wrap-007.xml</title>
+		</fail>
+		<fail uri="tests/required/wrap-008.xml">
+			<title>wrap-008.xml</title>
+		</fail>
+		<pass uri="tests/required/wrap-009.xml">
+			<title>wrap-009.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-sequence-001.xml">
+			<title>wrap-sequence-001.xml</title>
+		</pass>
+		<pass uri="tests/required/wrap-sequence-002.xml">
+			<title>wrap-sequence-002.xml</title>
+		</pass>
+		<fail uri="tests/required/xinclude-001.xml">
+			<title>xinclude-001.xml</title>
+		</fail>
+		<pass uri="tests/required/xinclude-002.xml">
+			<title>xinclude-002.xml</title>
+		</pass>
+		<pass uri="tests/required/xinclude-003.xml">
+			<title>xinclude-003.xml</title>
+		</pass>
+		<fail uri="tests/required/xinclude-004.xml">
+			<title>xinclude-004.xml</title>
+		</fail>
+		<fail uri="tests/required/xinclude-005.xml">
+			<title>xinclude-005.xml</title>
+		</fail>
+		<pass uri="tests/required/xml-id-001.xml">
+			<title>xml-id-001.xml</title>
+		</pass>
+		<pass uri="tests/required/xml-id-002.xml">
+			<title>xml-id-002.xml</title>
+		</pass>
+		<fail uri="tests/required/xpath-version-available-001.xml">
+			<title>xpath-version-available-001.xml</title>
+		</fail>
+		<fail uri="tests/required/xpath-version-available-002.xml">
+			<title>xpath-version-available-002.xml</title>
+		</fail>
+		<pass uri="tests/required/xslt-001.xml">
+			<title>xslt-001.xml</title>
+		</pass>
+		<fail uri="tests/required/xslt-002.xml">
+			<title>xslt-002.xml</title>
+		</fail>
+		<pass uri="tests/required/xslt-003.xml">
+			<title>xslt-003.xml</title>
+		</pass>
+		<pass uri="tests/required/xslt-004.xml">
+			<title>xslt-004.xml</title>
+		</pass>
+		<pass uri="tests/required/xslt-005.xml">
+			<title>xslt-005.xml</title>
+		</pass>
+		<fail uri="tests/required/xslt-006.xml">
+			<title>xslt-006.xml</title>
+		</fail>
+	</test-suite>
+	<test-suite>
+		<title>Optional</title>
+		<fail  uri="tests/optional/exec-001.xml">
+			<title>exec-001.xml</title>
+		</fail>
+		<pass  uri="tests/optional/exec-002.xml">
+			<title>exec-002.xml</title>
+		</pass>
+		<pass  uri="tests/optional/exec-003.xml">
+			<title>exec-003.xml</title>
+		</pass>
+		<pass  uri="tests/optional/exec-004.xml">
+			<title>exec-004.xml</title>
+		</pass>
+		<pass  uri="tests/optional/exec-005.xml">
+			<title>exec-005.xml</title>
+		</pass>
+		<fail  uri="tests/optional/exec-006.xml">
+			<title>exec-006.xml</title>
+		</fail>
+		<fail  uri="tests/optional/exec-007.xml">
+			<title>exec-007.xml</title>
+		</fail>
+		<fail  uri="tests/optional/exec-008.xml">
+			<title>exec-008.xml</title>
+		</fail>
+		<pass  uri="tests/optional/exec-009.xml">
+			<title>exec-009.xml</title>
+		</pass>
+		<fail  uri="tests/optional/exec-010.xml">
+			<title>exec-010.xml</title>
+		</fail>
+		<pass  uri="tests/optional/exec-011.xml">
+			<title>exec-011.xml</title>
+		</pass>
+		<fail  uri="tests/optional/exec-012.xml">
+			<title>exec-012.xml</title>
+		</fail>
+		<fail  uri="tests/optional/exec-013.xml">
+			<title>exec-013.xml</title>
+		</fail>
+		<fail  uri="tests/optional/exec-014.xml">
+			<title>exec-014.xml</title>
+		</fail>
+		<fail  uri="tests/optional/exec-015.xml">
+			<title>exec-015.xml</title>
+		</fail>
+		<pass  uri="tests/optional/exec-016.xml">
+			<title>exec-016.xml</title>
+		</pass>
+		<fail  uri="tests/optional/exec-017.xml">
+			<title>exec-017.xml</title>
+		</fail>
+		<fail  uri="tests/optional/hash-001.xml">
+			<title>hash-001.xml</title>
+		</fail>
+		<fail  uri="tests/optional/hash-002.xml">
+			<title>hash-002.xml</title>
+		</fail>
+		<pass  uri="tests/optional/hash-003.xml">
+			<title>hash-003.xml</title>
+		</pass>
+		<fail  uri="tests/optional/hash-004.xml">
+			<title>hash-004.xml</title>
+		</fail>
+		<fail  uri="tests/optional/hash-005.xml">
+			<title>hash-005.xml</title>
+		</fail>
+		<pass  uri="tests/optional/hash-006.xml">
+			<title>hash-006.xml</title>
+		</pass>
+		<pass  uri="tests/optional/uuid-001.xml">
+			<title>uuid-001.xml</title>
+		</pass>
+		<pass  uri="tests/optional/validrng-001.xml">
+			<title>validrng-001.xml</title>
+		</pass>
+		<pass  uri="tests/optional/validrng-002.xml">
+			<title>validrng-002.xml</title>
+		</pass>
+		<fail  uri="tests/optional/validrng-003.xml">
+			<title>validrng-003.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-004.xml">
+			<title>validrng-004.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-005.xml">
+			<title>validrng-005.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-006.xml">
+			<title>validrng-006.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-007.xml">
+			<title>validrng-007.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-008.xml">
+			<title>validrng-008.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validrng-009.xml">
+			<title>validrng-009.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validsch-001.xml">
+			<title>validsch-001.xml</title>
+		</fail>
+		<pass  uri="tests/optional/validsch-002.xml">
+			<title>validsch-002.xml</title>
+		</pass>
+		<fail  uri="tests/optional/validsch-003.xml">
+			<title>validsch-003.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validsch-004.xml">
+			<title>validsch-004.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validsch-005.xml">
+			<title>validsch-005.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-001.xml">
+			<title>validxsd-001.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-002.xml">
+			<title>validxsd-002.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-003.xml">
+			<title>validxsd-003.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-004.xml">
+			<title>validxsd-004.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-005.xml">
+			<title>validxsd-005.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-006.xml">
+			<title>validxsd-006.xml</title>
+		</fail>
+		<pass  uri="tests/optional/validxsd-007.xml">
+			<title>validxsd-007.xml</title>
+		</pass>
+		<fail  uri="tests/optional/validxsd-008.xml">
+			<title>validxsd-008.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-009.xml">
+			<title>validxsd-009.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-010.xml">
+			<title>validxsd-010.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-011.xml">
+			<title>validxsd-011.xml</title>
+		</fail>
+		<fail  uri="tests/optional/validxsd-012.xml">
+			<title>validxsd-012.xml</title>
+		</fail>
+		<fail  uri="tests/optional/www-form-urldecode-001.xml">
+			<title>www-form-urldecode-001.xml</title>
+		</fail>
+		<fail  uri="tests/optional/www-form-urlencode-001.xml">
+			<title>www-form-urlencode-001.xml</title>
+		</fail>
+		<pass  uri="tests/optional/xquery-001.xml">
+			<title>xquery-001.xml</title>
+		</pass>
+		<pass  uri="tests/optional/xquery-002.xml">
+			<title>xquery-002.xml</title>
+		</pass>
+		<fail  uri="tests/optional/xquery-003.xml">
+			<title>xquery-003.xml</title>
+		</fail>
+		<fail  uri="tests/optional/xquery-004.xml">
+			<title>xquery-004.xml</title>
+		</fail>
+		<fail  uri="tests/optional/xquery-005.xml">
+			<title>xquery-005.xml</title>
+		</fail>
+		<fail  uri="tests/optional/xquery-006.xml">
+			<title>xquery-006.xml</title>
+		</fail>
+		<fail  uri="tests/optional/xsl-formatter-001.xml">
+			<title>xsl-formatter-001.xml</title>
+		</fail>
+		<pass  uri="tests/optional/xslt2-001.xml">
+			<title>xslt2-001.xml</title>
+		</pass>
+		<fail  uri="tests/optional/xslt2-002.xml">
+			<title>xslt2-002.xml</title>
+		</fail>
+		<pass  uri="tests/optional/xslt2-003.xml">
+			<title>xslt2-003.xml</title>
+		</pass>
+	</test-suite>
+</test-report>

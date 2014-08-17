@@ -1,0 +1,3315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-report xmlns="http://xproc.org/ns/testreport">
+   <title>XProc Test Results for Tubular</title>
+   <date>2010-12-20T07:41:28</date>
+   <processor>
+      <name>Tubular</name>
+      <vendor>TranceCode</vendor>
+      <vendor-uri>http://code.google.com/p/tubular/</vendor-uri>
+      <version>0.1.0-SNAPSHOT</version>
+      <language>en_US</language>
+      <xproc-version>1.0</xproc-version>
+      <xpath-version>2.0</xpath-version>
+      <psvi-supported>false</psvi-supported>
+   </processor>
+   <test-suite>
+      <title>optional</title>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-001.xml">
+         <title>Test p:document-template-001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-002.xml">
+         <title>Test p:document-template-002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-003.xml">
+         <title>Test p:document-template-003</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option xpath-version is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-004.xml">
+         <title>Test p:document-template-004</title>
+         <error expected="err:XC0067">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-005.xml">
+         <title>Test p:document-template-005</title>
+         <error expected="err:XC0067">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-006.xml">
+         <title>Test p:document-template-006</title>
+         <error expected="err:XC0067">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-007.xml">
+         <title>Test p:document-template-007</title>
+         <error expected="err:XC0067">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-008.xml">
+         <title>Test p:document-template-008</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:in-scope-names</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-009.xml">
+         <title>Test p:document-template-009</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:in-scope-names</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-010.xml">
+         <title>Test p:document-template-010</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-011.xml">
+         <title>Test p:document-template-011</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:in-scope-names</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-012.xml">
+         <title>Test p:document-template-012</title>
+         <error expected="err:XC0067">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-013.xml">
+         <title>Test p:document-template-013</title>
+         <error expected="err:XC0068">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-014.xml">
+         <title>Test p:document-template-014</title>
+         <error expected="err:XD0026">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/document-template-015.xml">
+         <title>Test p:document-template-015</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:document-template</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0033-001.xml">
+         <title>Test for err:XC0033 - 001</title>
+         <error expected="err:XC0033">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0034-001.xml">
+         <title>Test for err:XC0034 - 001</title>
+         <error expected="err:XC0034">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0035-001.xml">
+         <title>Test for err:XC0035 - 001</title>
+         <error expected="err:XC0035">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0035-002.xml">
+         <title>Test for err:XC0035 - 002</title>
+         <error expected="err:XC0035">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0036-001.xml">
+         <title>Test err:XC0036 - #001</title>
+         <error expected="err:XC0036">UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0036-002.xml">
+         <title>Test err:XC0036 - #002</title>
+         <error expected="err:XC0036">UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0036-003.xml">
+         <title>Test err:XC0036 - #003</title>
+         <error expected="err:XC0036">UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0036-004.xml">
+         <title>Test err:XC0036 - #004</title>
+         <error expected="err:XC0036">UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0036-005.xml">
+         <title>Test err:XC0036 - #005</title>
+         <error expected="err:XC0036">UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0037-001.xml">
+         <title>Test err:XC0037 - #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0037-002.xml">
+         <title>Test err:XC0037 - #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0037-003.xml">
+         <title>Test err:XC0037 - #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0053-001.xml">
+         <title>Test err:XC0053 - #001</title>
+         <error expected="err:XC0053">UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0053-002.xml">
+         <title>Test err:XC0053 - #002</title>
+         <error expected="err:XC0053">AssertionError</error>
+         <message>Port[OUTPUT][!1.1.1/result]</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0053-003.xml">
+         <title>Test err:XC0053 - #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0053-004.xml">
+         <title>Test err:XC0053 - #004</title>
+         <error expected="err:XC0053">UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0054-001.xml">
+         <title>Test err:XC0054 - #001</title>
+         <error expected="err:XC0054">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0057-001.xml">
+         <title>Test err:XC0057 - #001</title>
+         <error expected="err:XC0057">UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0060-001.xml">
+         <title>Test err:XC0060 - #001</title>
+         <error expected="err:XC0060">UnsupportedOperationException</error>
+         <message>p:uuid</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0061-001.xml">
+         <title>Test err:XC0061 - #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0063-001.xml">
+         <title>Test err:XC0063 - #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0063-002.xml">
+         <title>Test err:XC0063 - #002</title>
+         <error expected="err:XC0063">IllegalArgumentException</error>
+         <message>java.lang.IllegalArgumentException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0064-001.xml">
+         <title>Test err:XC0064 - #001</title>
+         <error expected="err:XC0064">IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/err-c0066-001.xml">
+         <title>Test err:XC0066 - #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/err-c0066-002.xml">
+         <title>Test err:XC0066 - #002</title>
+         <error expected="err:XC0066">IllegalArgumentException</error>
+         <message>java.lang.IllegalArgumentException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-001.xml">
+         <title>Test exec-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/exec-002.xml">
+         <title>Test exec-002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-003.xml">
+         <title>Test exec-003</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;some text
+&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+&amp;lt;doc&amp;gt;some text
+&amp;lt;/doc&amp;gt;
+&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-004.xml">
+         <title>Test exec-004</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;
+   &lt;para&gt;some text&lt;/para&gt;
+&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+   &lt;doc&gt;&amp;lt;para&amp;gt;some text&amp;lt;/para&amp;gt;&lt;/doc&gt;
+&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-005.xml">
+         <title>Test exec-005</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;
+   &lt;c:line&gt;line1&lt;/c:line&gt;
+   &lt;c:line&gt;line2&lt;/c:line&gt;
+   &lt;c:line&gt;line3&lt;/c:line&gt;
+&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+   &lt;c:line/&gt;
+   &lt;c:line&gt;&amp;lt;doc&amp;gt;line1&lt;/c:line&gt;
+   &lt;c:line&gt;line2&lt;/c:line&gt;
+   &lt;c:line&gt;line3&amp;lt;/doc&amp;gt;&lt;/c:line&gt;
+&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-006.xml">
+         <title>Test exec-006</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-007.xml">
+         <title>Test exec-007</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-008.xml">
+         <title>Test exec-008</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: /c:result
+XPath syntax error at char 9 in {/c:result}:
+    Prefix c has not been declared</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-009.xml">
+         <title>Test exec-009</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-010.xml">
+         <title>Test exec-010</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: not(string-length(normalize-space(/c:result/text())) = 0)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-011.xml">
+         <title>Test exec-011</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;success/&gt;
+</expected>
+         <actual>
+&lt;doc&gt;some text&lt;/doc&gt;
+</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-012.xml">
+         <title>Test exec-012</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/exec-013.xml">
+         <title>Test exec-013</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/exec-014.xml">
+         <title>Test exec-014</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-015.xml">
+         <title>Test exec-015</title>
+         <error expected="err:XD0006">{http://www.w3.org/ns/xproc-error}XS0006</error>
+         <message>XS0006: wrong number of input documents in port exec/source</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-016.xml">
+         <title>Test exec-016</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;line1
+line2
+line3&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+&amp;lt;doc&amp;gt;line1
+line2
+line3&amp;lt;/doc&amp;gt;
+&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/exec-017.xml">
+         <title>Test exec-017</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step exec</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-001.xml">
+         <title>Test hash-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-002.xml">
+         <title>Test hash-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-003.xml">
+         <title>Test hash-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-004.xml">
+         <title>Test hash-004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-005.xml">
+         <title>Test hash-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/hash-006.xml">
+         <title>Test hash-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:hash</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/in-scope-names-001.xml">
+         <title>Test p:in-scope-names #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:in-scope-names</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/in-scope-names-002.xml">
+         <title>Test p:in-scope-names #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:in-scope-names</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/psvi-required-001.xml">
+         <title>Test psvi-required-001.xml</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/uuid-001.xml">
+         <title>Test uuid-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:uuid</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validrng-001.xml">
+         <title>Test validrng-001</title>
+         <error>AssertionError</error>
+         <message>Port[OUTPUT][!1.1.1/result]</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validrng-002.xml">
+         <title>Test validrng-002</title>
+         <error>AssertionError</error>
+         <message>Port[OUTPUT][!1.1.1/result]</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-003.xml">
+         <title>Test validrng-003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-004.xml">
+         <title>Test validrng-004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-005.xml">
+         <title>Test validrng-005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-006.xml">
+         <title>Test validrng-006</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-008.xml">
+         <title>Test validrng-008</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/optional/validrng-009.xml">
+         <title>Test validrng-009</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/optional/validsch-001.xml">
+         <title>Test validsch-001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validsch-002.xml">
+         <title>Test validsch-002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validsch-003.xml">
+         <title>Test validsch-003</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validsch-004.xml">
+         <title>Test validsch-004</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validsch-005.xml">
+         <title>Test validsch-005</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-001.xml">
+         <title>Test validxsd-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-002.xml">
+         <title>Test validxsd-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-003.xml">
+         <title>Test validxsd-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-004.xml">
+         <title>Test validxsd-004</title>
+         <error expected="err:XC0053">UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-005.xml">
+         <title>Test validxsd-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-006.xml">
+         <title>Test validxsd-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-007.xml">
+         <title>Test validxsd-007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-008.xml">
+         <title>Test validxsd-008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-009.xml">
+         <title>Test validxsd-009</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-010.xml">
+         <title>Test validxsd-010</title>
+         <error expected="err:XC0053">UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-011.xml">
+         <title>Test validxsd-011</title>
+         <error expected="err:XC0053">UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-012.xml">
+         <title>Test validxsd-012</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/validxsd-013.xml">
+         <title>Test validxsd-013</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:validate-with-xml-schema</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/www-form-urldecode-001.xml">
+         <title>Test www-form-urldecode-001</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.2</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/www-form-urlencode-001.xml">
+         <title>Test www-form-urlencode-001</title>
+         <error>AssertionError</error>
+         <message>Port[OUTPUT][!1.1.1/result]</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-001.xml">
+         <title>Test optional features of p:xinclude #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-002.xml">
+         <title>Test optional features of p:xinclude #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-003.xml">
+         <title>Test optional features of p:xinclude #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-004.xml">
+         <title>Test optional features of p:xinclude #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-005.xml">
+         <title>Test optional features of p:xinclude #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xinclude-006.xml">
+         <title>Test optional features of p:xinclude #006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xquery-001.xml">
+         <title>Test XQuery #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xquery-002.xml">
+         <title>Test xquery-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xquery-003.xml">
+         <title>Test xquery-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xquery-004.xml">
+         <title>Test xquery-004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xquery-006.xml">
+         <title>Test xquery-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xsl-formatter-001.xml">
+         <title>Test XSL Formatter #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xsl-formatter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xslt2-001.xml">
+         <title>Test XSLT 2.0 #001</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xslt2-002.xml">
+         <title>Test XSLT 2.0 #002</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step xslt2</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/optional/xslt2-003.xml">
+         <title>Test XSLT 2.0 #003</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+   </test-suite>
+   <test-suite>
+      <title>required</title>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-001.xml">
+         <title>Test p:add-attribute #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-002.xml">
+         <title>Test p:add-attribute #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-003.xml">
+         <title>Test add attribute 003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-004.xml">
+         <title>Test p:add-attribute #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-005.xml">
+         <title>Test p:add-attribute #005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/add-attribute-006.xml">
+         <title>Test p:add-attribute #006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:escape-markup</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/add-attribute-007.xml">
+         <title>Test p:add-attribute #007</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-001.xml">
+         <title>Test add-xml-base-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-002.xml">
+         <title>Test add-xml-base-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-003.xml">
+         <title>Test add-xml-base-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-004.xml">
+         <title>Test add-xml-base-004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-005.xml">
+         <title>Test add-xml-base-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/add-xml-base-006.xml">
+         <title>Test add-xml-base-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/base-uri-001.xml">
+         <title>Test base-uri #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(/doc/title),'"')
+XPath syntax error at char 33 in {...'"',p:base-uri(/doc/title),...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/base-uri-002.xml">
+         <title>Test base-uri #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(),'"')
+XPath syntax error at char 23 in {concat('"',p:base-uri(),'"'}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}base-uri()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/base-uri-003.xml">
+         <title>Test base-uri #003</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(),'"')
+XPath syntax error at char 23 in {concat('"',p:base-uri(),'"'}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}base-uri()</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/choose-001.xml">
+         <title>Test choose #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-002.xml">
+         <title>Test choose #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-003.xml">
+         <title>Test choose #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-004.xml">
+         <title>Test choose #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-005.xml">
+         <title>Test choose #005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-006.xml">
+         <title>Test choose #006</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/choose-007.xml">
+         <title>Test choose #007</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/compare-001.xml">
+         <title>Test compare</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/compare-002.xml">
+         <title>Test compare</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;false&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;true&lt;/c:result&gt;</actual>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/compare-003.xml">
+         <title>Test compare</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/compare-004.xml">
+         <title>Test compare</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/compare-005.xml">
+         <title>Test compare</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/count-001.xml">
+         <title>Test of the p:count Step</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/count-002.xml">
+         <title>Test of the p:count Step #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/count-003.xml">
+         <title>Test compare 003</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-001.xml">
+         <title>Test p:data #001</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-002.xml">
+         <title>Test p:data #002</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-003.xml">
+         <title>Test p:data #003</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-004.xml">
+         <title>Test p:data #004</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-005.xml">
+         <title>Test p:data #005</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-006.xml">
+         <title>Test p:data #006</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-007.xml">
+         <title>Test p:data #007</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/data-008.xml">
+         <title>Test p:data #008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-001.xml">
+         <title>Test p:declare-step-001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-002.xml">
+         <title>Test p:declare-step-002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-003.xml">
+         <title>Test p:declare-step-003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-004.xml">
+         <title>Test p:declare-step-004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-005.xml">
+         <title>Test p:declare-step-005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/declare-step-006.xml">
+         <title>Test p:declare-step-006</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: foo:test2</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-007.xml">
+         <title>Test p:declare-step-007</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/declare-step-008.xml">
+         <title>Test p:declare-step-008</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/declare-step-009.xml">
+         <title>Test p:declare-step-009</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/declare-step-010.xml">
+         <title>Test p:declare-step-010</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/declare-step-011.xml">
+         <title>Test p:declare-step-011</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/delete-001.xml">
+         <title>Test delete-001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/delete-002.xml">
+         <title>Test delete-002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/delete-003.xml">
+         <title>Test delete-003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/delete-004.xml">
+         <title>Test delete-004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/directory-list-001.xml">
+         <title>Test directory-list-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:directory-list</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/directory-list-002.xml">
+         <title>Test directory-list-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:directory-list</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/document-001.xml">
+         <title>Test p:document-001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0002-001.xml">
+         <title>Test err:XC0002 #001</title>
+         <error expected="err:XC0002">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0003-001.xml">
+         <title>Test for err:XC0003 #001</title>
+         <error expected="err:XC0003">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0003-002.xml">
+         <title>Test for err:XC0003 #002</title>
+         <error expected="err:XC0003">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0004-001.xml">
+         <title>Test err:XC0004 #001</title>
+         <error expected="err:XC0004">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0005-001.xml">
+         <title>Test err:XC0005 #001</title>
+         <error expected="err:XC0005">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0005-002.xml">
+         <title>Test err:XC0005 #002</title>
+         <error expected="err:XC0005">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0006-001.xml">
+         <title>Test for err:XC0006 #001</title>
+         <error expected="err:XC0006">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0010-001.xml">
+         <title>Test for err:XC0010 #001</title>
+         <error expected="err:XC0010">UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0010-002.xml">
+         <title>Test for err:XC0010 #002</title>
+         <error expected="err:XC0010">UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0012-001.xml">
+         <title>Test err:XC0012 (p:directory-list on an inaccessible directory).</title>
+         <error expected="err:XC0012">UnsupportedOperationException</error>
+         <message>p:directory-list</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0013-001.xml">
+         <title>Test for err:XC0013 #001</title>
+         <error expected="err:XC0013">UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0014-001.xml">
+         <title>Test err:XC0014 #001</title>
+         <error expected="err:XC0014">UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0014-002.xml">
+         <title>Test err:XC0014 #002</title>
+         <error expected="err:XC0014">UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0017-001.xml">
+         <title>Test err:XC0017 (p:directory-list with a non-directory path).</title>
+         <error expected="err:XC0017">UnsupportedOperationException</error>
+         <message>p:directory-list</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0019-001.xml">
+         <title>Test for err:XC0019 - 001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-001.xml">
+         <title>Test err:XC0020 #001</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-003.xml">
+         <title>Test err:XC0020 #003</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-004.xml">
+         <title>Test err:XC0020 #004</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-005.xml">
+         <title>Test err:XC0020 #005</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-006.xml">
+         <title>Test err:XC0020 #006</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0020-007.xml">
+         <title>Test err:XC0020 #007</title>
+         <error expected="err:XC0020">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0022-001.xml">
+         <title>Test err:XC0022 #001</title>
+         <error expected="err:XC0022">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0023-001.xml">
+         <title>Test for err:XC0023 #001</title>
+         <error expected="err:XC0023">{http://www.w3.org/ns/xproc-error}XC0023</error>
+         <message>XC0023: Selected node type TEXT is not allowed by the step ; allowed types: [ELEMENT] </message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0023-002.xml">
+         <title>Test for err:XC0023 #002</title>
+         <error expected="err:XC0023">{http://www.w3.org/ns/xproc-error}XC0023</error>
+         <message>XC0023: Selected node type ATTRIBUTE is not allowed by the step ; allowed types: [ELEMENT, TEXT, PROCESSING_INSTRUCTION, COMMENT] </message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0023-003.xml">
+         <title>Test for err:XC0023 #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0023-004.xml">
+         <title>Test for err:XC0023 #004</title>
+         <error expected="err:XC0023">UnsupportedOperationException</error>
+         <message>p:make-absolute-uris</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0023-005.xml">
+         <title>Test for err:XC0023 #005</title>
+         <error expected="err:XC0023">UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0023-006.xml">
+         <title>Test for err:XC0023 #006</title>
+         <error expected="err:XC0023">UnsupportedOperationException</error>
+         <message>p:replace</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0023-007.xml">
+         <title>Test for err:XC0023 #007</title>
+         <error expected="err:XC0023">{http://www.w3.org/ns/xproc-error}XC0023</error>
+         <message>XC0023: Selected node type ATTRIBUTE is not allowed by the step ; allowed types: [ELEMENT] </message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0023-008.xml">
+         <title>Test for err:XC0023 #008</title>
+         <error expected="err:XC0023">UnsupportedOperationException</error>
+         <message>p:unwrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0023-009.xml">
+         <title>Test for err:XC0023 #009</title>
+         <error expected="err:XC0023">UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0025-001.xml">
+         <title>Test for err:XC0025 #001</title>
+         <error expected="err:XC0025">{http://www.w3.org/ns/xproc-error}XC0025</error>
+         <message>XC0025: the match pattern matches a COMMENT which is not allowed when the position is first-child</message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0025-002.xml">
+         <title>Test for err:XC0025 #002</title>
+         <error expected="err:XC0025">{http://www.w3.org/ns/xproc-error}XC0025</error>
+         <message>XC0025: the match pattern matches a COMMENT which is not allowed when the position is last-child</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0027-001.xml">
+         <title>Test for err:XC0027 - 001</title>
+         <error expected="err:XC0027">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0027-002.xml">
+         <title>Test for err:XC0027 - 002</title>
+         <error expected="err:XC0027">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0027-003.xml">
+         <title>Test for err:XC0027 - 003</title>
+         <error expected="err:XC0027">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0028-001.xml">
+         <title>Test err:XC0028 #001</title>
+         <error expected="err:XC0028">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0029-001.xml">
+         <title>Test err:XC0029 #001</title>
+         <error expected="err:XC0029">UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0029-002.xml">
+         <title>Test err:XC0029 #002</title>
+         <error expected="err:XC0029">UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0030-001.xml">
+         <title>Test err:XC0030 #001</title>
+         <error expected="err:XC0030">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0039-001.xml">
+         <title>Test for err:XC0039 - 001</title>
+         <error expected="err:XC0039">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0040-001.xml">
+         <title>Test err:XC0040 #001</title>
+         <error expected="err:XC0040">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0050-001.xml">
+         <title>Test for err:XC0050 - 001</title>
+         <error expected="err:XC0050">IllegalStateException</error>
+         <message>Error while executing step store</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0051-001.xml">
+         <title>Test err:XC0051 #001</title>
+         <error expected="err:XC0051">UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0052-001.xml">
+         <title>Test err:XC0052 #001</title>
+         <error expected="err:XC0052">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0052-002.xml">
+         <title>Test err:XC0052 #002</title>
+         <error expected="err:XC0052">UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0056-001.xml">
+         <title>Test for err:XC0056 - 001</title>
+         <error expected="err:XC0056">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0056-002.xml">
+         <title>Test for err:XC0056 - 002</title>
+         <error expected="err:XC0056">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0058-001.xml">
+         <title>Test for err:XC0058 - 001</title>
+         <error expected="err:XC0058">UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0059-001.xml">
+         <title>Test err:XC0059 #001</title>
+         <error expected="err:XC0059">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-c0059-002.xml">
+         <title>Test err:XC0059 #002</title>
+         <error expected="err:XC0059">{http://www.w3.org/ns/xproc-error}XC0059</error>
+         <message>XC0059: It is a dynamic error if the QName value in the attribute-name option uses the prefix "xmlns" or any other prefix that resolves to the namespace name "http://www.w3.org/2000/xmlns/".</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-c0062-001.xml">
+         <title>Test err:XC0062 #001</title>
+         <error expected="err:XC0062">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0001-001.xml">
+         <title>Test err:XD0001 #001</title>
+         <error expected="err:XD0001">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0001-002.xml">
+         <title>Test err:XD0001 #002</title>
+         <error expected="err:XD0001">UnsupportedOperationException</error>
+         <message>p:unwrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0003-001.xml">
+         <title>Test err:XD0003</title>
+         <error expected="err:XD0003">{http://www.w3.org/ns/xproc-error}XS0003</error>
+         <message>XS0003: the viewport source does not provide exactly one document but 2</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0004-001.xml">
+         <title>Test err:XD0004</title>
+         <error expected="err:XD0004">{http://www.w3.org/ns/xproc-error}XS0004</error>
+         <message>XS0004: no subpipeline is selected by the p:choose and no default is provided</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0005-001.xml">
+         <title>Test err:XD0005</title>
+         <error expected="err:XD0005">AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0006-001.xml">
+         <title>Test err:XD0006 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0007-001.xml">
+         <title>Test err:XD0007</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0007-002.xml">
+         <title>Test err:XD0007 (p:viewport)</title>
+         <error expected="err:XD0007">IllegalArgumentException</error>
+         <message>expected one element but was: &lt;&lt;foo/&gt;, &lt;bar/&gt;&gt;</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0007-003.xml">
+         <title>Test err:XD0007 #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0008-001.xml">
+         <title>Test err:XD0008</title>
+         <error expected="err:XD0008">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0009-001.xml">
+         <title>Test err:XD0009</title>
+         <error expected="err:XD0009">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0009-002.xml">
+         <title>Test err:XD0009</title>
+         <error expected="err:XD0009">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0010-001.xml">
+         <title>Test err:XD0010</title>
+         <error expected="err:XD0010">{http://www.w3.org/ns/xproc-error}XS0010</error>
+         <message>XS0010: the match expression on p:viewport does not match an element or document: PROCESSING_INSTRUCTION</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0011-001.xml">
+         <title>Test for inaccessible URIs (err:XD0011)</title>
+         <error expected="err:XD0011">IllegalStateException</error>
+         <message>Error while executing step identity</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0011-002.xml">
+         <title>Test for err:XD0011 - 002</title>
+         <error expected="err:XD0011">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0011-003.xml">
+         <title>Test for err:XD0011 - 003</title>
+         <error expected="err:XD0011">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0012-001.xml">
+         <title>Test err:XD0012 #001</title>
+         <error expected="err:XD0012">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0012-002.xml">
+         <title>Test err:XD0012 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0012-003.xml">
+         <title>Test err:XD0012 #003</title>
+         <error expected="err:XD0012">UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0013-001.xml">
+         <title>Test err:XD0013 #001</title>
+         <error expected="err:XD0013">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0013-002.xml">
+         <title>Test err:XD0013 #002</title>
+         <error expected="err:XD0013">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0014-001.xml">
+         <title>Test for err:XD0014 #001</title>
+         <error expected="err:XD0014">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0014-002.xml">
+         <title>Test for err:XD0014 #002</title>
+         <error expected="err:XD0014">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0015-001.xml">
+         <title>Test for err:XD0015 #001</title>
+         <error expected="err:XD0015">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: p:system-property('unbound:limit')
+XPath syntax error at char 34 in {...stem-property('unbound:limi...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0016-001.xml">
+         <title>Test for err:XD0016 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0016-002.xml">
+         <title>Test for err:XD0016 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0018-001.xml">
+         <title>Test for err:XD0018 #001</title>
+         <error expected="err:XD0018">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0019-001.xml">
+         <title>Test err:XD0019</title>
+         <error expected="err:XD0019">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0019-002.xml">
+         <title>Test for err:XD0019 - 002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0020-001.xml">
+         <title>Test err:XD0020 #001</title>
+         <error expected="err:XD0020">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:serialization</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0020-002.xml">
+         <title>Test err:XD0020 #002</title>
+         <error expected="err:XD0020">IllegalStateException</error>
+         <message>Error while executing step store</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0021-001.xml">
+         <title>Test err:XD0021 #001</title>
+         <error expected="err:XD0021">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0021-002.xml">
+         <title>Test for err:XD0021 - 002</title>
+         <error expected="err:XD0021">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0022-001.xml">
+         <title>Test for err:XD0022 #001</title>
+         <error expected="err:XD0022">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option psvi-required is not declared on this step type (ex:test)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-001.xml">
+         <title>Test err:XD0023 - #001</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: foo^bar
+XPath syntax error at char 0 in {foo^}:
+    Invalid character '^' in expression</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-002.xml">
+         <title>Test err:XD0023 - #002</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: $foo
+Undeclared variable in XPath expression: $foo</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-003.xml">
+         <title>Test err:XD0023 - #003</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: i-do-not-exist()
+XPath syntax error at char 16 in {i-do-not-exist()}:
+    Unknown system function i-do-not-exist()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-004.xml">
+         <title>Test err:XD0023 - #004</title>
+         <error expected="err:XD0023">UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-005.xml">
+         <title>Test err:XD0023 - #005</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: $optional-no-default
+Undeclared variable in XPath expression: $optional-no-default</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-006.xml">
+         <title>Test err:XD0023 - #006</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: $opt2
+Undeclared variable in XPath expression: $opt2</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-007.xml">
+         <title>Test err:XD0023 - #007</title>
+         <error expected="err:XD0023">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: $var2
+Undeclared variable in XPath expression: $var2</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0023-008.xml">
+         <title>Test err:XD0023 - #008</title>
+         <error expected="err:XD0023">IllegalStateException</error>
+         <message>error while evaluating XPath query: /foo:document/bar:title</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0025-001.xml">
+         <title>Test for err:XD0025 #001</title>
+         <error expected="err:XD0025">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0026-001.xml">
+         <title>Test err-d0026-001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0026-002.xml">
+         <title>Test err:XD0026 #002</title>
+         <error expected="err:XD0026">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0026-003.xml">
+         <title>Test err:XD0026 #003</title>
+         <error expected="err:XD0026">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0026-004.xml">
+         <title>Test err:XD0026 #004</title>
+         <error expected="err:XD0026">NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0026-005.xml">
+         <title>Test err:XD0026 #005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0027-001.xml">
+         <title>Test for err:XD0027 #001</title>
+         <error expected="err:XD0027">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option xpath-version is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0028-001.xml">
+         <title>Test err:XC0028 #001</title>
+         <error expected="err:XD0028">IllegalArgumentException</error>
+         <message>net.sf.saxon.trans.XPathException: Invalid QName {not QName}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0028-002.xml">
+         <title>Test err:XC0028 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0028-003.xml">
+         <title>Test err:XC0028 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0028-004.xml">
+         <title>Test err:XC0028 #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0029-001.xml">
+         <title>Test for err:XD0029 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0029-002.xml">
+         <title>Test for err:XD0029 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0030-001.xml">
+         <title>Test err:XD0030 - 001</title>
+         <error expected="err:XD0030">UnsupportedOperationException</error>
+         <message>p:xquery</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0030-002.xml">
+         <title>Test err:XD0030 - 002</title>
+         <error expected="err:XD0030">UnsupportedOperationException</error>
+         <message>p:xsl-formatter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0031-001.xml">
+         <title>Test err:XD0031 #001</title>
+         <error expected="err:XD0031">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0033-001.xml">
+         <title>Test err:XD0033 #001</title>
+         <error expected="err:XD0033">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: p:value-available('not-available')
+XPath syntax error at char 34 in {...lue-available('not-availabl...}:
+    Prefix p has not been declared</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0033-002.xml">
+         <title>Test err:XD0033 #002</title>
+         <error expected="err:XD0033">{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: p:value-available('not-available', true())
+XPath syntax error at char 42 in {...lable('not-available', true...}:
+    Prefix p has not been declared</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-001.xml">
+         <title>Test err:XD0034 - 001</title>
+         <error expected="err:XD0034">{http://www.w3.org/ns/xproc-error}XS0034</error>
+         <message>XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-002.xml">
+         <title>Test err:XD0034 - 002</title>
+         <error expected="err:XD0034">{http://www.w3.org/ns/xproc-error}XS0034</error>
+         <message>XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-003.xml">
+         <title>Test err:XD0034 - 003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-004.xml">
+         <title>Test err:XD0034 - 004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-005.xml">
+         <title>Test err:XD0034 - 005</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-006.xml">
+         <title>Test err:XD0034 - 006</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-007.xml">
+         <title>Test err:XD0034 - 007</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-008.xml">
+         <title>Test err:XD0034 - 008</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-009.xml">
+         <title>Test err:XD0034 - 009</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-010.xml">
+         <title>Test err:XD0034 - 010</title>
+         <error expected="err:XD0034">UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-011.xml">
+         <title>Test err:XD0034 - 011</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-012.xml">
+         <title>Test err:XD0034 - 012</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-013.xml">
+         <title>Test err:XD0034 - 013</title>
+         <error expected="err:XD0034">{http://www.w3.org/ns/xproc-error}XS0034</error>
+         <message>XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-d0034-014.xml">
+         <title>Test err:XD0034 - 014</title>
+         <error expected="err:XD0034">{http://www.w3.org/ns/xproc-error}XS0034</error>
+         <message>XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-015.xml">
+         <title>Test err:XD0034 - 015</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-016.xml">
+         <title>Test err:XD0034 - 016</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-017.xml">
+         <title>Test err:XD0034 - 017</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-d0034-018.xml">
+         <title>Test err:XD0034 - 018</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-primary-001.xml">
+         <title>Test err:XS0008</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-001.xml">
+         <title>Test for err:XS0001</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = following/result ; ports = {pipeline/source=EnvironmentPort[pipeline/source], pipeline/result=EnvironmentPort[pipeline/result]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-002.xml">
+         <title>Test for err:XS0001 #002</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = step/result ; ports = {pipeline/source=EnvironmentPort[pipeline/source], pipeline/result=EnvironmentPort[pipeline/result]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0001-003.xml">
+         <title>Test for err:XS0001 #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-004.xml">
+         <title>Test for err:XS0001 #004</title>
+         <error expected="err:XS0001">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-005.xml">
+         <title>Test for err:XS0001 #005</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = step/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-006.xml">
+         <title>Test for err:XS0001 #006</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-007.xml">
+         <title>Test for err:XS0001 #007</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = step/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-008.xml">
+         <title>Test for err:XS0001 #008</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-010.xml">
+         <title>Test for err:XS0001 #010</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0001-011.xml">
+         <title>Test for err:XS0001 #011</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = following/result ; ports = {step/xpath-context=EnvironmentPort[step/xpath-context], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0002-001.xml">
+         <title>Test for duplicate names error (err:XS0002)</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0002-002.xml">
+         <title>Test for duplicate names error (err:XS0002)</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0003-001.xml">
+         <title>Test err:XS0003 #001</title>
+         <error expected="err:XS0003">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0003-002.xml">
+         <title>Test err:XS0003 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0003-004.xml">
+         <title>Test err:XS0003 #004</title>
+         <error expected="err:XS0003">{http://example.com/ns}foo</error>
+         <message>XS0000: !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0004-001.xml">
+         <title>Test for err:XS0004 #001</title>
+         <error expected="err:XS0004">AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0004-002.xml">
+         <title>Test for err:XS0004 #002</title>
+         <error expected="err:XS0004">AssertionError</error>
+         <message>step = _ ; variable = _ ; variables = [OPTION[_]]</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0004-003.xml">
+         <title>Test for err:XS0004 #003</title>
+         <error expected="err:XS0004">AssertionError</error>
+         <message>step = !1 ; variable = varName ; variables = [VARIABLE[varName][select=0]]</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0004-004.xml">
+         <title>Test for err:XS0004 #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0004-005.xml">
+         <title>Test for err:XS0004 #005</title>
+         <error expected="err:XS0004">AssertionError</error>
+         <message>step = !1 ; variable = foo ; variables = [OPTION[foo][select='bar']]</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-001.xml">
+         <title>Test err:XS0005 #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0005-002.xml">
+         <title>Test err:XS0005 #002</title>
+         <error expected="err:XS0005">IllegalStateException</error>
+         <message>Error while executing step xslt</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-003.xml">
+         <title>Test err:XS0005 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-004.xml">
+         <title>Test err:XS0005 #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-005.xml">
+         <title>Test err:XS0005 #005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-006.xml">
+         <title>Test err:XS0005 #006</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-007.xml">
+         <title>Test err:XS0005 #007</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-008.xml">
+         <title>Test err:XS0005 #008</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-009.xml">
+         <title>Test err:XS0005 #009</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-010.xml">
+         <title>Test err:XS0005 #010</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-011.xml">
+         <title>Test err:XS0005 #011</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-012.xml">
+         <title>Test err:XS0005 #012</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0005-013.xml">
+         <title>Test err:XS0005 #013</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0006-001.xml">
+         <title>Test for err:XS0006 - 001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0007-001.xml">
+         <title>Test for err:XS0007</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0007-002.xml">
+         <title>Test for err:XS0007 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0007-003.xml">
+         <title>Test for err:XS0007 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0008-001.xml">
+         <title>Test for err:XS0008 - 001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0009-001.xml">
+         <title>Test for err:XS0009 - 001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0009-002.xml">
+         <title>Test for err:XS0009 - 002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0009-004.xml">
+         <title>Test for err:XS0009 - 004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0009-005.xml">
+         <title>Test for err:XS0009 - 005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0010-001.xml">
+         <title>Test for err:XS0010 - 001</title>
+         <error expected="err:XS0010">AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0010-002.xml">
+         <title>Test for err:XS0010 - 002</title>
+         <error expected="err:XS0010">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option mynonexistentoption is not declared on this step type (p:count)</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0010-003.xml">
+         <title>Test for err:XS0010 - 003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0011-001.xml">
+         <title>Test err:XS0011 #001</title>
+         <error expected="err:XS0011">AssertionError</error>
+         <message>port = INPUT ; with-port = OUTPUT</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0011-002.xml">
+         <title>Test err:XS0011 #002</title>
+         <error expected="err:XS0011">AssertionError</error>
+         <message>port = INPUT ; with-port = PARAMETER</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0011-003.xml">
+         <title>Test err:XS0011 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0011-004.xml">
+         <title>Test err:XS0011 #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0014-001.xml">
+         <title>Test for multiple primary outputs</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0015-001.xml">
+         <title>Test err:XS0015 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0017-001.xml">
+         <title>Test for err:XS0017 - 001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0018-001.xml">
+         <title>Test for err:XS0018 - 001</title>
+         <error expected="err:XS0018">{http://www.w3.org/ns/xproc-error}XS0018</error>
+         <message>XS0018: Option match is required and is missing a value</message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0018-002.xml">
+         <title>Test for err:XS0018 - 002</title>
+         <error expected="err:XS0018">{http://www.w3.org/ns/xproc-error}XS0018</error>
+         <message>XS0018: Option opt is required and is missing a value</message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0018-003.xml">
+         <title>Test for err:XS0018 - 003</title>
+         <error expected="err:XS0018">{http://www.w3.org/ns/xproc-error}XS0018</error>
+         <message>XS0018: Option opt is required and is missing a value</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0019-001.xml">
+         <title>Test for err:XS0019 - 001</title>
+         <error expected="err:XS0019">AssertionError</error>
+         <message>port = identity/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0020-001.xml">
+         <title>Test for err:XS0020 - 001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0020-002.xml">
+         <title>Test for err:XS0020 - 002</title>
+         <error expected="err:XS0020">NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0020-003.xml">
+         <title>Test for err:XS0020 - 003</title>
+         <error expected="err:XS0020">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0022-001.xml">
+         <title>Test err:XS0022 #001</title>
+         <error expected="err:XS0022">AssertionError</error>
+         <message>port = foo/result ; ports = {!1.1.1/source=EnvironmentPort[!1.1.1/source], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0022-002.xml">
+         <title>Test for err:XS0022</title>
+         <error expected="err:XS0022">AssertionError</error>
+         <message>port = _/_ ; ports = {pipeline/source=EnvironmentPort[pipeline/source], _/result=EnvironmentPort[_/result], _/source=EnvironmentPort[_/source], pipeline/result=EnvironmentPort[pipeline/result]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0022-003.xml">
+         <title>Test for err:XS0022</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0022-004.xml">
+         <title>Test for err:XS0022 #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0022-005.xml">
+         <title>Test for err:XS0022 #005</title>
+         <error expected="err:XS0022">AssertionError</error>
+         <message>port = loop/current ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0022-006.xml">
+         <title>Test for err:XS0022 #006</title>
+         <error expected="err:XS0022">AssertionError</error>
+         <message>port = viewport/current ; ports = {!1.1.1/viewport-source=EnvironmentPort[!1.1.1/viewport-source], !1.1.1/result=EnvironmentPort[!1.1.1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0024-001.xml">
+         <title>Test for err:XS0024 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0024-002.xml">
+         <title>Test for err:XS0024 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0025-001.xml">
+         <title>Test for err:XS0025 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0025-002.xml">
+         <title>Test for err:XS0025 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0025-003.xml">
+         <title>Test for err:XS0025 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0025-004.xml">
+         <title>Test for err:XS0025 #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0026-001.xml">
+         <title>Test for err:XS0026 #001</title>
+         <error expected="err:XS0026">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:log</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0026-002.xml">
+         <title>Test for err:XS0026 #002</title>
+         <error expected="err:XS0026">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:log</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0027-001.xml">
+         <title>Test for err:XS0027</title>
+         <error expected="err:XS0027">AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0028-001.xml">
+         <title>Test err:XS0028 #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0028-002.xml">
+         <title>Test err:XS0028 #002</title>
+         <error expected="err:XS0028">NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0029-001.xml">
+         <title>Test err:XS0029 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0030-001.xml">
+         <title>Test for multiple primary inputs</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0031-001.xml">
+         <title>Test for err:XS0031 - 001</title>
+         <error expected="err:XS0031">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option not-declared is not declared on this step type (p:identity)</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0031-002.xml">
+         <title>Test for err:XS0031 - 002</title>
+         <error expected="err:XS0031">AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0032-001.xml">
+         <title>Test err:XS0032 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0033-001.xml">
+         <title>Test for err:XS0033 - 001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0034-001.xml">
+         <title>Test for err:XS0034 - 001</title>
+         <error expected="err:XS0034">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0034-002.xml">
+         <title>Test for err:XS0034 - 002</title>
+         <error expected="err:XS0034">UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0035-001.xml">
+         <title>Test err:XS0035 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0035-002.xml">
+         <title>Test err:XS0035 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0036-001.xml">
+         <title>Test err:XS0036 #001</title>
+         <error expected="err:XS0036">IllegalStateException</error>
+         <message>java.lang.IllegalStateException</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0036-002.xml">
+         <title>Test err:XS0036 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0036-003.xml">
+         <title>Test err:XS0036 #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0036-004.xml">
+         <title>Test err:XS0036 #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0036-005.xml">
+         <title>Test err:xs0036 #005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0037-001.xml">
+         <title>Test for err:XS0037 - 001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0037-002.xml">
+         <title>Test for err:XS0037 - 002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0037-003.xml">
+         <title>Test for err:XS0037 - 003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0038-001.xml">
+         <title>Test for err:XS0038 - 001</title>
+         <error expected="err:XS0038">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0038-002.xml">
+         <title>Test for err:XS0038 - 002</title>
+         <error expected="err:XS0038">{http://www.w3.org/ns/xproc-error}XS0018</error>
+         <message>XS0018: Option myvalue is required and is missing a value</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0039-001.xml">
+         <title>Test for err:XS0039 - 001</title>
+         <error expected="err:XS0039">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:serialization</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0039-002.xml">
+         <title>Test for err:XS0039 - 002</title>
+         <error expected="err:XS0039">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:serialization</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0040-001.xml">
+         <title>Test for err:XS0040 - 001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0041-001.xml">
+         <title>Test err:XS0041 #001</title>
+         <error expected="err:XS0041">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0042-001.xml">
+         <title>Test err:XS0042 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0044-001.xml">
+         <title>Test err:XS0044 #001</title>
+         <error expected="err:XS0044">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:this-is-an-error</message>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0044-002.xml">
+         <title>Test err:XS0044 #002</title>
+         <error expected="err:XS0044">{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: this-is-an-error</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0044-003.xml">
+         <title>Test err:XS0044 #0003</title>
+         <error expected="err:XS0044">AssertionError</error>
+         <message>port = count/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0048-001.xml">
+         <title>Test for err:XS0048 - 001</title>
+         <error expected="err:XS0048">IllegalStateException</error>
+         <message>java.lang.IllegalStateException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0051-001.xml">
+         <title>Test err:XS0051 #001</title>
+         <error expected="err:XS0051">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0051-002.xml">
+         <title>Test err:XS0051 #001</title>
+         <error expected="err:XS0051">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0052-001.xml">
+         <title>Test err:XS0052 #001</title>
+         <error expected="err:XS0052">PipelineException</error>
+         <message>net.sf.saxon.s9api.SaxonApiException: java.io.FileNotFoundException: http://tests.xproc.org/tests/required/i-do-not-exist.xml</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0052-002.xml">
+         <title>Test err:XS0052 #002</title>
+         <error expected="err:XS0052">NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0053-001.xml">
+         <title>Test err:XS0053 #001</title>
+         <error expected="err:XS0053">NullPointerException</error>
+         <message>null key</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0055-001.xml">
+         <title>Test err:XS0055 #001</title>
+         <error expected="err:XS0055">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0055-002.xml">
+         <title>Test err:XS0055 #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0057-001.xml">
+         <title>Test err:XS0057 #001</title>
+         <error expected="err:XS0057">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0057-002.xml">
+         <title>Test err:XS0057 #002</title>
+         <error expected="err:XS0057">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0058-001.xml">
+         <title>Test err:XS0058 #001</title>
+         <error expected="err:XS0058">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0059-001.xml">
+         <title>Test for err:XS0059 #001</title>
+         <error expected="err:XS0059">NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/err-s0061-001.xml">
+         <title>Test err:XS0061 #001</title>
+         <error expected="err:XS0061">{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option use-when is not declared on this step type (p:identity)</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0062-001.xml">
+         <title>Test for err:XS0062 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0062-002.xml">
+         <title>Test for err:XS0062 #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/err-s0063-001.xml">
+         <title>Test err:XS0063 #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/error-001.xml">
+         <title>Test p:error #001</title>
+         <error expected="usrerr:X1">{http://xproc.org/ns/user-error}X1</error>
+         <message>XS0000: go-bang</message>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/error-002.xml">
+         <title>Test p:error #002</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/error-003.xml">
+         <title>Test p:error #003</title>
+         <error>AssertionError</error>
+         <message>port = catch/error ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/escape-markup-001.xml">
+         <title>Test escape-markup #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:escape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/evaluation-order-001.xml">
+         <title>Test evaluation order #001</title>
+         <error>AssertionError</error>
+         <message>port = i2/result ; ports = {main/source=EnvironmentPort[main/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/evaluation-order-002.xml">
+         <title>Test evaluation order #002</title>
+         <error>AssertionError</error>
+         <message>port = i3/result ; ports = {main/source=EnvironmentPort[main/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/evaluation-order-003.xml">
+         <title>Test evaluation order #003</title>
+         <error>AssertionError</error>
+         <message>port = i3/result ; ports = {i1/result=EnvironmentPort[i1/result], i2/result=EnvironmentPort[i2/result], i2/source=EnvironmentPort[i2/source], i1/source=EnvironmentPort[i1/source], main/source=EnvironmentPort[main/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-001.xml">
+         <title>Test exclude-inline-prefixes-001</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-002.xml">
+         <title>Test exclude-inline-prefixes-002</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-003.xml">
+         <title>Test exclude-inline-prefixes-003</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-004.xml">
+         <title>Test exclude-inline-prefixes-004</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-005.xml">
+         <title>Test exclude-inline-prefixes-005</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-006.xml">
+         <title>Test exclude-inline-prefixes-006</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-007.xml">
+         <title>Test exclude-inline-prefixes-007</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-008.xml">
+         <title>Test exclude-inline-prefixes-008</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-009.xml">
+         <title>Test exclude-inline-prefixes-009</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (null)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/exclude-inline-prefixes-010.xml">
+         <title>Test exclude-inline-prefixes-010</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option exclude-inline-prefixes is not declared on this step type (ex:foo)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/fibonacci.xml">
+         <title>Test fibonacci</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: cl:make-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/filter-001.xml">
+         <title>Test filter-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/filter-002.xml">
+         <title>Test filter-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/filter-003.xml">
+         <title>Test filter-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-001.xml">
+         <title>Test for-each #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-002.xml">
+         <title>Test for-each #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/for-each-003.xml">
+         <title>Test for-each #003</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:iteration-position() = 1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-004.xml">
+         <title>Test for-each #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/for-each-005.xml">
+         <title>Test for-each #005</title>
+         <error>AssertionError</error>
+         <message>port = loop/current ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-006.xml">
+         <title>Test for-each #006</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/for-each-007.xml">
+         <title>Test for-each #007</title>
+         <error>AssertionError</error>
+         <message>port = identity/result ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-008.xml">
+         <title>Test for-each #008</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/for-each-009.xml">
+         <title>Test for-each #009</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;wrapper&gt;
+   &lt;bar/&gt;
+   &lt;bar/&gt;
+&lt;/wrapper&gt;
+  </expected>
+         <actual>&lt;wrapper
+         xmlns:t="http://xproc.org/ns/testsuite"
+         xmlns:p="http://www.w3.org/ns/xproc"
+         xmlns:c="http://www.w3.org/ns/xproc-step"
+         xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+   &lt;foo/&gt;
+   &lt;foo/&gt;
+&lt;/wrapper&gt;</actual>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/for-each-010.xml">
+         <title>Test for-each #010</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/for-each-011.xml">
+         <title>Test for-each #011</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: p:iteration-position()
+XPath syntax error at char 22 in {p:iteration-position()}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/group-001.xml">
+         <title>Test group #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/group-002.xml">
+         <title>Test group #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-001.xml">
+         <title>Test http-request #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-002.xml">
+         <title>Test http-request #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-003.xml">
+         <title>Test http-request #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-004.xml">
+         <title>Test http-request #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-005.xml">
+         <title>Test http-request #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-006.xml">
+         <title>Test http-request #006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-007.xml">
+         <title>Test http-request #007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-008.xml">
+         <title>Test http-request #008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-009.xml">
+         <title>Test http-request #009</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-010.xml">
+         <title>Test http-request #010</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-011.xml">
+         <title>Test http-request #011</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-012.xml">
+         <title>Test http-request #012</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-013.xml">
+         <title>Test http-request #009</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/http-request-014.xml">
+         <title>Test http-request #014</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/identity-001.xml">
+         <title>Test p:identity-step-001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/identity-002.xml">
+         <title>Test p:identity-step-002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/identity-003.xml">
+         <title>Test p:identity-step-002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/identity-004.xml">
+         <title>Test p:identity-step-004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/identity-005.xml">
+         <title>Test p:identity-step-005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/import-001.xml">
+         <title>Test p:import #001</title>
+         <error>AssertionError</error>
+         <message>port = main/source ; ports = {!1.1.2/result=EnvironmentPort[!1.1.2/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source], !1.1.2/source=EnvironmentPort[!1.1.2/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/import-002.xml">
+         <title>Test p:import #002</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>&lt;been-there/&gt;</expected>
+         <actual>
+    &lt;doc/&gt;
+  </actual>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/import-003.xml">
+         <title>Test p:import #009</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/import-004.xml">
+         <title>Test p:import #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/import-005.xml">
+         <title>Test p:import #005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/import-006.xml">
+         <title>Test p:import #006</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/import-007.xml">
+         <title>Test p:import #007</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: test:step</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/import-008.xml">
+         <title>Test p:import #008</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/import-009.xml">
+         <title>Test p:import #009</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('foo:imported') and not(p:step-available('foo:nested')) and not(p:step-available('test:step'))</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/import-010.xml">
+         <title>Test p:import #010</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-001.xml">
+         <title>Test input-001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-002.xml">
+         <title>Test input-002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-003.xml">
+         <title>Test input-003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-004.xml">
+         <title>Test input-004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-005.xml">
+         <title>Test input-005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-006.xml">
+         <title>Test input-006</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/input-007.xml">
+         <title>Test input-007</title>
+         <error>AssertionError</error>
+         <message>result = [] expected:&lt;1&gt; but was:&lt;0&gt;</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/input-008.xml">
+         <title>Test input-008</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;p&gt;Some other text.&lt;/p&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>&lt;p&gt;Some other text.&lt;/p&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/input-009.xml">
+         <title>Test input-009</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;p&gt;Some other text.&lt;/p&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>&lt;p&gt;Some other text.&lt;/p&gt;</actual>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/input-010.xml">
+         <title>Test input-010</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-011.xml">
+         <title>Test input-011</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/input-012.xml">
+         <title>Test input-012</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-001.xml">
+         <title>Test p:insert #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-002.xml">
+         <title>Test p:insert #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-003.xml">
+         <title>Test p:insert #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-004.xml">
+         <title>Test p:insert #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-005.xml">
+         <title>Test insert-005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-006.xml">
+         <title>Test insert-006</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-007.xml">
+         <title>Test p:insert #007</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-008.xml">
+         <title>Test p:insert #008</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-009.xml">
+         <title>Test insert-009</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/insert-010.xml">
+         <title>Test p:insert #010</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/iteration-001.xml">
+         <title>Test iteration #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat(p:iteration-position(), ' of ', p:iteration-size())
+XPath syntax error at char 29 in {...p:iteration-position(), ' o...}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/iteration-002.xml">
+         <title>Test iteration #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:iteration-position(), ' of ', p:iteration-size(),'"')
+XPath syntax error at char 33 in {...p:iteration-position(), ' o...}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-001.xml">
+         <title>Test labelelements001</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;4&lt;/c:result&gt;</expected>
+         <actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;0&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-002.xml">
+         <title>Test p:label-elements #002</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;div&gt;
+        &lt;p test:pid="_foo_1_bar_"&gt;Some para.&lt;/p&gt;
+        &lt;p test:pid="_foo_2_bar_"&gt;Some other para.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>
+    &lt;doc&gt;
+      &lt;div&gt;
+        &lt;p&gt;Some para.&lt;/p&gt;
+        &lt;p&gt;Some other para.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/doc&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-003.xml">
+         <title>Test p:label-elements #003</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc xml:base="http://example.com/base/"&gt;
+      &lt;chap xml:base="http://foo.com/1"&gt;
+        &lt;para&gt;...&lt;/para&gt;
+      &lt;/chap&gt;
+      &lt;chap xml:base="http://foo.com/2"&gt;
+        &lt;para&gt;...&lt;/para&gt;
+      &lt;/chap&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>
+    &lt;doc xml:base="http://example.com/base/"&gt;
+      &lt;chap xml:base="http://example.com/base/chaps/"&gt;
+        &lt;para&gt;...&lt;/para&gt;
+      &lt;/chap&gt;
+      &lt;chap&gt;
+        &lt;para&gt;...&lt;/para&gt;
+      &lt;/chap&gt;
+    &lt;/doc&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-004.xml">
+         <title>Test labelelements #004</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;4&lt;/c:result&gt;</expected>
+         <actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;0&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-005.xml">
+         <title>Test p:label-elements #005</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;div&gt;
+        &lt;p test:pid="_foo_1_bar_"&gt;Some para.&lt;/p&gt;
+        &lt;p test:pid="_foo_2_bar_"&gt;Some other para.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>
+    &lt;doc&gt;
+      &lt;div&gt;
+        &lt;p&gt;Some para.&lt;/p&gt;
+        &lt;p&gt;Some other para.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/doc&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-006.xml">
+         <title>Test labelelements #006</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;3&lt;/c:result&gt;</expected>
+         <actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;0&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-007.xml">
+         <title>Test labelelements #007</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;document&gt;
+      &lt;element baz:foo="_1"/&gt;
+    &lt;/document&gt;
+  </expected>
+         <actual>
+    &lt;document&gt;
+      &lt;element/&gt;
+    &lt;/document&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-008.xml">
+         <title>Test labelelements #008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:escape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/labelelements-009.xml">
+         <title>Test labelelements #009</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;document&gt;
+      &lt;element bar:baz="baz" bar2:foo="_1"/&gt;
+    &lt;/document&gt;
+  </expected>
+         <actual>
+    &lt;document&gt;
+      &lt;element bar:baz="baz"/&gt;
+    &lt;/document&gt;
+  </actual>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/load-001.xml">
+         <title>Test p:load #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/load-002.xml">
+         <title>Test p:load #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/load-003.xml">
+         <title>Test p:load #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/load-004.xml">
+         <title>Test p:load #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/log-001.xml">
+         <title>Test p:log #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:log</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/log-002.xml">
+         <title>Test p:log #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:log</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/make-absolute-uris-001.xml">
+         <title>Test make-absolute-uris #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:make-absolute-uris</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/make-absolute-uris-002.xml">
+         <title>Test make-absolute-uris #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:make-absolute-uris</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/make-absolute-uris-003.xml">
+         <title>Test make-absolute-uris #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:make-absolute-uris</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/make-sequence.xml">
+         <title>Test make-sequence</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: cl:make-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/multipart-001.xml">
+         <title>Test http-request multipart #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/multipart-002.xml">
+         <title>Test http-request multipart #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/multipart-003.xml">
+         <title>Test http-request multipart #003</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/multipart-004.xml">
+         <title>Test http-request multipart #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/multipart-005.xml">
+         <title>Test http-request multipart #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:http-request</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-001.xml">
+         <title>Test namespace-rename-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-002.xml">
+         <title>Test p:namespace-rename #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-003.xml">
+         <title>Test p:namespace-rename #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-004.xml">
+         <title>Test p:namespace-rename #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-005.xml">
+         <title>Test p:namespace-rename #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-006.xml">
+         <title>Test p:namespace-rename #006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-007.xml">
+         <title>Test p:namespace-rename #007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-008.xml">
+         <title>Test p:namespace-rename #008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-009.xml">
+         <title>Test p:namespace-rename #009</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-010.xml">
+         <title>Test p:namespace-rename #010</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-011.xml">
+         <title>Test p:namespace-rename #011</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-012.xml">
+         <title>Test p:namespace-rename #012</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-013.xml">
+         <title>Test p:namespace-rename #013</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-014.xml">
+         <title>Test p:namespace-rename #014</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-015.xml">
+         <title>Test namespace-rename-015</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-016.xml">
+         <title>Test namespace-rename-016</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespace-rename-017.xml">
+         <title>Test namespace-rename-017</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:namespace-rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-001.xml">
+         <title>Test p:namespaces #001</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-002.xml">
+         <title>Test p:namespaces #002</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-003.xml">
+         <title>Test p:namespaces #003</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-004.xml">
+         <title>Test p:namespaces #004</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-005.xml">
+         <title>Test p:namespaces #005</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: count(//pfx:*)
+XPath syntax error at char 13 in {count(//pfx:*)}:
+    Prefix pfx has not been declared</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/namespaces-006.xml">
+         <title>Test p:namespaces #006</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/nested-pipeline-001.xml">
+         <title>Test nested pipeline #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/option-001.xml">
+         <title>Test option #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/option-002.xml">
+         <title>Test option #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/option-004.xml">
+         <title>Test option #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/output-001.xml">
+         <title>Test output-001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/output-002.xml">
+         <title>Test output-001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/pack-001.xml">
+         <title>Test pack #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/pack-002.xml">
+         <title>Test pack #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/pack-003.xml">
+         <title>Test pack #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/pack-004.xml">
+         <title>Test pack #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/pack-005.xml">
+         <title>Test pack #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/pack-006.xml">
+         <title>Test pack #006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:pack</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/param-003.xml">
+         <title>Test param-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/param-004.xml">
+         <title>Test param-004</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/parameters-001.xml">
+         <title>Test parameters-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/parameters-002.xml">
+         <title>Test parameters-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:parameters</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/pipe-001.xml">
+         <title>Test p:pipe #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/pipeinfo-001.xml">
+         <title>Test p:pipeinfo-001</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step identity</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/preserve-base-uri-001.xml">
+         <title>Test preserving base URI #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(/doc/chap),'"')
+XPath syntax error at char 32 in {...('"',p:base-uri(/doc/chap),...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/preserve-base-uri-002.xml">
+         <title>Test preserving base URI #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-001.xml">
+         <title>Test rename-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-002.xml">
+         <title>Test rename-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-003.xml">
+         <title>Test rename-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-004.xml">
+         <title>Test rename-004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-005.xml">
+         <title>Test rename-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-006.xml">
+         <title>Test rename-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/rename-007.xml">
+         <title>Test rename-007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:rename</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/replace-001.xml">
+         <title>Test replace001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:replace</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/resolve-uri-001.xml">
+         <title>Test resolve-uri #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:resolve-uri('test'),'"')
+XPath syntax error at char 32 in {...('"',p:resolve-uri('test'),...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}resolve-uri()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/resolve-uri-002.xml">
+         <title>Test resolve-uri #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:resolve-uri('test', p:base-uri(/doc/title)),'"')
+XPath syntax error at char 55 in {...est', p:base-uri(/doc/title...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/set-attributes-001.xml">
+         <title>Test set-attributes #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/set-attributes-002.xml">
+         <title>Test set-attributes #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/sink-001.xml">
+         <title>Test p:sink #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/sink-002.xml">
+         <title>Test p:sink #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/sink-003.xml">
+         <title>Test p:sink #003</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-001.xml">
+         <title>Test split-sequence-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-002.xml">
+         <title>Test split-sequence-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-003.xml">
+         <title>Test split-sequence-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-004.xml">
+         <title>Test tail001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-005.xml">
+         <title>Test split-sequence 005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-006.xml">
+         <title>Test split-sequence 006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/split-sequence-007.xml">
+         <title>Test split-sequence #007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:split-sequence</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-001.xml">
+         <title>Test step-available #001</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('ex:unimplemented')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-002.xml">
+         <title>Test step-available #002</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('p:identity')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-003.xml">
+         <title>Test step-available #003</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('ex:user-defined')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-004.xml">
+         <title>Test step-available #004</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('ex:user-defined2')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-005.xml">
+         <title>Test step-available #005</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('ex:user-defined-nested')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/step-available-006.xml">
+         <title>Test step-available #006</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:step-available('test:imported')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/store-001.xml">
+         <title>Test the p:store step</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step store</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/string-replace-001.xml">
+         <title>Test p:string-replace #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/string-replace-002.xml">
+         <title>Test p:string-replace #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/string-replace-003.xml">
+         <title>Test p:string-replace #003</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/string-replace-004.xml">
+         <title>Test p:string-replace #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/string-replace-005.xml">
+         <title>Test p:string-replace #005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/system-property-001.xml">
+         <title>Test system-property-001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:system-property('p:episode'), '"')
+XPath syntax error at char 41 in {...tem-property('p:episode'), ...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/system-property-002.xml">
+         <title>Test system-property-002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: concat('"',p:system-property('p:unknown-value'), '"')
+XPath syntax error at char 47 in {...operty('p:unknown-value'), ...}:
+    Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/try-001.xml">
+         <title>Test try/catch #001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/try-002.xml">
+         <title>Test try/catch #002</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;p&gt;p:compare failed&lt;/p&gt;
+</expected>
+         <actual>&lt;p&gt;p:compare succeeded&lt;/p&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/try-003.xml">
+         <title>Test try/catch #003</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/try-004.xml">
+         <title>Test try/catch #004</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;p&gt;p:compare failed at the nested level&lt;/p&gt;
+</expected>
+         <actual>
+&lt;doc/&gt;
+</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/try-005.xml">
+         <title>Test try/catch #005</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1.1.1</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/try-006.xml">
+         <title>Test try/catch #006</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-001.xml">
+         <title>Test unescapemarkup-001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-002.xml">
+         <title>Test unescapemarkup-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-003.xml">
+         <title>Test unescape markup-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-004.xml">
+         <title>Test unescapemarkup-004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-005.xml">
+         <title>Test unescapemarkup-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-006.xml">
+         <title>Test unescapemarkup-005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unescapemarkup-007.xml">
+         <title>Test unescapemarkup-007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unescape-markup</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unwrap-001.xml">
+         <title>Test unwrap001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unwrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/unwrap-002.xml">
+         <title>Test unwrap 002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:unwrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/use-when-001.xml">
+         <title>Test use-when #001</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option use-when is not declared on this step type (p:identity)</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/use-when-002.xml">
+         <title>Test use-when #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/use-when-003.xml">
+         <title>Test use-when #003</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: ex:unsupported-step</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/use-when-004.xml">
+         <title>Test use-when #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-001.xml">
+         <title>Test value-available #001</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:value-available('opt')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-002.xml">
+         <title>Test value-available #002</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:value-available('ex:opt')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-003.xml">
+         <title>Test value-available #003</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:value-available('ex:opt')</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-004.xml">
+         <title>Test value-available #004</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:value-available('opt', false())</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-005.xml">
+         <title>Test value-available #005</title>
+         <error>NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/value-available-006.xml">
+         <title>Test value-available #006</title>
+         <error>NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/variable-001.xml">
+         <title>Test variable #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/variable-002.xml">
+         <title>Test variable #002</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/variable-003.xml">
+         <title>Test variable #003</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/variable-004.xml">
+         <title>Test variable #004</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/variable-005.xml">
+         <title>Test variable #005</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/variable-006.xml">
+         <title>Test variable #006</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/version-available-001.xml">
+         <title>Test version-available #001</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:version-available(1.0)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/version-available-002.xml">
+         <title>Test version-available #002</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:version-available(123.45)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-001.xml">
+         <title>Test versioning #001</title>
+         <error>AssertionError</error>
+         <message>port = identity/new-output-port ; ports = {identity/source=EnvironmentPort[identity/source], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source], identity/result=EnvironmentPort[identity/result], !1.1.2/source=EnvironmentPort[!1.1.2/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-002.xml">
+         <title>Test versioning #002</title>
+         <error expected="err:XS0001">AssertionError</error>
+         <message>port = id2/new-output-port ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-003.xml">
+         <title>Test versioning #003</title>
+         <error>IllegalStateException</error>
+         <message>net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (new-attribute) whose parent is a document node</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-004.xml">
+         <title>Test versioning #004</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0031</error>
+         <message>XS0031: Option new-option is not declared on this step type (p:identity)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-005.xml">
+         <title>Test versioning #005</title>
+         <error>AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-006.xml">
+         <title>Test versioning #006</title>
+         <error>AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/versioning-007.xml">
+         <title>Test versioning #007</title>
+         <error>AssertionError</error>
+         <message>java.lang.AssertionError</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/viewport-001.xml">
+         <title>Test viewport #001</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/viewport-002.xml">
+         <title>Test viewport #002</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-003.xml">
+         <title>Test viewport #003</title>
+         <error>NoSuchElementException</error>
+         <message>java.util.NoSuchElementException</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/viewport-004.xml">
+         <title>Test viewport #004</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-005.xml">
+         <title>Test viewport #005</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:iteration-position() = 1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-006.xml">
+         <title>Test viewport #006</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;foo/&gt;
+      &lt;foo/&gt;
+      &lt;foo/&gt;
+      &lt;foo/&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>
+    &lt;doc&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;
+        &lt;para&gt;Nested paragraph.&lt;/para&gt;
+      &lt;/para&gt;
+    &lt;/doc&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-007.xml">
+         <title>Test viewport #007</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;doc&gt;
+      &lt;foo/&gt;
+      &lt;bar/&gt;
+      &lt;foo/&gt;
+      &lt;bar/&gt;
+      &lt;foo/&gt;
+      &lt;bar/&gt;
+      &lt;foo/&gt;
+      &lt;bar/&gt;
+    &lt;/doc&gt;
+  </expected>
+         <actual>
+    &lt;doc&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;Some paragraph.&lt;/para&gt;
+      &lt;para&gt;
+        &lt;para&gt;Nested paragraph.&lt;/para&gt;
+      &lt;/para&gt;
+    &lt;/doc&gt;
+  </actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-008.xml">
+         <title>Test viewport #008</title>
+         <error>AssertionError</error>
+         <message>port = identity1/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/viewport-009.xml">
+         <title>Test viewport #009</title>
+      </pass>
+      <pass uri="http://tests.xproc.org/tests/required/viewport-010.xml">
+         <title>Test viewport #010</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/viewport-011.xml">
+         <title>Test viewport #011</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0023</error>
+         <message>XS0023: XPath expression cannot be evaluated: p:iteration-position()
+XPath syntax error at char 22 in {p:iteration-position()}:
+    Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-001.xml">
+         <title>Test wrap001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-002.xml">
+         <title>Test wrap-002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-003.xml">
+         <title>Test wrap-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-004.xml">
+         <title>Test for p:wrap #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-005.xml">
+         <title>Test for p:wrap #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-006.xml">
+         <title>Test wrap-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-007.xml">
+         <title>Test wrap-007</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-008.xml">
+         <title>Test wrap-008</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-009.xml">
+         <title>Test wrap-009</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-010.xml">
+         <title>Test wrap-010</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-011.xml">
+         <title>Test wrap-011</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/wrap-sequence-001.xml">
+         <title>Test wrap-sequence-001</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-sequence-002.xml">
+         <title>Test wrap-sequence-002</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+&lt;c:result&gt;3&lt;/c:result&gt;
+</expected>
+         <actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;1&lt;/c:result&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-sequence-003.xml">
+         <title>Test wrap-sequence-003</title>
+         <error>XdmNodeCompareAssertionError</error>
+         <expected>
+    &lt;baz:wrapper&gt;
+      &lt;doc/&gt;
+    &lt;/baz:wrapper&gt;
+  </expected>
+         <actual>&lt;wrapper
+         xmlns:t="http://xproc.org/ns/testsuite"
+         xmlns:p="http://www.w3.org/ns/xproc"
+         xmlns:c="http://www.w3.org/ns/xproc-step"
+         xmlns:err="http://www.w3.org/ns/xproc-error"&gt;
+   &lt;doc/&gt;
+&lt;/wrapper&gt;</actual>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/wrap-sequence-004.xml">
+         <title>Test wrap-sequence-003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:wrap</message>
+      </fail>
+      <pass uri="http://tests.xproc.org/tests/required/wrap-sequence-005.xml">
+         <title>Test wrap-sequence-005</title>
+      </pass>
+      <fail uri="http://tests.xproc.org/tests/required/xinclude-001.xml">
+         <title>Test p:xinclude #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xinclude-002.xml">
+         <title>Test p:xinclude #002</title>
+         <error>{http://www.w3.org/ns/xproc-error}XS0044</error>
+         <message>XS0044: Unsupported element: p:log</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xinclude-003.xml">
+         <title>Test p:xinclude #003</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xinclude-004.xml">
+         <title>Test p:xinclude #004</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xinclude-005.xml">
+         <title>Test p:xinclude #005</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:xinclude</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xml-id-001.xml">
+         <title>Test literal xml:id support #001</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xml-id-002.xml">
+         <title>Test added xml:id support #002</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:filter</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xpath-version-available-001.xml">
+         <title>Test xpath-version-available #001</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:xpath-version-available(1.0) or p:xpath-version-available(2.0)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xpath-version-available-002.xml">
+         <title>Test xpath-version-available #001</title>
+         <error>IllegalStateException</error>
+         <message>error while evaluating XPath query: p:xpath-version-available(123.45)</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-001.xml">
+         <title>Test xslt-001</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-002.xml">
+         <title>Test xslt-002</title>
+         <error expected="err:XC0038">IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-003.xml">
+         <title>Test xslt-003</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-004.xml">
+         <title>Test xslt-004</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-005.xml">
+         <title>Test xsl-t005</title>
+         <error>IllegalStateException</error>
+         <message>Error while executing step !1.1.1</message>
+      </fail>
+      <fail uri="http://tests.xproc.org/tests/required/xslt-006.xml">
+         <title>Test xslt-006</title>
+         <error>UnsupportedOperationException</error>
+         <message>p:add-xml-base</message>
+      </fail>
+   </test-suite>
+</test-report>
