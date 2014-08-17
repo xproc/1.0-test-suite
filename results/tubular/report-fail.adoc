@@ -1,0 +1,6343 @@
+
+= XProc Test Results for Tubular
+
+Passed 221 of 690 tests (32.03%) on 20 Dec 2010 at 07:41a.
+
+:toc: right
+
+This report only shows failing tests.
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|Tubular|Language|en_US
+|Vendor|TranceCode|XProc version|1.0
+|Vendor URI|http://code.google.com/p/tubular/|XPath version|2.0
+|Version|0.1.0-SNAPSHOT|PSVI Supported|false
+|=============================================
+
+
+== optional
+
+Passed 16 of 110 tests (14.55%).
+
+[role="fail"]
+=== FAIL Test p:document-template-001
+http://tests.xproc.org/tests/optional/document-template-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-002
+http://tests.xproc.org/tests/optional/document-template-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-003
+http://tests.xproc.org/tests/optional/document-template-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option xpath-version is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test p:document-template-004
+http://tests.xproc.org/tests/optional/document-template-004.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-005
+http://tests.xproc.org/tests/optional/document-template-005.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-006
+http://tests.xproc.org/tests/optional/document-template-006.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-007
+http://tests.xproc.org/tests/optional/document-template-007.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-008
+http://tests.xproc.org/tests/optional/document-template-008.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:in-scope-names
+
+[role="fail"]
+=== FAIL Test p:document-template-009
+http://tests.xproc.org/tests/optional/document-template-009.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:in-scope-names
+
+[role="fail"]
+=== FAIL Test p:document-template-010
+http://tests.xproc.org/tests/optional/document-template-010.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-011
+http://tests.xproc.org/tests/optional/document-template-011.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:in-scope-names
+
+[role="fail"]
+=== FAIL Test p:document-template-012
+http://tests.xproc.org/tests/optional/document-template-012.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-013
+http://tests.xproc.org/tests/optional/document-template-013.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-014
+http://tests.xproc.org/tests/optional/document-template-014.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test p:document-template-015
+http://tests.xproc.org/tests/optional/document-template-015.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:document-template
+
+[role="fail"]
+=== FAIL Test for err:XC0033 - 001
+http://tests.xproc.org/tests/optional/err-c0033-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0034 - 001
+http://tests.xproc.org/tests/optional/err-c0034-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0035 - 001
+http://tests.xproc.org/tests/optional/err-c0035-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0035 - 002
+http://tests.xproc.org/tests/optional/err-c0035-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XC0036 - #001
+http://tests.xproc.org/tests/optional/err-c0036-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test err:XC0036 - #002
+http://tests.xproc.org/tests/optional/err-c0036-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test err:XC0036 - #003
+http://tests.xproc.org/tests/optional/err-c0036-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test err:XC0036 - #004
+http://tests.xproc.org/tests/optional/err-c0036-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test err:XC0036 - #005
+http://tests.xproc.org/tests/optional/err-c0036-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test err:XC0053 - #001
+http://tests.xproc.org/tests/optional/err-c0053-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test err:XC0053 - #002
+http://tests.xproc.org/tests/optional/err-c0053-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* Port[OUTPUT][!1.1.1/result]
+
+[role="fail"]
+=== FAIL Test err:XC0053 - #004
+http://tests.xproc.org/tests/optional/err-c0053-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test err:XC0054 - #001
+http://tests.xproc.org/tests/optional/err-c0054-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test err:XC0057 - #001
+http://tests.xproc.org/tests/optional/err-c0057-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test err:XC0060 - #001
+http://tests.xproc.org/tests/optional/err-c0060-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:uuid
+
+[role="fail"]
+=== FAIL Test err:XC0063 - #002
+http://tests.xproc.org/tests/optional/err-c0063-002.xml
+
+Error: IllegalArgumentException was raised. 
+
+* IllegalArgumentException: 
+
+==== Error message
+
+
+* java.lang.IllegalArgumentException
+
+[role="fail"]
+=== FAIL Test err:XC0064 - #001
+http://tests.xproc.org/tests/optional/err-c0064-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test err:XC0066 - #002
+http://tests.xproc.org/tests/optional/err-c0066-002.xml
+
+Error: IllegalArgumentException was raised. 
+
+* IllegalArgumentException: 
+
+==== Error message
+
+
+* java.lang.IllegalArgumentException
+
+[role="fail"]
+=== FAIL Test exec-001
+http://tests.xproc.org/tests/optional/exec-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test exec-003
+http://tests.xproc.org/tests/optional/exec-003.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>some text
+</c:result>
+
+l|<c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error">
+&lt;doc&gt;some text
+&lt;/doc&gt;
+</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test exec-004
+http://tests.xproc.org/tests/optional/exec-004.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>
+   <para>some text</para>
+</c:result>
+
+l|<c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error">
+   <doc>&lt;para&gt;some text&lt;/para&gt;</doc>
+</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test exec-005
+http://tests.xproc.org/tests/optional/exec-005.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>
+   <c:line>line1</c:line>
+   <c:line>line2</c:line>
+   <c:line>line3</c:line>
+</c:result>
+
+l|<c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error">
+   <c:line/>
+   <c:line>&lt;doc&gt;line1</c:line>
+   <c:line>line2</c:line>
+   <c:line>line3&lt;/doc&gt;</c:line>
+</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test exec-006
+http://tests.xproc.org/tests/optional/exec-006.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test exec-007
+http://tests.xproc.org/tests/optional/exec-007.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test exec-008
+http://tests.xproc.org/tests/optional/exec-008.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: /c:result XPath syntax error at char 9 in {/c:result}: Prefix c has not been declared
+
+[role="fail"]
+=== FAIL Test exec-009
+http://tests.xproc.org/tests/optional/exec-009.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test exec-010
+http://tests.xproc.org/tests/optional/exec-010.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: not(string-length(normalize-space(/c:result/text())) = 0)
+
+[role="fail"]
+=== FAIL Test exec-011
+http://tests.xproc.org/tests/optional/exec-011.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<success/>
+
+l|
+<doc>some text</doc>
+
+|====================
+
+[role="fail"]
+=== FAIL Test exec-012
+http://tests.xproc.org/tests/optional/exec-012.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test exec-015
+http://tests.xproc.org/tests/optional/exec-015.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0006 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0006: 
+
+==== Error message
+
+
+* XS0006: wrong number of input documents in port exec/source
+
+[role="fail"]
+=== FAIL Test exec-016
+http://tests.xproc.org/tests/optional/exec-016.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>line1
+line2
+line3</c:result>
+
+l|<c:result
+          xmlns:t="http://xproc.org/ns/testsuite"
+          xmlns:p="http://www.w3.org/ns/xproc"
+          xmlns:c="http://www.w3.org/ns/xproc-step"
+          xmlns:err="http://www.w3.org/ns/xproc-error">
+&lt;doc&gt;line1
+line2
+line3&lt;/doc&gt;
+</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test exec-017
+http://tests.xproc.org/tests/optional/exec-017.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step exec
+
+[role="fail"]
+=== FAIL Test hash-001
+http://tests.xproc.org/tests/optional/hash-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test hash-002
+http://tests.xproc.org/tests/optional/hash-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test hash-003
+http://tests.xproc.org/tests/optional/hash-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test hash-004
+http://tests.xproc.org/tests/optional/hash-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test hash-005
+http://tests.xproc.org/tests/optional/hash-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test hash-006
+http://tests.xproc.org/tests/optional/hash-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:hash
+
+[role="fail"]
+=== FAIL Test p:in-scope-names #001
+http://tests.xproc.org/tests/optional/in-scope-names-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:in-scope-names
+
+[role="fail"]
+=== FAIL Test p:in-scope-names #002
+http://tests.xproc.org/tests/optional/in-scope-names-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:in-scope-names
+
+[role="fail"]
+=== FAIL Test psvi-required-001.xml
+http://tests.xproc.org/tests/optional/psvi-required-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test uuid-001
+http://tests.xproc.org/tests/optional/uuid-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:uuid
+
+[role="fail"]
+=== FAIL Test validrng-001
+http://tests.xproc.org/tests/optional/validrng-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* Port[OUTPUT][!1.1.1/result]
+
+[role="fail"]
+=== FAIL Test validrng-002
+http://tests.xproc.org/tests/optional/validrng-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* Port[OUTPUT][!1.1.1/result]
+
+[role="fail"]
+=== FAIL Test validsch-001
+http://tests.xproc.org/tests/optional/validsch-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test validsch-002
+http://tests.xproc.org/tests/optional/validsch-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test validsch-003
+http://tests.xproc.org/tests/optional/validsch-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test validsch-004
+http://tests.xproc.org/tests/optional/validsch-004.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test validsch-005
+http://tests.xproc.org/tests/optional/validsch-005.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test validxsd-001
+http://tests.xproc.org/tests/optional/validxsd-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-002
+http://tests.xproc.org/tests/optional/validxsd-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-003
+http://tests.xproc.org/tests/optional/validxsd-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-004
+http://tests.xproc.org/tests/optional/validxsd-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-005
+http://tests.xproc.org/tests/optional/validxsd-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-006
+http://tests.xproc.org/tests/optional/validxsd-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-007
+http://tests.xproc.org/tests/optional/validxsd-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-008
+http://tests.xproc.org/tests/optional/validxsd-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-009
+http://tests.xproc.org/tests/optional/validxsd-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-010
+http://tests.xproc.org/tests/optional/validxsd-010.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-011
+http://tests.xproc.org/tests/optional/validxsd-011.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-012
+http://tests.xproc.org/tests/optional/validxsd-012.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test validxsd-013
+http://tests.xproc.org/tests/optional/validxsd-013.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:validate-with-xml-schema
+
+[role="fail"]
+=== FAIL Test www-form-urldecode-001
+http://tests.xproc.org/tests/optional/www-form-urldecode-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.2
+
+[role="fail"]
+=== FAIL Test www-form-urlencode-001
+http://tests.xproc.org/tests/optional/www-form-urlencode-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* Port[OUTPUT][!1.1.1/result]
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #001
+http://tests.xproc.org/tests/optional/xinclude-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #002
+http://tests.xproc.org/tests/optional/xinclude-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #003
+http://tests.xproc.org/tests/optional/xinclude-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #004
+http://tests.xproc.org/tests/optional/xinclude-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #005
+http://tests.xproc.org/tests/optional/xinclude-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test optional features of p:xinclude #006
+http://tests.xproc.org/tests/optional/xinclude-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test XQuery #001
+http://tests.xproc.org/tests/optional/xquery-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test xquery-002
+http://tests.xproc.org/tests/optional/xquery-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test xquery-003
+http://tests.xproc.org/tests/optional/xquery-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test xquery-004
+http://tests.xproc.org/tests/optional/xquery-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test xquery-006
+http://tests.xproc.org/tests/optional/xquery-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test XSL Formatter #001
+http://tests.xproc.org/tests/optional/xsl-formatter-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xsl-formatter
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #001
+http://tests.xproc.org/tests/optional/xslt2-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #002
+http://tests.xproc.org/tests/optional/xslt2-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step xslt2
+
+[role="fail"]
+=== FAIL Test XSLT 2.0 #003
+http://tests.xproc.org/tests/optional/xslt2-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+
+== required
+
+Passed 205 of 580 tests (35.34%).
+
+[role="fail"]
+=== FAIL Test p:add-attribute #006
+http://tests.xproc.org/tests/required/add-attribute-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:escape-markup
+
+[role="fail"]
+=== FAIL Test add-xml-base-001
+http://tests.xproc.org/tests/required/add-xml-base-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test add-xml-base-002
+http://tests.xproc.org/tests/required/add-xml-base-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test add-xml-base-003
+http://tests.xproc.org/tests/required/add-xml-base-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test add-xml-base-004
+http://tests.xproc.org/tests/required/add-xml-base-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test add-xml-base-005
+http://tests.xproc.org/tests/required/add-xml-base-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test add-xml-base-006
+http://tests.xproc.org/tests/required/add-xml-base-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test base-uri #001
+http://tests.xproc.org/tests/required/base-uri-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(/doc/title),'"') XPath syntax error at char 33 in {...'"',p:base-uri(/doc/title),...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()
+
+[role="fail"]
+=== FAIL Test base-uri #002
+http://tests.xproc.org/tests/required/base-uri-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(),'"') XPath syntax error at char 23 in {concat('"',p:base-uri(),'"'}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}base-uri()
+
+[role="fail"]
+=== FAIL Test base-uri #003
+http://tests.xproc.org/tests/required/base-uri-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(),'"') XPath syntax error at char 23 in {concat('"',p:base-uri(),'"'}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}base-uri()
+
+[role="fail"]
+=== FAIL Test compare
+http://tests.xproc.org/tests/required/compare-002.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>false</c:result>
+
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">true</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test compare 003
+http://tests.xproc.org/tests/required/count-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test p:data #001
+http://tests.xproc.org/tests/required/data-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #002
+http://tests.xproc.org/tests/required/data-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #003
+http://tests.xproc.org/tests/required/data-003.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #004
+http://tests.xproc.org/tests/required/data-004.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #005
+http://tests.xproc.org/tests/required/data-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #006
+http://tests.xproc.org/tests/required/data-006.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #007
+http://tests.xproc.org/tests/required/data-007.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:data #008
+http://tests.xproc.org/tests/required/data-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test p:declare-step-006
+http://tests.xproc.org/tests/required/declare-step-006.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: foo:test2
+
+[role="fail"]
+=== FAIL Test p:declare-step-009
+http://tests.xproc.org/tests/required/declare-step-009.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:declare-step-010
+http://tests.xproc.org/tests/required/declare-step-010.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test p:declare-step-011
+http://tests.xproc.org/tests/required/declare-step-011.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test directory-list-001
+http://tests.xproc.org/tests/required/directory-list-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:directory-list
+
+[role="fail"]
+=== FAIL Test directory-list-002
+http://tests.xproc.org/tests/required/directory-list-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:directory-list
+
+[role="fail"]
+=== FAIL Test err:XC0002 #001
+http://tests.xproc.org/tests/required/err-c0002-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0003 #001
+http://tests.xproc.org/tests/required/err-c0003-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0003 #002
+http://tests.xproc.org/tests/required/err-c0003-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0004 #001
+http://tests.xproc.org/tests/required/err-c0004-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0005 #001
+http://tests.xproc.org/tests/required/err-c0005-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0005 #002
+http://tests.xproc.org/tests/required/err-c0005-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0006 #001
+http://tests.xproc.org/tests/required/err-c0006-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0010 #001
+http://tests.xproc.org/tests/required/err-c0010-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test for err:XC0010 #002
+http://tests.xproc.org/tests/required/err-c0010-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test err:XC0012 (p:directory-list on an inaccessible directory).
+http://tests.xproc.org/tests/required/err-c0012-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:directory-list
+
+[role="fail"]
+=== FAIL Test for err:XC0013 #001
+http://tests.xproc.org/tests/required/err-c0013-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test err:XC0014 #001
+http://tests.xproc.org/tests/required/err-c0014-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test err:XC0014 #002
+http://tests.xproc.org/tests/required/err-c0014-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test err:XC0017 (p:directory-list with a non-directory path).
+http://tests.xproc.org/tests/required/err-c0017-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:directory-list
+
+[role="fail"]
+=== FAIL Test err:XC0020 #001
+http://tests.xproc.org/tests/required/err-c0020-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0020 #003
+http://tests.xproc.org/tests/required/err-c0020-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0020 #004
+http://tests.xproc.org/tests/required/err-c0020-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0020 #005
+http://tests.xproc.org/tests/required/err-c0020-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0020 #006
+http://tests.xproc.org/tests/required/err-c0020-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0020 #007
+http://tests.xproc.org/tests/required/err-c0020-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0022 #001
+http://tests.xproc.org/tests/required/err-c0022-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0023 #004
+http://tests.xproc.org/tests/required/err-c0023-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:make-absolute-uris
+
+[role="fail"]
+=== FAIL Test for err:XC0023 #005
+http://tests.xproc.org/tests/required/err-c0023-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test for err:XC0023 #006
+http://tests.xproc.org/tests/required/err-c0023-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:replace
+
+[role="fail"]
+=== FAIL Test for err:XC0023 #008
+http://tests.xproc.org/tests/required/err-c0023-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unwrap
+
+[role="fail"]
+=== FAIL Test for err:XC0023 #009
+http://tests.xproc.org/tests/required/err-c0023-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test for err:XC0027 - 001
+http://tests.xproc.org/tests/required/err-c0027-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0027 - 002
+http://tests.xproc.org/tests/required/err-c0027-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0027 - 003
+http://tests.xproc.org/tests/required/err-c0027-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XC0028 #001
+http://tests.xproc.org/tests/required/err-c0028-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0029 #001
+http://tests.xproc.org/tests/required/err-c0029-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test err:XC0029 #002
+http://tests.xproc.org/tests/required/err-c0029-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test err:XC0030 #001
+http://tests.xproc.org/tests/required/err-c0030-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0039 - 001
+http://tests.xproc.org/tests/required/err-c0039-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XC0040 #001
+http://tests.xproc.org/tests/required/err-c0040-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test for err:XC0050 - 001
+http://tests.xproc.org/tests/required/err-c0050-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step store
+
+[role="fail"]
+=== FAIL Test err:XC0051 #001
+http://tests.xproc.org/tests/required/err-c0051-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test err:XC0052 #001
+http://tests.xproc.org/tests/required/err-c0052-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XC0052 #002
+http://tests.xproc.org/tests/required/err-c0052-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test for err:XC0056 - 001
+http://tests.xproc.org/tests/required/err-c0056-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0056 - 002
+http://tests.xproc.org/tests/required/err-c0056-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XC0058 - 001
+http://tests.xproc.org/tests/required/err-c0058-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+
+[role="fail"]
+=== FAIL Test err:XC0059 #001
+http://tests.xproc.org/tests/required/err-c0059-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XC0062 #001
+http://tests.xproc.org/tests/required/err-c0062-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0001 #001
+http://tests.xproc.org/tests/required/err-d0001-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0001 #002
+http://tests.xproc.org/tests/required/err-d0001-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unwrap
+
+[role="fail"]
+=== FAIL Test err:XD0003
+http://tests.xproc.org/tests/required/err-d0003-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0003 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0003: 
+
+==== Error message
+
+
+* XS0003: the viewport source does not provide exactly one document but 2
+
+[role="fail"]
+=== FAIL Test err:XD0004
+http://tests.xproc.org/tests/required/err-d0004-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0004 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0004: 
+
+==== Error message
+
+
+* XS0004: no subpipeline is selected by the p:choose and no default is provided
+
+[role="fail"]
+=== FAIL Test err:XD0005
+http://tests.xproc.org/tests/required/err-d0005-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test err:XD0007 (p:viewport)
+http://tests.xproc.org/tests/required/err-d0007-002.xml
+
+Error: IllegalArgumentException was raised. 
+
+* IllegalArgumentException: 
+
+==== Error message
+
+
+* expected one element but was: <<foo/>, <bar/>>
+
+[role="fail"]
+=== FAIL Test err:XD0008
+http://tests.xproc.org/tests/required/err-d0008-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0009
+http://tests.xproc.org/tests/required/err-d0009-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0009
+http://tests.xproc.org/tests/required/err-d0009-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0010
+http://tests.xproc.org/tests/required/err-d0010-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0010 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0010: 
+
+==== Error message
+
+
+* XS0010: the match expression on p:viewport does not match an element or document: PROCESSING_INSTRUCTION
+
+[role="fail"]
+=== FAIL Test for inaccessible URIs (err:XD0011)
+http://tests.xproc.org/tests/required/err-d0011-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step identity
+
+[role="fail"]
+=== FAIL Test for err:XD0011 - 002
+http://tests.xproc.org/tests/required/err-d0011-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XD0011 - 003
+http://tests.xproc.org/tests/required/err-d0011-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0012 #001
+http://tests.xproc.org/tests/required/err-d0012-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0012 #003
+http://tests.xproc.org/tests/required/err-d0012-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test err:XD0013 #001
+http://tests.xproc.org/tests/required/err-d0013-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0013 #002
+http://tests.xproc.org/tests/required/err-d0013-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XD0014 #001
+http://tests.xproc.org/tests/required/err-d0014-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test for err:XD0014 #002
+http://tests.xproc.org/tests/required/err-d0014-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test for err:XD0015 #001
+http://tests.xproc.org/tests/required/err-d0015-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: p:system-property('unbound:limit') XPath syntax error at char 34 in {...stem-property('unbound:limi...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()
+
+[role="fail"]
+=== FAIL Test for err:XD0018 #001
+http://tests.xproc.org/tests/required/err-d0018-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XD0019
+http://tests.xproc.org/tests/required/err-d0019-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0020 #001
+http://tests.xproc.org/tests/required/err-d0020-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:serialization
+
+[role="fail"]
+=== FAIL Test err:XD0020 #002
+http://tests.xproc.org/tests/required/err-d0020-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step store
+
+[role="fail"]
+=== FAIL Test err:XD0021 #001
+http://tests.xproc.org/tests/required/err-d0021-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XD0021 - 002
+http://tests.xproc.org/tests/required/err-d0021-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XD0022 #001
+http://tests.xproc.org/tests/required/err-d0022-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option psvi-required is not declared on this step type (ex:test)
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #001
+http://tests.xproc.org/tests/required/err-d0023-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: foo^bar XPath syntax error at char 0 in {foo^}: Invalid character '^' in expression
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #002
+http://tests.xproc.org/tests/required/err-d0023-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: $foo Undeclared variable in XPath expression: $foo
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #003
+http://tests.xproc.org/tests/required/err-d0023-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: i-do-not-exist() XPath syntax error at char 16 in {i-do-not-exist()}: Unknown system function i-do-not-exist()
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #004
+http://tests.xproc.org/tests/required/err-d0023-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #005
+http://tests.xproc.org/tests/required/err-d0023-005.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: $optional-no-default Undeclared variable in XPath expression: $optional-no-default
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #006
+http://tests.xproc.org/tests/required/err-d0023-006.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: $opt2 Undeclared variable in XPath expression: $opt2
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #007
+http://tests.xproc.org/tests/required/err-d0023-007.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: $var2 Undeclared variable in XPath expression: $var2
+
+[role="fail"]
+=== FAIL Test err:XD0023 - #008
+http://tests.xproc.org/tests/required/err-d0023-008.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: /foo:document/bar:title
+
+[role="fail"]
+=== FAIL Test for err:XD0025 #001
+http://tests.xproc.org/tests/required/err-d0025-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XD0026 #002
+http://tests.xproc.org/tests/required/err-d0026-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XD0026 #003
+http://tests.xproc.org/tests/required/err-d0026-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XD0026 #004
+http://tests.xproc.org/tests/required/err-d0026-004.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test for err:XD0027 #001
+http://tests.xproc.org/tests/required/err-d0027-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option xpath-version is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test err:XC0028 #001
+http://tests.xproc.org/tests/required/err-d0028-001.xml
+
+Error: IllegalArgumentException was raised. 
+
+* IllegalArgumentException: 
+
+==== Error message
+
+
+* net.sf.saxon.trans.XPathException: Invalid QName {not QName}
+
+[role="fail"]
+=== FAIL Test err:XD0030 - 001
+http://tests.xproc.org/tests/required/err-d0030-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xquery
+
+[role="fail"]
+=== FAIL Test err:XD0030 - 002
+http://tests.xproc.org/tests/required/err-d0030-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xsl-formatter
+
+[role="fail"]
+=== FAIL Test err:XD0031 #001
+http://tests.xproc.org/tests/required/err-d0031-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XD0033 #001
+http://tests.xproc.org/tests/required/err-d0033-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: p:value-available('not-available') XPath syntax error at char 34 in {...lue-available('not-availabl...}: Prefix p has not been declared
+
+[role="fail"]
+=== FAIL Test err:XD0033 #002
+http://tests.xproc.org/tests/required/err-d0033-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: p:value-available('not-available', true()) XPath syntax error at char 42 in {...lable('not-available', true...}: Prefix p has not been declared
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 001
+http://tests.xproc.org/tests/required/err-d0034-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0034 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0034: 
+
+==== Error message
+
+
+* XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 002
+http://tests.xproc.org/tests/required/err-d0034-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0034 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0034: 
+
+==== Error message
+
+
+* XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 005
+http://tests.xproc.org/tests/required/err-d0034-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 006
+http://tests.xproc.org/tests/required/err-d0034-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 007
+http://tests.xproc.org/tests/required/err-d0034-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 008
+http://tests.xproc.org/tests/required/err-d0034-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 009
+http://tests.xproc.org/tests/required/err-d0034-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 010
+http://tests.xproc.org/tests/required/err-d0034-010.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 013
+http://tests.xproc.org/tests/required/err-d0034-013.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0034 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0034: 
+
+==== Error message
+
+
+* XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).
+
+[role="fail"]
+=== FAIL Test err:XD0034 - 014
+http://tests.xproc.org/tests/required/err-d0034-014.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0034 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0034: 
+
+==== Error message
+
+
+* XS0034: It is a dynamic error to specify a new namespace or prefix if the lexical value of the specified name contains a colon (or if no wrapper is explicitly specified).
+
+[role="fail"]
+=== FAIL Test for err:XS0001
+http://tests.xproc.org/tests/required/err-s0001-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = following/result ; ports = {pipeline/source=EnvironmentPort[pipeline/source], pipeline/result=EnvironmentPort[pipeline/result]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #002
+http://tests.xproc.org/tests/required/err-s0001-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = step/result ; ports = {pipeline/source=EnvironmentPort[pipeline/source], pipeline/result=EnvironmentPort[pipeline/result]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #004
+http://tests.xproc.org/tests/required/err-s0001-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #005
+http://tests.xproc.org/tests/required/err-s0001-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = step/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #006
+http://tests.xproc.org/tests/required/err-s0001-006.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #007
+http://tests.xproc.org/tests/required/err-s0001-007.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = step/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #008
+http://tests.xproc.org/tests/required/err-s0001-008.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #010
+http://tests.xproc.org/tests/required/err-s0001-010.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = following/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0001 #011
+http://tests.xproc.org/tests/required/err-s0001-011.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = following/result ; ports = {step/xpath-context=EnvironmentPort[step/xpath-context], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test err:XS0003 #001
+http://tests.xproc.org/tests/required/err-s0003-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XS0003 #004
+http://tests.xproc.org/tests/required/err-s0003-004.xml
+
+Error: {http://example.com/ns}foo was raised. 
+
+* //example.com/ns}foo: 
+
+==== Error message
+
+
+* XS0000: !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XS0004 #001
+http://tests.xproc.org/tests/required/err-s0004-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test for err:XS0004 #002
+http://tests.xproc.org/tests/required/err-s0004-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* step = _ ; variable = _ ; variables = [OPTION[_]]
+
+[role="fail"]
+=== FAIL Test for err:XS0004 #003
+http://tests.xproc.org/tests/required/err-s0004-003.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* step = !1 ; variable = varName ; variables = [VARIABLE[varName][select=0]]
+
+[role="fail"]
+=== FAIL Test for err:XS0004 #005
+http://tests.xproc.org/tests/required/err-s0004-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* step = !1 ; variable = foo ; variables = [OPTION[foo][select='bar']]
+
+[role="fail"]
+=== FAIL Test err:XS0005 #002
+http://tests.xproc.org/tests/required/err-s0005-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step xslt
+
+[role="fail"]
+=== FAIL Test for err:XS0010 - 001
+http://tests.xproc.org/tests/required/err-s0010-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test for err:XS0010 - 002
+http://tests.xproc.org/tests/required/err-s0010-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option mynonexistentoption is not declared on this step type (p:count)
+
+[role="fail"]
+=== FAIL Test err:XS0011 #001
+http://tests.xproc.org/tests/required/err-s0011-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = INPUT ; with-port = OUTPUT
+
+[role="fail"]
+=== FAIL Test err:XS0011 #002
+http://tests.xproc.org/tests/required/err-s0011-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = INPUT ; with-port = PARAMETER
+
+[role="fail"]
+=== FAIL Test for err:XS0019 - 001
+http://tests.xproc.org/tests/required/err-s0019-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = identity/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0020 - 002
+http://tests.xproc.org/tests/required/err-s0020-002.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test for err:XS0020 - 003
+http://tests.xproc.org/tests/required/err-s0020-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XS0022 #001
+http://tests.xproc.org/tests/required/err-s0022-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = foo/result ; ports = {!1.1.1/source=EnvironmentPort[!1.1.1/source], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0022
+http://tests.xproc.org/tests/required/err-s0022-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = _/_ ; ports = {pipeline/source=EnvironmentPort[pipeline/source], _/result=EnvironmentPort[_/result], _/source=EnvironmentPort[_/source], pipeline/result=EnvironmentPort[pipeline/result]}
+
+[role="fail"]
+=== FAIL Test for err:XS0022 #005
+http://tests.xproc.org/tests/required/err-s0022-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = loop/current ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0022 #006
+http://tests.xproc.org/tests/required/err-s0022-006.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = viewport/current ; ports = {!1.1.1/viewport-source=EnvironmentPort[!1.1.1/viewport-source], !1.1.1/result=EnvironmentPort[!1.1.1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0026 #001
+http://tests.xproc.org/tests/required/err-s0026-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:log
+
+[role="fail"]
+=== FAIL Test for err:XS0026 #002
+http://tests.xproc.org/tests/required/err-s0026-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:log
+
+[role="fail"]
+=== FAIL Test for err:XS0027
+http://tests.xproc.org/tests/required/err-s0027-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test err:XS0028 #002
+http://tests.xproc.org/tests/required/err-s0028-002.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test for err:XS0031 - 002
+http://tests.xproc.org/tests/required/err-s0031-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test for err:XS0034 - 001
+http://tests.xproc.org/tests/required/err-s0034-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XS0034 - 002
+http://tests.xproc.org/tests/required/err-s0034-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test err:XS0036 #001
+http://tests.xproc.org/tests/required/err-s0036-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* java.lang.IllegalStateException
+
+[role="fail"]
+=== FAIL Test for err:XS0038 - 001
+http://tests.xproc.org/tests/required/err-s0038-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test for err:XS0038 - 002
+http://tests.xproc.org/tests/required/err-s0038-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0018 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0018: 
+
+==== Error message
+
+
+* XS0018: Option myvalue is required and is missing a value
+
+[role="fail"]
+=== FAIL Test for err:XS0039 - 001
+http://tests.xproc.org/tests/required/err-s0039-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:serialization
+
+[role="fail"]
+=== FAIL Test for err:XS0039 - 002
+http://tests.xproc.org/tests/required/err-s0039-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:serialization
+
+[role="fail"]
+=== FAIL Test err:XS0041 #001
+http://tests.xproc.org/tests/required/err-s0041-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XS0044 #0003
+http://tests.xproc.org/tests/required/err-s0044-003.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = count/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for err:XS0048 - 001
+http://tests.xproc.org/tests/required/err-s0048-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* java.lang.IllegalStateException
+
+[role="fail"]
+=== FAIL Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XS0051 #001
+http://tests.xproc.org/tests/required/err-s0051-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XS0052 #001
+http://tests.xproc.org/tests/required/err-s0052-001.xml
+
+Error: PipelineException was raised. 
+
+* PipelineException: 
+
+==== Error message
+
+
+* net.sf.saxon.s9api.SaxonApiException: java.io.FileNotFoundException: http://tests.xproc.org/tests/required/i-do-not-exist.xml
+
+[role="fail"]
+=== FAIL Test err:XS0052 #002
+http://tests.xproc.org/tests/required/err-s0052-002.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test err:XS0053 #001
+http://tests.xproc.org/tests/required/err-s0053-001.xml
+
+Error: NullPointerException was raised. 
+
+* NullPointerException: 
+
+==== Error message
+
+
+* null key
+
+[role="fail"]
+=== FAIL Test err:XS0055 #001
+http://tests.xproc.org/tests/required/err-s0055-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test err:XS0057 #001
+http://tests.xproc.org/tests/required/err-s0057-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test err:XS0057 #002
+http://tests.xproc.org/tests/required/err-s0057-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test err:XS0058 #001
+http://tests.xproc.org/tests/required/err-s0058-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test for err:XS0059 #001
+http://tests.xproc.org/tests/required/err-s0059-001.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test err:XS0061 #001
+http://tests.xproc.org/tests/required/err-s0061-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option use-when is not declared on this step type (p:identity)
+
+[role="fail"]
+=== FAIL Test p:error #002
+http://tests.xproc.org/tests/required/error-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1.1.1
+
+[role="fail"]
+=== FAIL Test p:error #003
+http://tests.xproc.org/tests/required/error-003.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = catch/error ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test escape-markup #001
+http://tests.xproc.org/tests/required/escape-markup-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:escape-markup
+
+[role="fail"]
+=== FAIL Test evaluation order #001
+http://tests.xproc.org/tests/required/evaluation-order-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = i2/result ; ports = {main/source=EnvironmentPort[main/source]}
+
+[role="fail"]
+=== FAIL Test evaluation order #002
+http://tests.xproc.org/tests/required/evaluation-order-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = i3/result ; ports = {main/source=EnvironmentPort[main/source]}
+
+[role="fail"]
+=== FAIL Test evaluation order #003
+http://tests.xproc.org/tests/required/evaluation-order-003.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = i3/result ; ports = {i1/result=EnvironmentPort[i1/result], i2/result=EnvironmentPort[i2/result], i2/source=EnvironmentPort[i2/source], i1/source=EnvironmentPort[i1/source], main/source=EnvironmentPort[main/source]}
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-001
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-002
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-003
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-004
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-005
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-005.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-006
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-006.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-007
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-007.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-008
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-008.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-009
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-009.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (null)
+
+[role="fail"]
+=== FAIL Test exclude-inline-prefixes-010
+http://tests.xproc.org/tests/required/exclude-inline-prefixes-010.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option exclude-inline-prefixes is not declared on this step type (ex:foo)
+
+[role="fail"]
+=== FAIL Test fibonacci
+http://tests.xproc.org/tests/required/fibonacci.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: cl:make-sequence
+
+[role="fail"]
+=== FAIL Test filter-001
+http://tests.xproc.org/tests/required/filter-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test filter-002
+http://tests.xproc.org/tests/required/filter-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test filter-003
+http://tests.xproc.org/tests/required/filter-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test for-each #003
+http://tests.xproc.org/tests/required/for-each-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:iteration-position() = 1
+
+[role="fail"]
+=== FAIL Test for-each #005
+http://tests.xproc.org/tests/required/for-each-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = loop/current ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for-each #007
+http://tests.xproc.org/tests/required/for-each-007.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = identity/result ; ports = {loop/iteration-source=EnvironmentPort[loop/iteration-source], loop/result=EnvironmentPort[loop/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test for-each #009
+http://tests.xproc.org/tests/required/for-each-009.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <wrapper>
+   <bar/>
+   <bar/>
+</wrapper>
+  
+l|<wrapper
+         xmlns:t="http://xproc.org/ns/testsuite"
+         xmlns:p="http://www.w3.org/ns/xproc"
+         xmlns:c="http://www.w3.org/ns/xproc-step"
+         xmlns:err="http://www.w3.org/ns/xproc-error">
+   <foo/>
+   <foo/>
+</wrapper>
+|====================
+
+[role="fail"]
+=== FAIL Test for-each #011
+http://tests.xproc.org/tests/required/for-each-011.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: p:iteration-position() XPath syntax error at char 22 in {p:iteration-position()}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()
+
+[role="fail"]
+=== FAIL Test http-request #001
+http://tests.xproc.org/tests/required/http-request-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #002
+http://tests.xproc.org/tests/required/http-request-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #003
+http://tests.xproc.org/tests/required/http-request-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #004
+http://tests.xproc.org/tests/required/http-request-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #005
+http://tests.xproc.org/tests/required/http-request-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #006
+http://tests.xproc.org/tests/required/http-request-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #007
+http://tests.xproc.org/tests/required/http-request-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #008
+http://tests.xproc.org/tests/required/http-request-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #009
+http://tests.xproc.org/tests/required/http-request-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #010
+http://tests.xproc.org/tests/required/http-request-010.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #011
+http://tests.xproc.org/tests/required/http-request-011.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #012
+http://tests.xproc.org/tests/required/http-request-012.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #009
+http://tests.xproc.org/tests/required/http-request-013.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request #014
+http://tests.xproc.org/tests/required/http-request-014.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test p:import #001
+http://tests.xproc.org/tests/required/import-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = main/source ; ports = {!1.1.2/result=EnvironmentPort[!1.1.2/result], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source], !1.1.2/source=EnvironmentPort[!1.1.2/source]}
+
+[role="fail"]
+=== FAIL Test p:import #002
+http://tests.xproc.org/tests/required/import-002.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<been-there/>
+l|
+    <doc/>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test p:import #007
+http://tests.xproc.org/tests/required/import-007.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: test:step
+
+[role="fail"]
+=== FAIL Test p:import #009
+http://tests.xproc.org/tests/required/import-009.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('foo:imported') and not(p:step-available('foo:nested')) and not(p:step-available('test:step'))
+
+[role="fail"]
+=== FAIL Test input-007
+http://tests.xproc.org/tests/required/input-007.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* result = [] expected:<1> but was:<0>
+
+[role="fail"]
+=== FAIL Test input-008
+http://tests.xproc.org/tests/required/input-008.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <p>Some other text.</p>
+    </doc>
+  
+l|<p>Some other text.</p>
+|====================
+
+[role="fail"]
+=== FAIL Test input-009
+http://tests.xproc.org/tests/required/input-009.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <p>Some other text.</p>
+    </doc>
+  
+l|<p>Some other text.</p>
+|====================
+
+[role="fail"]
+=== FAIL Test iteration #001
+http://tests.xproc.org/tests/required/iteration-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat(p:iteration-position(), ' of ', p:iteration-size()) XPath syntax error at char 29 in {...p:iteration-position(), ' o...}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()
+
+[role="fail"]
+=== FAIL Test iteration #002
+http://tests.xproc.org/tests/required/iteration-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:iteration-position(), ' of ', p:iteration-size(),'"') XPath syntax error at char 33 in {...p:iteration-position(), ' o...}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()
+
+[role="fail"]
+=== FAIL Test labelelements001
+http://tests.xproc.org/tests/required/labelelements-001.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>4</c:result>
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">0</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test p:label-elements #002
+http://tests.xproc.org/tests/required/labelelements-002.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <div>
+        <p test:pid="_foo_1_bar_">Some para.</p>
+        <p test:pid="_foo_2_bar_">Some other para.</p>
+      </div>
+    </doc>
+  
+l|
+    <doc>
+      <div>
+        <p>Some para.</p>
+        <p>Some other para.</p>
+      </div>
+    </doc>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test p:label-elements #003
+http://tests.xproc.org/tests/required/labelelements-003.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc xml:base="http://example.com/base/">
+      <chap xml:base="http://foo.com/1">
+        <para>...</para>
+      </chap>
+      <chap xml:base="http://foo.com/2">
+        <para>...</para>
+      </chap>
+    </doc>
+  
+l|
+    <doc xml:base="http://example.com/base/">
+      <chap xml:base="http://example.com/base/chaps/">
+        <para>...</para>
+      </chap>
+      <chap>
+        <para>...</para>
+      </chap>
+    </doc>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test labelelements #004
+http://tests.xproc.org/tests/required/labelelements-004.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>4</c:result>
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">0</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test p:label-elements #005
+http://tests.xproc.org/tests/required/labelelements-005.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <div>
+        <p test:pid="_foo_1_bar_">Some para.</p>
+        <p test:pid="_foo_2_bar_">Some other para.</p>
+      </div>
+    </doc>
+  
+l|
+    <doc>
+      <div>
+        <p>Some para.</p>
+        <p>Some other para.</p>
+      </div>
+    </doc>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test labelelements #006
+http://tests.xproc.org/tests/required/labelelements-006.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>3</c:result>
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">0</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test labelelements #007
+http://tests.xproc.org/tests/required/labelelements-007.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <document>
+      <element baz:foo="_1"/>
+    </document>
+  
+l|
+    <document>
+      <element/>
+    </document>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test labelelements #008
+http://tests.xproc.org/tests/required/labelelements-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:escape-markup
+
+[role="fail"]
+=== FAIL Test labelelements #009
+http://tests.xproc.org/tests/required/labelelements-009.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <document>
+      <element bar:baz="baz" bar2:foo="_1"/>
+    </document>
+  
+l|
+    <document>
+      <element bar:baz="baz"/>
+    </document>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test p:log #001
+http://tests.xproc.org/tests/required/log-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:log
+
+[role="fail"]
+=== FAIL Test p:log #002
+http://tests.xproc.org/tests/required/log-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:log
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #001
+http://tests.xproc.org/tests/required/make-absolute-uris-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:make-absolute-uris
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #002
+http://tests.xproc.org/tests/required/make-absolute-uris-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:make-absolute-uris
+
+[role="fail"]
+=== FAIL Test make-absolute-uris #003
+http://tests.xproc.org/tests/required/make-absolute-uris-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:make-absolute-uris
+
+[role="fail"]
+=== FAIL Test make-sequence
+http://tests.xproc.org/tests/required/make-sequence.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: cl:make-sequence
+
+[role="fail"]
+=== FAIL Test http-request multipart #001
+http://tests.xproc.org/tests/required/multipart-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request multipart #002
+http://tests.xproc.org/tests/required/multipart-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request multipart #003
+http://tests.xproc.org/tests/required/multipart-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (exclude-inline-prefixes) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test http-request multipart #004
+http://tests.xproc.org/tests/required/multipart-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test http-request multipart #005
+http://tests.xproc.org/tests/required/multipart-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:http-request
+
+[role="fail"]
+=== FAIL Test namespace-rename-001
+http://tests.xproc.org/tests/required/namespace-rename-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #002
+http://tests.xproc.org/tests/required/namespace-rename-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #003
+http://tests.xproc.org/tests/required/namespace-rename-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #004
+http://tests.xproc.org/tests/required/namespace-rename-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #005
+http://tests.xproc.org/tests/required/namespace-rename-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #006
+http://tests.xproc.org/tests/required/namespace-rename-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #007
+http://tests.xproc.org/tests/required/namespace-rename-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #008
+http://tests.xproc.org/tests/required/namespace-rename-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #009
+http://tests.xproc.org/tests/required/namespace-rename-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #010
+http://tests.xproc.org/tests/required/namespace-rename-010.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #011
+http://tests.xproc.org/tests/required/namespace-rename-011.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #012
+http://tests.xproc.org/tests/required/namespace-rename-012.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #013
+http://tests.xproc.org/tests/required/namespace-rename-013.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespace-rename #014
+http://tests.xproc.org/tests/required/namespace-rename-014.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test namespace-rename-015
+http://tests.xproc.org/tests/required/namespace-rename-015.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test namespace-rename-016
+http://tests.xproc.org/tests/required/namespace-rename-016.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test namespace-rename-017
+http://tests.xproc.org/tests/required/namespace-rename-017.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:namespace-rename
+
+[role="fail"]
+=== FAIL Test p:namespaces #001
+http://tests.xproc.org/tests/required/namespaces-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test p:namespaces #002
+http://tests.xproc.org/tests/required/namespaces-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test p:namespaces #003
+http://tests.xproc.org/tests/required/namespaces-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test p:namespaces #004
+http://tests.xproc.org/tests/required/namespaces-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1.1.1
+
+[role="fail"]
+=== FAIL Test p:namespaces #005
+http://tests.xproc.org/tests/required/namespaces-005.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: count(//pfx:*) XPath syntax error at char 13 in {count(//pfx:*)}: Prefix pfx has not been declared
+
+[role="fail"]
+=== FAIL Test p:namespaces #006
+http://tests.xproc.org/tests/required/namespaces-006.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test pack #001
+http://tests.xproc.org/tests/required/pack-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test pack #002
+http://tests.xproc.org/tests/required/pack-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test pack #003
+http://tests.xproc.org/tests/required/pack-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test pack #004
+http://tests.xproc.org/tests/required/pack-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test pack #005
+http://tests.xproc.org/tests/required/pack-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test pack #006
+http://tests.xproc.org/tests/required/pack-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:pack
+
+[role="fail"]
+=== FAIL Test param-003
+http://tests.xproc.org/tests/required/param-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test param-004
+http://tests.xproc.org/tests/required/param-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test parameters-001
+http://tests.xproc.org/tests/required/parameters-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test parameters-002
+http://tests.xproc.org/tests/required/parameters-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:parameters
+
+[role="fail"]
+=== FAIL Test p:pipeinfo-001
+http://tests.xproc.org/tests/required/pipeinfo-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step identity
+
+[role="fail"]
+=== FAIL Test preserving base URI #001
+http://tests.xproc.org/tests/required/preserve-base-uri-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:base-uri(/doc/chap),'"') XPath syntax error at char 32 in {...('"',p:base-uri(/doc/chap),...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()
+
+[role="fail"]
+=== FAIL Test preserving base URI #002
+http://tests.xproc.org/tests/required/preserve-base-uri-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-001
+http://tests.xproc.org/tests/required/rename-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-002
+http://tests.xproc.org/tests/required/rename-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-003
+http://tests.xproc.org/tests/required/rename-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-004
+http://tests.xproc.org/tests/required/rename-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-005
+http://tests.xproc.org/tests/required/rename-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-006
+http://tests.xproc.org/tests/required/rename-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test rename-007
+http://tests.xproc.org/tests/required/rename-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:rename
+
+[role="fail"]
+=== FAIL Test replace001
+http://tests.xproc.org/tests/required/replace-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:replace
+
+[role="fail"]
+=== FAIL Test resolve-uri #001
+http://tests.xproc.org/tests/required/resolve-uri-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:resolve-uri('test'),'"') XPath syntax error at char 32 in {...('"',p:resolve-uri('test'),...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}resolve-uri()
+
+[role="fail"]
+=== FAIL Test resolve-uri #002
+http://tests.xproc.org/tests/required/resolve-uri-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:resolve-uri('test', p:base-uri(/doc/title)),'"') XPath syntax error at char 55 in {...est', p:base-uri(/doc/title...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}base-uri()
+
+[role="fail"]
+=== FAIL Test split-sequence-001
+http://tests.xproc.org/tests/required/split-sequence-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test split-sequence-002
+http://tests.xproc.org/tests/required/split-sequence-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test split-sequence-003
+http://tests.xproc.org/tests/required/split-sequence-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test tail001
+http://tests.xproc.org/tests/required/split-sequence-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test split-sequence 005
+http://tests.xproc.org/tests/required/split-sequence-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test split-sequence 006
+http://tests.xproc.org/tests/required/split-sequence-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test split-sequence #007
+http://tests.xproc.org/tests/required/split-sequence-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:split-sequence
+
+[role="fail"]
+=== FAIL Test step-available #001
+http://tests.xproc.org/tests/required/step-available-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('ex:unimplemented')
+
+[role="fail"]
+=== FAIL Test step-available #002
+http://tests.xproc.org/tests/required/step-available-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('p:identity')
+
+[role="fail"]
+=== FAIL Test step-available #003
+http://tests.xproc.org/tests/required/step-available-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('ex:user-defined')
+
+[role="fail"]
+=== FAIL Test step-available #004
+http://tests.xproc.org/tests/required/step-available-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('ex:user-defined2')
+
+[role="fail"]
+=== FAIL Test step-available #005
+http://tests.xproc.org/tests/required/step-available-005.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('ex:user-defined-nested')
+
+[role="fail"]
+=== FAIL Test step-available #006
+http://tests.xproc.org/tests/required/step-available-006.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:step-available('test:imported')
+
+[role="fail"]
+=== FAIL Test the p:store step
+http://tests.xproc.org/tests/required/store-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step store
+
+[role="fail"]
+=== FAIL Test p:string-replace #003
+http://tests.xproc.org/tests/required/string-replace-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test system-property-001
+http://tests.xproc.org/tests/required/system-property-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:system-property('p:episode'), '"') XPath syntax error at char 41 in {...tem-property('p:episode'), ...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()
+
+[role="fail"]
+=== FAIL Test system-property-002
+http://tests.xproc.org/tests/required/system-property-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: concat('"',p:system-property('p:unknown-value'), '"') XPath syntax error at char 47 in {...operty('p:unknown-value'), ...}: Cannot find a matching 1-argument function named {http://www.w3.org/ns/xproc}system-property()
+
+[role="fail"]
+=== FAIL Test try/catch #002
+http://tests.xproc.org/tests/required/try-002.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<p>p:compare failed</p>
+
+l|<p>p:compare succeeded</p>
+|====================
+
+[role="fail"]
+=== FAIL Test try/catch #003
+http://tests.xproc.org/tests/required/try-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1.1.1
+
+[role="fail"]
+=== FAIL Test try/catch #004
+http://tests.xproc.org/tests/required/try-004.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <p>p:compare failed at the nested level</p>
+
+l|
+<doc/>
+
+|====================
+
+[role="fail"]
+=== FAIL Test try/catch #005
+http://tests.xproc.org/tests/required/try-005.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1.1.1
+
+[role="fail"]
+=== FAIL Test unescapemarkup-001
+http://tests.xproc.org/tests/required/unescapemarkup-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescapemarkup-002
+http://tests.xproc.org/tests/required/unescapemarkup-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescape markup-003
+http://tests.xproc.org/tests/required/unescapemarkup-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescapemarkup-004
+http://tests.xproc.org/tests/required/unescapemarkup-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescapemarkup-005
+http://tests.xproc.org/tests/required/unescapemarkup-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescapemarkup-005
+http://tests.xproc.org/tests/required/unescapemarkup-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unescapemarkup-007
+http://tests.xproc.org/tests/required/unescapemarkup-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unescape-markup
+
+[role="fail"]
+=== FAIL Test unwrap001
+http://tests.xproc.org/tests/required/unwrap-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unwrap
+
+[role="fail"]
+=== FAIL Test unwrap 002
+http://tests.xproc.org/tests/required/unwrap-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:unwrap
+
+[role="fail"]
+=== FAIL Test use-when #001
+http://tests.xproc.org/tests/required/use-when-001.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option use-when is not declared on this step type (p:identity)
+
+[role="fail"]
+=== FAIL Test use-when #003
+http://tests.xproc.org/tests/required/use-when-003.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: ex:unsupported-step
+
+[role="fail"]
+=== FAIL Test value-available #001
+http://tests.xproc.org/tests/required/value-available-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:value-available('opt')
+
+[role="fail"]
+=== FAIL Test value-available #002
+http://tests.xproc.org/tests/required/value-available-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:value-available('ex:opt')
+
+[role="fail"]
+=== FAIL Test value-available #003
+http://tests.xproc.org/tests/required/value-available-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:value-available('ex:opt')
+
+[role="fail"]
+=== FAIL Test value-available #004
+http://tests.xproc.org/tests/required/value-available-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:value-available('opt', false())
+
+[role="fail"]
+=== FAIL Test value-available #005
+http://tests.xproc.org/tests/required/value-available-005.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test value-available #006
+http://tests.xproc.org/tests/required/value-available-006.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test version-available #001
+http://tests.xproc.org/tests/required/version-available-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:version-available(1.0)
+
+[role="fail"]
+=== FAIL Test version-available #002
+http://tests.xproc.org/tests/required/version-available-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:version-available(123.45)
+
+[role="fail"]
+=== FAIL Test versioning #001
+http://tests.xproc.org/tests/required/versioning-001.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = identity/new-output-port ; ports = {identity/source=EnvironmentPort[identity/source], !1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source], identity/result=EnvironmentPort[identity/result], !1.1.2/source=EnvironmentPort[!1.1.2/source]}
+
+[role="fail"]
+=== FAIL Test versioning #002
+http://tests.xproc.org/tests/required/versioning-002.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = id2/new-output-port ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test versioning #003
+http://tests.xproc.org/tests/required/versioning-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* net.sf.saxon.event.NoOpenStartTagException: Cannot create an attribute node (new-attribute) whose parent is a document node
+
+[role="fail"]
+=== FAIL Test versioning #004
+http://tests.xproc.org/tests/required/versioning-004.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0031 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0031: 
+
+==== Error message
+
+
+* XS0031: Option new-option is not declared on this step type (p:identity)
+
+[role="fail"]
+=== FAIL Test versioning #005
+http://tests.xproc.org/tests/required/versioning-005.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test versioning #006
+http://tests.xproc.org/tests/required/versioning-006.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test versioning #007
+http://tests.xproc.org/tests/required/versioning-007.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* java.lang.AssertionError
+
+[role="fail"]
+=== FAIL Test viewport #003
+http://tests.xproc.org/tests/required/viewport-003.xml
+
+Error: NoSuchElementException was raised. 
+
+* NoSuchElementException: 
+
+==== Error message
+
+
+* java.util.NoSuchElementException
+
+[role="fail"]
+=== FAIL Test viewport #005
+http://tests.xproc.org/tests/required/viewport-005.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:iteration-position() = 1
+
+[role="fail"]
+=== FAIL Test viewport #006
+http://tests.xproc.org/tests/required/viewport-006.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <foo/>
+      <foo/>
+      <foo/>
+      <foo/>
+    </doc>
+  
+l|
+    <doc>
+      <para>Some paragraph.</para>
+      <para>Some paragraph.</para>
+      <para>Some paragraph.</para>
+      <para>
+        <para>Nested paragraph.</para>
+      </para>
+    </doc>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test viewport #007
+http://tests.xproc.org/tests/required/viewport-007.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <doc>
+      <foo/>
+      <bar/>
+      <foo/>
+      <bar/>
+      <foo/>
+      <bar/>
+      <foo/>
+      <bar/>
+    </doc>
+  
+l|
+    <doc>
+      <para>Some paragraph.</para>
+      <para>Some paragraph.</para>
+      <para>Some paragraph.</para>
+      <para>
+        <para>Nested paragraph.</para>
+      </para>
+    </doc>
+  
+|====================
+
+[role="fail"]
+=== FAIL Test viewport #008
+http://tests.xproc.org/tests/required/viewport-008.xml
+
+Error: AssertionError was raised. 
+
+* AssertionError: 
+
+==== Error message
+
+
+* port = identity1/result ; ports = {!1/result=EnvironmentPort[!1/result], !1/source=EnvironmentPort[!1/source]}
+
+[role="fail"]
+=== FAIL Test viewport #011
+http://tests.xproc.org/tests/required/viewport-011.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0023 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0023: 
+
+==== Error message
+
+
+* XS0023: XPath expression cannot be evaluated: p:iteration-position() XPath syntax error at char 22 in {p:iteration-position()}: Cannot find a matching 0-argument function named {http://www.w3.org/ns/xproc}iteration-position()
+
+[role="fail"]
+=== FAIL Test wrap001
+http://tests.xproc.org/tests/required/wrap-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-002
+http://tests.xproc.org/tests/required/wrap-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-003
+http://tests.xproc.org/tests/required/wrap-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test for p:wrap #004
+http://tests.xproc.org/tests/required/wrap-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test for p:wrap #005
+http://tests.xproc.org/tests/required/wrap-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-006
+http://tests.xproc.org/tests/required/wrap-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-007
+http://tests.xproc.org/tests/required/wrap-007.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-008
+http://tests.xproc.org/tests/required/wrap-008.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-009
+http://tests.xproc.org/tests/required/wrap-009.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-010
+http://tests.xproc.org/tests/required/wrap-010.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-011
+http://tests.xproc.org/tests/required/wrap-011.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test wrap-sequence-002
+http://tests.xproc.org/tests/required/wrap-sequence-002.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+<c:result>3</c:result>
+
+l|<c:result xmlns:c="http://www.w3.org/ns/xproc-step">1</c:result>
+|====================
+
+[role="fail"]
+=== FAIL Test wrap-sequence-003
+http://tests.xproc.org/tests/required/wrap-sequence-003.xml
+
+Error: XdmNodeCompareAssertionError was raised. 
+
+* XdmNodeCompareAssertionError: 
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|
+    <baz:wrapper>
+      <doc/>
+    </baz:wrapper>
+  
+l|<wrapper
+         xmlns:t="http://xproc.org/ns/testsuite"
+         xmlns:p="http://www.w3.org/ns/xproc"
+         xmlns:c="http://www.w3.org/ns/xproc-step"
+         xmlns:err="http://www.w3.org/ns/xproc-error">
+   <doc/>
+</wrapper>
+|====================
+
+[role="fail"]
+=== FAIL Test wrap-sequence-003
+http://tests.xproc.org/tests/required/wrap-sequence-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:wrap
+
+[role="fail"]
+=== FAIL Test p:xinclude #001
+http://tests.xproc.org/tests/required/xinclude-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test p:xinclude #002
+http://tests.xproc.org/tests/required/xinclude-002.xml
+
+Error: {http://www.w3.org/ns/xproc-error}XS0044 was raised. 
+
+* //www.w3.org/ns/xproc-error}XS0044: 
+
+==== Error message
+
+
+* XS0044: Unsupported element: p:log
+
+[role="fail"]
+=== FAIL Test p:xinclude #003
+http://tests.xproc.org/tests/required/xinclude-003.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test p:xinclude #004
+http://tests.xproc.org/tests/required/xinclude-004.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test p:xinclude #005
+http://tests.xproc.org/tests/required/xinclude-005.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:xinclude
+
+[role="fail"]
+=== FAIL Test literal xml:id support #001
+http://tests.xproc.org/tests/required/xml-id-001.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test added xml:id support #002
+http://tests.xproc.org/tests/required/xml-id-002.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:filter
+
+[role="fail"]
+=== FAIL Test xpath-version-available #001
+http://tests.xproc.org/tests/required/xpath-version-available-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:xpath-version-available(1.0) or p:xpath-version-available(2.0)
+
+[role="fail"]
+=== FAIL Test xpath-version-available #001
+http://tests.xproc.org/tests/required/xpath-version-available-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* error while evaluating XPath query: p:xpath-version-available(123.45)
+
+[role="fail"]
+=== FAIL Test xslt-001
+http://tests.xproc.org/tests/required/xslt-001.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test xslt-002
+http://tests.xproc.org/tests/required/xslt-002.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test xslt-003
+http://tests.xproc.org/tests/required/xslt-003.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test xslt-004
+http://tests.xproc.org/tests/required/xslt-004.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test xsl-t005
+http://tests.xproc.org/tests/required/xslt-005.xml
+
+Error: IllegalStateException was raised. 
+
+* IllegalStateException: 
+
+==== Error message
+
+
+* Error while executing step !1.1.1
+
+[role="fail"]
+=== FAIL Test xslt-006
+http://tests.xproc.org/tests/required/xslt-006.xml
+
+Error: UnsupportedOperationException was raised. 
+
+* UnsupportedOperationException: 
+
+==== Error message
+
+
+* p:add-xml-base
+

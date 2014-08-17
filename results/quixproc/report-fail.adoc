@@ -1,0 +1,176 @@
+
+= XProc Test Results for QuiXProc Open 1.1.0
+
+Passed 587 of 600 tests (97.83%) on 27 Sep 2012 at 12:57p.
+
+:toc: right
+
+This report only shows failing tests.
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|QuiXProc Open|Language|fr-FR
+|Vendor|Innovimax|XProc version|1.0
+|Vendor URI|http://quixproc.com/|XPath version|2.0
+|Version|1.1.0 (for Saxon 9.4)|PSVI Supported|false
+|=============================================
+
+[role="fail"]
+== FAIL Test add-xml-base-001
+file:///D:/projets/java/xproc/required/add-xml-base-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+l|<doc xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="file:/D:/projets/java/xproc/doc/xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test add-xml-base-002
+file:///D:/projets/java/xproc/required/add-xml-base-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has one base URI: <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> <p xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">This has a different base URI: <uri xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml">xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml">This has the original base URI.</p> </doc>
+l|<doc xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml"> <p xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml">This has one base URI: <uri xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml">xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="file:/D:/projets/java/xproc/doc/xml-base-chap.xml"> <p xml:base="file:/D:/projets/java/xproc/doc/xml-base-chap.xml">This has a different base URI: <uri xml:base="file:/D:/projets/java/xproc/doc/xml-base-chap.xml">xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml">This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test add-xml-base-003
+file:///D:/projets/java/xproc/required/add-xml-base-003.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+l|<doc xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test add-xml-base-005
+file:///D:/projets/java/xproc/required/add-xml-base-005.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="http://tests.xproc.org/tests/doc/xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+l|<doc xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="file:/D:/projets/java/xproc/doc/xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test add-xml-base-006
+file:///D:/projets/java/xproc/required/add-xml-base-006.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error" xml:base="http://tests.xproc.org/tests/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+l|<doc xml:base="file:/D:/projets/java/xproc/doc/xml-base-test.xml"> <p>This has one base URI: <uri>xml-base-test.xml</uri> </p> <?pi in base-test?> <div xml:base="xml-base-chap.xml"> <p>This has a different base URI: <uri>xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test p:data #002
+file:///D:/projets/java/xproc/required/data-002.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:err="http://www.w3.org/ns/xproc-error" content-type="text/plain; charset=&#34;utf-8&#34;">Toman a lesn√≠ panna Franti≈°ek Ladislav ƒåelakovsk√Ω Veƒ?er p≈ôed svat√Ωm Janem mluv√≠ sestra s Tomanem: "Kam pojede≈°, brat≈ôe mil√Ω, v t√©to pozdn√≠ na noc chv√≠li na kon√≠ƒ?ku sedlan√©m, ƒ?istƒõ vy≈°perkovan√©m?" "Do Podh√°j√≠ k myslivci mus√≠m ke sv√© dƒõvƒ?ici; znenad√°n√≠ nem√°m st√°n√≠, zas mƒõ ƒ?ekej o sv√≠t√°n√≠. Dej, sest≈ôiƒ?ko, dej novou ko≈°iliƒ?ku kmentovou, kamizolku r≈Ø≈æovou." Jiskra padla pod kon√≠ƒ?kem, sestra vol√° za brat≈ô√≠ƒ?kem: "Sly≈°, Tom√°nku, radou mou, ned√°vej se doubravou: objeƒ? dolem k Svat√© ho≈ôe, a≈• nem√°m po tobƒõ ho≈ôe, dej se radƒõj v z√°poli, a≈• mƒõ srdce nebol√≠." Nejel Toman doubravou, dal se cestiƒ?kou pravou; a v Podh√°j√≠ u myslivce nov√Ω domek jedna sv√≠ce, host√≠ mnoho pospolu, jizba plna
+      hovoru. Smutkem Toman obklopen pat≈ô√≠ s konƒõ do oken dƒõvƒ?e l√°skou jen rozpl√Ωv√°, na ≈æenicha se usm√≠v√°; otec jedn√° n√°mluvy, matka hled√≠ obsluhy. Jedli, pili, rozpr√°vƒõli, dobrou v≈Øli spolu mƒõli, ≈æ√°dn√Ω na to nic nedbal, k≈Ø≈à ≈æe venku za≈ôehtal, a ml√°denec zavzdychal. Panna jenom snouben√° najednou se zardƒõla; svƒõdom√≠ ji p≈ôece tlaƒ?√≠, ≈°ept√° cosi sest≈ôe mlad≈°√≠. Sest≈ôiƒ?ka od veƒ?e≈ôe vy≈°la rychle za dv√©≈ôe: "Na vƒõky se, Tomane, mil√° s tebou rozstane, jin√©mu se dostane. Najezdil jsi se k n√°m dosti, dnes tu m√°me bli≈æ≈°√≠ hosti, hledej sobƒõ jinde ≈°tƒõst√≠." Toman konƒõm zatoƒ?il, v ≈°√≠r√© pole poskoƒ?il, za≈•al zuby, smraƒ?il ƒ?elo, kolem v≈°ecko neveselo. P≈Ølnoc byla, mƒõs√≠c za≈°el, sotva jezdec cestu na≈°el; prudce hned, pak loudavƒõ ub√≠ral se k doubravƒõ. "V≈°ecky kr√°sn√© hvƒõzdiƒ?ky ze tmy jsou se prosypaly, proƒ? vy, moje mlad√© dni, ve tm√°ch jste se zasypaly!" Jede, jede doubravou, les ≈°um√≠ mu nad hlavou, vƒõt≈ô√≠k chladn√Ω z noci
+      fouk√°, nad ouvalem sova houk√°; kon√≠k bl√Ωsk√° oƒ?ima, kon√≠k st≈ô√≠h√° u≈°ima. Cupy dupy z hou≈°tiny let√≠ jelen v mejtiny, na jel√≠nku podkasan√° sed√≠ sobƒõ Lesn√≠ panna; ≈°aty p≈Øl m√° zelen√©, p≈Øl kade≈ômi ƒ?ernƒõn√©, a ze svatojansk√Ωch brouƒ?k≈Ø sv√≠t√≠ p√°sek na klobouƒ?ku. T≈ôikr√°t kolem jak st≈ôela v bƒõhu konƒõ objela, pak Tomanovi po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej, jedna-li tƒõ opustila, nahrad√≠ to stokr√°t jin√°. ≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej!" To kdy≈æ sladce zp√≠vala, v oƒ?i se mu d√≠vala Lesn√≠ panna na jelenu, Toman c√≠t√≠ v srdci zmƒõnu. Jedou, jedou pospolu mƒõkk√Ωm mechem do dolu, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à; l√≠b√≠-li se ti m√© l√≠ce, d√°m radost√≠ na tis√≠ce. ≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à!" To kdy panna zp√≠vala, za ruku ho ujala; Tomanovi rozko≈° proudem
+      prolila se ka≈æd√Ωm oudem. Jedou, jedou d√°l a d√°l podl√© ≈ôeky, podl√© skal, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, m≈Øj jsi, m≈Øj! K m√©mu bytu se mnou pluj; svƒõtla denn√≠ho v m√©m domƒõ vƒõƒ?nƒõ nezachce se tobƒõ. ≈†varn√Ω hochu, m≈Øj jsi, m≈Øj - k m√©mu bytu se mnou pluj!" To kdy panna zp√≠vala, v √∫sta jezdce l√≠bala, v n√°ruƒ?√≠ ho objala. Tomanovi srdce ples√°, uzdu pou≈°t√≠, s konƒõ kles√° pod skalami prost≈ôed lesa. Slunce vy≈°lo nad horu, sk√°ƒ?e kon√≠k do dvoru, smutnƒõ hrabe podkovou, ≈ôehce zpr√°vu nedobrou. Sestra k oknu p≈ôiskoƒ?ila, a rukama zalomila "Brat≈ôe m≈Øj, brat≈ô√≠ƒ?ku m≈Øj, kde skonal jsi ≈æivot sv≈Øj!"</c:data>
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain">Toman a lesn√≠ panna Franti≈°ek Ladislav ƒåelakovsk√Ω Veƒ?er p≈ôed svat√Ωm Janem mluv√≠ sestra s Tomanem: "Kam pojede≈°, brat≈ôe mil√Ω, v t√©to pozdn√≠ na noc chv√≠li na kon√≠ƒ?ku sedlan√©m, ƒ?istƒõ vy≈°perkovan√©m?" "Do Podh√°j√≠ k myslivci mus√≠m ke sv√© dƒõvƒ?ici; znenad√°n√≠ nem√°m st√°n√≠, zas mƒõ ƒ?ekej o sv√≠t√°n√≠. Dej, sest≈ôiƒ?ko, dej novou ko≈°iliƒ?ku kmentovou, kamizolku r≈Ø≈æovou." Jiskra padla pod kon√≠ƒ?kem, sestra vol√° za brat≈ô√≠ƒ?kem: "Sly≈°, Tom√°nku, radou mou, ned√°vej se doubravou: objeƒ? dolem k Svat√© ho≈ôe, a≈• nem√°m po tobƒõ ho≈ôe, dej se radƒõj v z√°poli, a≈• mƒõ srdce nebol√≠." Nejel Toman doubravou, dal se cestiƒ?kou pravou; a v Podh√°j√≠ u myslivce nov√Ω domek jedna sv√≠ce, host√≠ mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen pat≈ô√≠ s konƒõ do oken dƒõvƒ?e l√°skou jen rozpl√Ωv√°, na ≈æenicha se usm√≠v√°; otec jedn√° n√°mluvy, matka hled√≠ obsluhy.
+      Jedli, pili, rozpr√°vƒõli, dobrou v≈Øli spolu mƒõli, ≈æ√°dn√Ω na to nic nedbal, k≈Ø≈à ≈æe venku za≈ôehtal, a ml√°denec zavzdychal. Panna jenom snouben√° najednou se zardƒõla; svƒõdom√≠ ji p≈ôece tlaƒ?√≠, ≈°ept√° cosi sest≈ôe mlad≈°√≠. Sest≈ôiƒ?ka od veƒ?e≈ôe vy≈°la rychle za dv√©≈ôe: "Na vƒõky se, Tomane, mil√° s tebou rozstane, jin√©mu se dostane. Najezdil jsi se k n√°m dosti, dnes tu m√°me bli≈æ≈°√≠ hosti, hledej sobƒõ jinde ≈°tƒõst√≠." Toman konƒõm zatoƒ?il, v ≈°√≠r√© pole poskoƒ?il, za≈•al zuby, smraƒ?il ƒ?elo, kolem v≈°ecko neveselo. P≈Ølnoc byla, mƒõs√≠c za≈°el, sotva jezdec cestu na≈°el; prudce hned, pak loudavƒõ ub√≠ral se k doubravƒõ. "V≈°ecky kr√°sn√© hvƒõzdiƒ?ky ze tmy jsou se prosypaly, proƒ? vy, moje mlad√© dni, ve tm√°ch jste se zasypaly!" Jede, jede doubravou, les ≈°um√≠ mu nad hlavou, vƒõt≈ô√≠k chladn√Ω z noci fouk√°, nad ouvalem sova houk√°; kon√≠k bl√Ωsk√° oƒ?ima, kon√≠k st≈ô√≠h√° u≈°ima. Cupy dupy z hou≈°tiny let√≠ jelen v mejtiny, na jel√≠nku podkasan√° sed√≠
+      sobƒõ Lesn√≠ panna; ≈°aty p≈Øl m√° zelen√©, p≈Øl kade≈ômi ƒ?ernƒõn√©, a ze svatojansk√Ωch brouƒ?k≈Ø sv√≠t√≠ p√°sek na klobouƒ?ku. T≈ôikr√°t kolem jak st≈ôela v bƒõhu konƒõ objela, pak Tomanovi po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej, jedna-li tƒõ opustila, nahrad√≠ to stokr√°t jin√°. ≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej!" To kdy≈æ sladce zp√≠vala, v oƒ?i se mu d√≠vala Lesn√≠ panna na jelenu, Toman c√≠t√≠ v srdci zmƒõnu. Jedou, jedou pospolu mƒõkk√Ωm mechem do dolu, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à; l√≠b√≠-li se ti m√© l√≠ce, d√°m radost√≠ na tis√≠ce. ≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à!" To kdy panna zp√≠vala, za ruku ho ujala; Tomanovi rozko≈° proudem prolila se ka≈æd√Ωm oudem. Jedou, jedou d√°l a d√°l podl√© ≈ôeky, podl√© skal, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, m≈Øj jsi,
+      m≈Øj! K m√©mu bytu se mnou pluj; svƒõtla denn√≠ho v m√©m domƒõ vƒõƒ?nƒõ nezachce se tobƒõ. ≈†varn√Ω hochu, m≈Øj jsi, m≈Øj - k m√©mu bytu se mnou pluj!" To kdy panna zp√≠vala, v √∫sta jezdce l√≠bala, v n√°ruƒ?√≠ ho objala. Tomanovi srdce ples√°, uzdu pou≈°t√≠, s konƒõ kles√° pod skalami prost≈ôed lesa. Slunce vy≈°lo nad horu, sk√°ƒ?e kon√≠k do dvoru, smutnƒõ hrabe podkovou, ≈ôehce zpr√°vu nedobrou. Sestra k oknu p≈ôiskoƒ?ila, a rukama zalomila "Brat≈ôe m≈Øj, brat≈ô√≠ƒ?ku m≈Øj, kde skonal jsi ≈æivot sv≈Øj!"</c:data>
+|====================
+
+[role="fail"]
+== FAIL Test p:data #006
+file:///D:/projets/java/xproc/required/data-006.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:err="http://www.w3.org/ns/xproc-error" content-type="text/plain; charset=&#34;utf-8&#34;">Toman a lesn√≠ panna Franti≈°ek Ladislav ƒåelakovsk√Ω Veƒ?er p≈ôed svat√Ωm Janem mluv√≠ sestra s Tomanem: "Kam pojede≈°, brat≈ôe mil√Ω, v t√©to pozdn√≠ na noc chv√≠li na kon√≠ƒ?ku sedlan√©m, ƒ?istƒõ vy≈°perkovan√©m?" "Do Podh√°j√≠ k myslivci mus√≠m ke sv√© dƒõvƒ?ici; znenad√°n√≠ nem√°m st√°n√≠, zas mƒõ ƒ?ekej o sv√≠t√°n√≠. Dej, sest≈ôiƒ?ko, dej novou ko≈°iliƒ?ku kmentovou, kamizolku r≈Ø≈æovou." Jiskra padla pod kon√≠ƒ?kem, sestra vol√° za brat≈ô√≠ƒ?kem: "Sly≈°, Tom√°nku, radou mou, ned√°vej se doubravou: objeƒ? dolem k Svat√© ho≈ôe, a≈• nem√°m po tobƒõ ho≈ôe, dej se radƒõj v z√°poli, a≈• mƒõ srdce nebol√≠." Nejel Toman doubravou, dal se cestiƒ?kou pravou; a v Podh√°j√≠ u myslivce nov√Ω domek jedna sv√≠ce, host√≠ mnoho pospolu, jizba plna
+      hovoru. Smutkem Toman obklopen pat≈ô√≠ s konƒõ do oken dƒõvƒ?e l√°skou jen rozpl√Ωv√°, na ≈æenicha se usm√≠v√°; otec jedn√° n√°mluvy, matka hled√≠ obsluhy. Jedli, pili, rozpr√°vƒõli, dobrou v≈Øli spolu mƒõli, ≈æ√°dn√Ω na to nic nedbal, k≈Ø≈à ≈æe venku za≈ôehtal, a ml√°denec zavzdychal. Panna jenom snouben√° najednou se zardƒõla; svƒõdom√≠ ji p≈ôece tlaƒ?√≠, ≈°ept√° cosi sest≈ôe mlad≈°√≠. Sest≈ôiƒ?ka od veƒ?e≈ôe vy≈°la rychle za dv√©≈ôe: "Na vƒõky se, Tomane, mil√° s tebou rozstane, jin√©mu se dostane. Najezdil jsi se k n√°m dosti, dnes tu m√°me bli≈æ≈°√≠ hosti, hledej sobƒõ jinde ≈°tƒõst√≠." Toman konƒõm zatoƒ?il, v ≈°√≠r√© pole poskoƒ?il, za≈•al zuby, smraƒ?il ƒ?elo, kolem v≈°ecko neveselo. P≈Ølnoc byla, mƒõs√≠c za≈°el, sotva jezdec cestu na≈°el; prudce hned, pak loudavƒõ ub√≠ral se k doubravƒõ. "V≈°ecky kr√°sn√© hvƒõzdiƒ?ky ze tmy jsou se prosypaly, proƒ? vy, moje mlad√© dni, ve tm√°ch jste se zasypaly!" Jede, jede doubravou, les ≈°um√≠ mu nad hlavou, vƒõt≈ô√≠k chladn√Ω z noci
+      fouk√°, nad ouvalem sova houk√°; kon√≠k bl√Ωsk√° oƒ?ima, kon√≠k st≈ô√≠h√° u≈°ima. Cupy dupy z hou≈°tiny let√≠ jelen v mejtiny, na jel√≠nku podkasan√° sed√≠ sobƒõ Lesn√≠ panna; ≈°aty p≈Øl m√° zelen√©, p≈Øl kade≈ômi ƒ?ernƒõn√©, a ze svatojansk√Ωch brouƒ?k≈Ø sv√≠t√≠ p√°sek na klobouƒ?ku. T≈ôikr√°t kolem jak st≈ôela v bƒõhu konƒõ objela, pak Tomanovi po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej, jedna-li tƒõ opustila, nahrad√≠ to stokr√°t jin√°. ≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej!" To kdy≈æ sladce zp√≠vala, v oƒ?i se mu d√≠vala Lesn√≠ panna na jelenu, Toman c√≠t√≠ v srdci zmƒõnu. Jedou, jedou pospolu mƒõkk√Ωm mechem do dolu, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à; l√≠b√≠-li se ti m√© l√≠ce, d√°m radost√≠ na tis√≠ce. ≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à!" To kdy panna zp√≠vala, za ruku ho ujala; Tomanovi rozko≈° proudem
+      prolila se ka≈æd√Ωm oudem. Jedou, jedou d√°l a d√°l podl√© ≈ôeky, podl√© skal, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, m≈Øj jsi, m≈Øj! K m√©mu bytu se mnou pluj; svƒõtla denn√≠ho v m√©m domƒõ vƒõƒ?nƒõ nezachce se tobƒõ. ≈†varn√Ω hochu, m≈Øj jsi, m≈Øj - k m√©mu bytu se mnou pluj!" To kdy panna zp√≠vala, v √∫sta jezdce l√≠bala, v n√°ruƒ?√≠ ho objala. Tomanovi srdce ples√°, uzdu pou≈°t√≠, s konƒõ kles√° pod skalami prost≈ôed lesa. Slunce vy≈°lo nad horu, sk√°ƒ?e kon√≠k do dvoru, smutnƒõ hrabe podkovou, ≈ôehce zpr√°vu nedobrou. Sestra k oknu p≈ôiskoƒ?ila, a rukama zalomila "Brat≈ôe m≈Øj, brat≈ô√≠ƒ?ku m≈Øj, kde skonal jsi ≈æivot sv≈Øj!"</c:data>
+l|<c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type="text/plain">Toman a lesn√≠ panna Franti≈°ek Ladislav ƒåelakovsk√Ω Veƒ?er p≈ôed svat√Ωm Janem mluv√≠ sestra s Tomanem: "Kam pojede≈°, brat≈ôe mil√Ω, v t√©to pozdn√≠ na noc chv√≠li na kon√≠ƒ?ku sedlan√©m, ƒ?istƒõ vy≈°perkovan√©m?" "Do Podh√°j√≠ k myslivci mus√≠m ke sv√© dƒõvƒ?ici; znenad√°n√≠ nem√°m st√°n√≠, zas mƒõ ƒ?ekej o sv√≠t√°n√≠. Dej, sest≈ôiƒ?ko, dej novou ko≈°iliƒ?ku kmentovou, kamizolku r≈Ø≈æovou." Jiskra padla pod kon√≠ƒ?kem, sestra vol√° za brat≈ô√≠ƒ?kem: "Sly≈°, Tom√°nku, radou mou, ned√°vej se doubravou: objeƒ? dolem k Svat√© ho≈ôe, a≈• nem√°m po tobƒõ ho≈ôe, dej se radƒõj v z√°poli, a≈• mƒõ srdce nebol√≠." Nejel Toman doubravou, dal se cestiƒ?kou pravou; a v Podh√°j√≠ u myslivce nov√Ω domek jedna sv√≠ce, host√≠ mnoho pospolu, jizba plna hovoru. Smutkem Toman obklopen pat≈ô√≠ s konƒõ do oken dƒõvƒ?e l√°skou jen rozpl√Ωv√°, na ≈æenicha se usm√≠v√°; otec jedn√° n√°mluvy, matka hled√≠ obsluhy.
+      Jedli, pili, rozpr√°vƒõli, dobrou v≈Øli spolu mƒõli, ≈æ√°dn√Ω na to nic nedbal, k≈Ø≈à ≈æe venku za≈ôehtal, a ml√°denec zavzdychal. Panna jenom snouben√° najednou se zardƒõla; svƒõdom√≠ ji p≈ôece tlaƒ?√≠, ≈°ept√° cosi sest≈ôe mlad≈°√≠. Sest≈ôiƒ?ka od veƒ?e≈ôe vy≈°la rychle za dv√©≈ôe: "Na vƒõky se, Tomane, mil√° s tebou rozstane, jin√©mu se dostane. Najezdil jsi se k n√°m dosti, dnes tu m√°me bli≈æ≈°√≠ hosti, hledej sobƒõ jinde ≈°tƒõst√≠." Toman konƒõm zatoƒ?il, v ≈°√≠r√© pole poskoƒ?il, za≈•al zuby, smraƒ?il ƒ?elo, kolem v≈°ecko neveselo. P≈Ølnoc byla, mƒõs√≠c za≈°el, sotva jezdec cestu na≈°el; prudce hned, pak loudavƒõ ub√≠ral se k doubravƒõ. "V≈°ecky kr√°sn√© hvƒõzdiƒ?ky ze tmy jsou se prosypaly, proƒ? vy, moje mlad√© dni, ve tm√°ch jste se zasypaly!" Jede, jede doubravou, les ≈°um√≠ mu nad hlavou, vƒõt≈ô√≠k chladn√Ω z noci fouk√°, nad ouvalem sova houk√°; kon√≠k bl√Ωsk√° oƒ?ima, kon√≠k st≈ô√≠h√° u≈°ima. Cupy dupy z hou≈°tiny let√≠ jelen v mejtiny, na jel√≠nku podkasan√° sed√≠
+      sobƒõ Lesn√≠ panna; ≈°aty p≈Øl m√° zelen√©, p≈Øl kade≈ômi ƒ?ernƒõn√©, a ze svatojansk√Ωch brouƒ?k≈Ø sv√≠t√≠ p√°sek na klobouƒ?ku. T≈ôikr√°t kolem jak st≈ôela v bƒõhu konƒõ objela, pak Tomanovi po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej, jedna-li tƒõ opustila, nahrad√≠ to stokr√°t jin√°. ≈†varn√Ω hochu, nezoufej, bujn√Ωm vƒõtr≈Øm ≈æalost dej!" To kdy≈æ sladce zp√≠vala, v oƒ?i se mu d√≠vala Lesn√≠ panna na jelenu, Toman c√≠t√≠ v srdci zmƒõnu. Jedou, jedou pospolu mƒõkk√Ωm mechem do dolu, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à; l√≠b√≠-li se ti m√© l√≠ce, d√°m radost√≠ na tis√≠ce. ≈†varn√Ω hochu, sklo≈à se, sklo≈à, jenom d√°le se mnou ho≈à!" To kdy panna zp√≠vala, za ruku ho ujala; Tomanovi rozko≈° proudem prolila se ka≈æd√Ωm oudem. Jedou, jedou d√°l a d√°l podl√© ≈ôeky, podl√© skal, panna Tomanu po boku vyrovn√°v√° v plavn√©m skoku: "≈†varn√Ω hochu, m≈Øj jsi,
+      m≈Øj! K m√©mu bytu se mnou pluj; svƒõtla denn√≠ho v m√©m domƒõ vƒõƒ?nƒõ nezachce se tobƒõ. ≈†varn√Ω hochu, m≈Øj jsi, m≈Øj - k m√©mu bytu se mnou pluj!" To kdy panna zp√≠vala, v √∫sta jezdce l√≠bala, v n√°ruƒ?√≠ ho objala. Tomanovi srdce ples√°, uzdu pou≈°t√≠, s konƒõ kles√° pod skalami prost≈ôed lesa. Slunce vy≈°lo nad horu, sk√°ƒ?e kon√≠k do dvoru, smutnƒõ hrabe podkovou, ≈ôehce zpr√°vu nedobrou. Sestra k oknu p≈ôiskoƒ?ila, a rukama zalomila "Brat≈ôe m≈Øj, brat≈ô√≠ƒ?ku m≈Øj, kde skonal jsi ≈æivot sv≈Øj!"</c:data>
+|====================
+
+[role="fail"]
+== FAIL Test directory-list-001
+file:///D:/projets/java/xproc/required/directory-list-001.xml
+
+Error: err:XC0017 was raised. 
+
+* XC0017: 
+
+=== Error message
+
+
+* XC0017
+
+[role="fail"]
+== FAIL Test directory-list-002
+file:///D:/projets/java/xproc/required/directory-list-002.xml
+
+Error: err:XC0017 was raised. 
+
+* XC0017: 
+
+=== Error message
+
+
+* XC0017
+
+[role="fail"]
+== FAIL Test for err:XS0062 #001
+file:///D:/projets/java/xproc/required/err-s0062-001.xml
+
+
+=== Error messages
+
+
+* baseURI
+* Illegal character in opaque part at index 2: D:\projets\java\xproc\required\err-s0062-001.xml
+
+[role="fail"]
+== FAIL Test p:import #006
+file:///D:/projets/java/xproc/required/import-006.xml
+
+
+=== Error message
+
+
+* Duplicate step type
+
+[role="fail"]
+== FAIL Test make-absolute-uris #001
+file:///D:/projets/java/xproc/required/make-absolute-uris-001.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<doc xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:err="http://www.w3.org/ns/xproc-error"> <p>This has one base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-test.xml</uri> </p> <?pi in base-test?> <div> <p>This has a different base URI: <uri>http://tests.xproc.org/tests/doc/xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+l|<doc> <p>This has one base URI: <uri>file:/D:/projets/java/xproc/doc/xml-base-test.xml</uri> </p> <?pi in base-test?> <div> <p>This has a different base URI: <uri>file:/D:/projets/java/xproc/doc/xml-base-chap.xml</uri>.</p> <?pi in base-chap?> </div> <p>This has the original base URI.</p> </doc>
+|====================
+
+[role="fail"]
+== FAIL Test unescapemarkup-004
+file:///D:/projets/java/xproc/required/unescapemarkup-004.xml
+
+[frame="topbot",cols="d<,d<"]
+|====================
+|Expected result:|Actual result:
+l|<c:body xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:err="http://www.w3.org/ns/xproc-error" content-type="text/html" encoding="base64"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>An HTML Document</title> </head> <body> <p>With <em> <b>broken</b> </em> <b/> markup. </p> </body> </html> </c:body>
+l|<c:body xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:t="http://xproc.org/ns/testsuite" xmlns:p="http://www.w3.org/ns/xproc" xmlns:err="http://www.w3.org/ns/xproc-error" content-type="text/html" encoding="base64"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>An HTML Document</title> </head> <body> <p>With <em> <b>broken</b> </em> markup. </p> </body> </html> </c:body>
+|====================
+
