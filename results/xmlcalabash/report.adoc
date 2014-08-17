@@ -1,7 +1,7 @@
 
 = XProc Test Results for XML Calabash
 
-Passed 764 of 768 tests (99.48%) on 16 Aug 2014 at 07:49p.
+Passed 765 of 768 tests (99.61%) on 17 Aug 2014 at 02:45p.
 
 :toc: right
 
@@ -11,10 +11,10 @@ Passed 764 of 768 tests (99.48%) on 16 Aug 2014 at 07:49p.
 |Name|XML Calabash|Language|en-US
 |Vendor|Norman Walsh|XProc version|1.0
 |Vendor URI|http://xmlcalabash.com/|XPath version|2.0
-|Version|1.0.18 (for Saxon 9.5.1.5/EE)|PSVI Supported|true
+|Version|1.0.19-b1 (for Saxon 9.5.1.5/EE)|PSVI Supported|true
 |==================================================
 
-== Required tests (Revision 633)
+== Required tests
 
 Passed 600 of 602 tests (99.67%).
 
@@ -5085,7 +5085,7 @@ http://tests.xproc.org/tests/required/xslt-006.xml
 
 
 
-== Serialization tests (Revision 633)
+== Serialization tests
 
 Passed 25 of 25 tests (100.00%).
 
@@ -5363,7 +5363,7 @@ http://tests.xproc.org/tests/serialization/version-001.xml
 * Compare pipelines failed: this shouldn't happen.
 
 
-== Optional tests (Revision 633)
+== Optional tests
 
 Passed 113 of 114 tests (99.12%).
 
@@ -6154,7 +6154,7 @@ http://tests.xproc.org/tests/optional/xslt2-003.xml
 
 
 
-== Extension tests (Revision 633)
+== Extension tests
 
 Passed 1 of 1 tests (100.00%).
 
@@ -6170,7 +6170,7 @@ Wrong error: expected err:XD0017 but null was raised.
 
 == XML Calabash extension tests
 
-Passed 25 of 26 tests (96.15%).
+Passed 26 of 26 tests (100.00%).
 
 [role="pass"]
 === PASS Test ml:adhoc-query-001
@@ -6287,45 +6287,10 @@ http://xmlcalabash.com/tests/unzip-001.xml
 http://xmlcalabash.com/tests/unzip-002.xml
 
 
-[role="fail"]
-=== FAIL Test cx:uri-info
+[role="pass"]
+=== PASS Test cx:uri-info
 http://xmlcalabash.com/tests/uri-info-001.xml
 
-[frame="topbot",cols="d<,d<"]
-|====================
-|Expected result:|Actual result:
-l|<c:uri-info xmlns:c="http://www.w3.org/ns/xproc-step"
-            xmlns:t="http://xproc.org/ns/testsuite"
-            href="http://tests.xproc.org/"
-            status="200"
-            readable="true"
-            exists="true"
-            uri="http://tests.xproc.org/"
-            size="2598">
-   <c:header name="Server" value="Apache"/>
-   <c:header name="Accept-Ranges" value="bytes"/>
-   <c:header name="Vary" value="Accept-Encoding"/>
-   <c:header name="Content-Length" value="2598"/>
-   <c:header name="Keep-Alive" value="timeout=2, max=99"/>
-   <c:header name="Connection" value="Keep-Alive"/>
-   <c:header name="Content-Type" value="text/html; charset=utf-8"/>
-</c:uri-info>
-l|<c:uri-info xmlns:c="http://www.w3.org/ns/xproc-step"
-            href="http://tests.xproc.org/"
-            status="200"
-            readable="true"
-            exists="true"
-            uri="http://tests.xproc.org/"
-            size="2598">
-   <c:header name="Server" value="Apache"/>
-   <c:header name="Accept-Ranges" value="bytes"/>
-   <c:header name="Vary" value="Accept-Encoding"/>
-   <c:header name="Content-Length" value="2598"/>
-   <c:header name="Keep-Alive" value="timeout=2, max=98"/>
-   <c:header name="Connection" value="Keep-Alive"/>
-   <c:header name="Content-Type" value="text/html; charset=utf-8"/>
-</c:uri-info>
-|====================
 
 [role="pass"]
 === PASS Test cx:rdf-load #001
