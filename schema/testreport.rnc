@@ -1,0 +1,73 @@
+default namespace t = "http://xproc.org/ns/testreport"
+
+start = Report
+
+Report =
+   element t:test-report {
+      Title,
+      Date,
+      Processor,
+      (TestSuite|Test)+
+   }
+
+Date =
+   element date { xsd:date }
+
+Title =
+   element title { text }
+
+Processor =
+   element processor {
+      (Name & Vendor & VendorURI & Version & Episode & Language
+       & XProcVersion & XPathVersion & PSVISupported)
+   }
+
+Name = element name { text }
+Vendor = element vendor { text }
+VendorURI = element vendor-uri { text }
+Version = element version { text }
+Episode = element episode { text }
+Language = element language { text }
+XProcVersion = element xproc-version { text }
+XPathVersion = element xpath-version { text }
+PSVISupported = element psvi-supported { "true" | "false" }
+
+PassedTest =
+   element t:pass {
+      attribute uri { xsd:anyURI },
+      Title,
+      Error?,
+      Message*
+   }
+
+FailedTest =
+   element t:fail {
+      attribute uri { xsd:anyURI },
+      Title,
+      Error?,
+      Message*,
+      (Expected, Actual)?
+   }
+
+Message =
+   element t:message { text }
+
+Error =
+   element t:error {
+      attribute expected { text }?,
+      xsd:QName
+   }
+
+Test = PassedTest | FailedTest
+
+TestSuite =
+   element t:test-suite {
+      Title,
+      Test+
+   }
+
+Expected =
+   element expected { text }
+
+Actual =
+   element actual { text }

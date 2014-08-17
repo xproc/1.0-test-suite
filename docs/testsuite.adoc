@@ -1,0 +1,291 @@
+////
+        This file is intended to be pre-processed to replace
+        the RNG: prefixed lines with appropriate markup
+////
+= XProc Test Suite Vocabulary
+This document describes the format for XProc test suite documents.
+:toc:
+
+These elements are defined formally by
+link:../schema/testsuite.rng[a RELAX NG grammar]
+(link:../schema/testsuite.rnc[compact syntax]).
+
+All of the elements in the test suite vocabulary are in the
+test suite namespace, http://xproc.org/ns/testsuite.
+
+[[t.testsuite]]
+== The `test-suite` element
+
+The `test-suite` element defines an entire test suite.
+A test suite must have a `title` and consists of one or more
+`test`s.
+
+----
+<t:test-suite
+  xinclude? = boolean>
+    t:title,
+    t:test+
+</t:test-suite>
+----
+
+If the `xinclude` attribute on the `test-suite` element has the value
+`true`, then XInclude processing must be applied to the test suite
+before attempting to run it.
+
+NOTE: XInclude processing is recursive. If it is enabled for the test suite,
+then all *tests* in the test suite that wish to
+*test* the `p:xinclude` step *must*
+identify the source document for the `p:xinclude` step
+<<external-documents,externally>>.
+
+[[t.test]]
+== The `test` element
+
+The `test` element identifies a single test. There are two
+kinds of tests, tests for pipelines that are expected to succeed and tests
+for pipelines that are expected to raise (static or dynamic) errors.
+
+Both kinds of `test` element must have a `title`
+and may have a `description`.
+
+[[valid-tests]]
+=== Testing correct pipelines
+
+The `test` element for a correct pipeline contains zero or more
+`input` elements, a `pipeline`, an optional `compare-pipeline`, and
+zero or more `output` elements.
+
+----
+<t:test
+  xml:id? = ID
+  ignore-whitespace-differences? = true|false>
+    t:title,
+    t:description?,
+    (t:input |
+     t:parameter |
+     t:option)*,
+    t:pipeline,
+    t:compare-pipeline?,
+    t:output*
+</t:test>
+----
+
+Each `input` element specifies what should appear on the input port
+that it defines.
+
+The `pipeline` element specifies the `p:pipeline` that will be
+evaluated with the specified inputs.
+
+Each `output` element specifies what should appear on the output port
+that it defines.
+
+If there is no `compare-pipeline`, then the test passes if and only if
+what appears on each output port of the `pipeline` is *deep-equal* to
+what is specified for that port in the `test`’s `output` element for
+that port.
+
+If a `compare-pipeline` is present, then it is run
+before the comparison, as described <<t.compare-pipeline>>.
+
+[[invalid-tests]]
+=== Testing incorrect pipelines
+
+The `test` element for an incorrect pipeline has an
+`error` attribute which identifies the expected
+error. It contains
+zero or more `input` elements and a `pipeline` element.
+
+----
+<t:test
+  xml:id? = ID
+  ignore-whitespace-differences? = true|false
+  error = QName>
+    t:title,
+    t:description?,
+    t:input*,
+    t:pipeline
+</t:test>
+----
+
+It may not contain a `compare-pipeline` element or any `output`
+elements. The pipeline is not expected to succeed.
+
+An incorrect pipeline test passes if and only if the implementation
+signals an error during processing. Ideally, the error will match the
+`error` specified in the `test`, but this is not always the case.
+
+Conformance to an incorrect test requires only that the test
+fail, there is no requirement that it generate the expected
+error.
+
+
+[[t.input]]
+== The `input` element
+
+The `input` element identifies an input document or sequence of input
+documents. The document or documents will appear on the port specified
+by the `port` attribute.
+
+----
+<t:input
+  port = NCName>
+    (t:document* |
+     anyElement)
+</t:input>
+----
+
+If the `input` element contains one or more `document` elements, then
+those elements identify the document or sequence of documents that
+appear on the specified port.
+
+As a syntactic convenience, if the input consists of exactly one
+document, that document can be provided inline without the `document`
+wrapper.
+
+As a further syntactic convenience, if the input consists of a single,
+external document, the `input` element can point directly to it:
+
+----
+<t:input
+  port = NCName
+  href = anyURI />
+----
+
+[[t.output]]
+== The `output` element
+
+The `output` element identifies an output document or sequence of
+output documents against which the pipeline output will be compared.
+The document or documents will be compared to what appears on the port
+specified by the `port` attribute.
+
+----
+<t:output
+  port = NCName>
+    (t:document* |
+     anyElement)
+</t:output>
+----
+
+If the `output` element contains one or more `document` elements, then
+those elements identify the document or sequence of documents that
+will be used for comparison.
+
+As a syntactic convenience, if the output consists of exactly one
+document, that document can be provided inline without the `document`
+wrapper.
+
+[[t.document]]
+== The `document` element
+
+The `document` element identifies a single document for either `input`
+or `output`. Documents can be specified inline or by reference.
+
+----
+<t:document>
+    anyElement
+</t:document>
+----
+
+An inline document appears…inline inside the `document` element.
+
+----
+<t:document
+  href = anyURI />
+----
+
+[[external-documents]]An external document is identified by an `href`
+attribute.
+
+[[t.option]]
+== The `option` element
+
+The `option` element specifies the value for a pipeline option:
+
+----
+<t:option
+  name = QName
+  value = string />
+----
+
+Note: Only the `pipeline` receives the options; the pipeline
+in the `compare-pipeline` (if there is one) does not receive
+any options.
+
+[[t.parameter]]
+== The `parameter` element
+
+The `parameter` element specifies the value for a pipeline parameter:
+
+----
+<t:parameter
+  port? = NCName
+  name = QName
+  value = string />
+----
+
+Note: Only the `pipeline` receives the parameters; the pipeline in the
+`compare-pipeline` (if there is one) does not receive any parameters.
+
+[[t.pipeline]]
+== The `pipeline` element
+
+The `pipeline` element identifies the `p:pipeline` that is the subject
+of the `p:test`. Pipelines can be specified inline or by reference.
+
+----
+<t:pipeline>
+  ...
+</t:pipepline>
+----
+
+An inline pipeline appears…inline inside the `pipeline` element.
+
+----
+<t:pipeline
+  href = anyURI />
+----
+
+An external pipeline is identified by an `href` attribute.
+
+[[t.compare-pipeline]]
+== The `compare-pipeline` element
+
+A `compare-pipeline` is used to preprocess the results of the primary
+`pipeline`.
+
+If a `compare-pipeline` is present, then it is run before the
+comparison. The `p:pipeline` that is specified in a `compare-pipeline`
+must have an input port with the same name as the name of each of the
+output ports in the tested `p:pipeline`.
+
+The test passes if and only if what appears on each output port of the
+`compare-pipeline` is *deep-equal* to what is
+specified for that port in the `test`’s `output` element for that
+port.
+
+The `compare-pipeline` is only needed when the output of the tested
+pipeline cannot be directly compared to the putative outputs. Consider
+this example:
+
+[source,xml]
+----
+include::../tests/required/store-001.xml[]
+----
+
+The `test` cannot directly test if the pipeline stored the correct
+document because the stored document is not part of the output. So the
+`compare-pipeline` is used to load the stored document for comparison.
+
+[[t.description]]
+== The `description` element
+
+The `description` element is provided for human-readable
+prose about the test. It must contain XHTML markup.
+
+----
+<t:description>
+    anyHtmlElement*
+</t:description>
+----
+

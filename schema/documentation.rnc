@@ -1,0 +1,28 @@
+# This schema is a customization for the XProc test suite
+#
+# Author: Norman Walsh, <ndw@nwalsh.com>
+# Release: $Id: dbspec.rnc,v 1.13 2007/09/04 12:48:24 NormanWalsh Exp $
+#
+# ======================================================================
+
+namespace ctrl = "http://nwalsh.com/xmlns/schema-control/"
+namespace rng  = "http://relaxng.org/ns/structure/1.0"
+namespace s = "http://www.ascc.net/xml/schematron"
+namespace db = "http://docbook.org/ns/docbook"
+namespace html = "http://www.w3.org/1999/xhtml"
+namespace p = "http://www.w3.org/ns/xproc"
+namespace e ="http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+default namespace = "http://docbook.org/ns/docbook"
+
+include "docbookxi.rnc"
+
+db.all.blocks |= e.rng-pattern
+
+e.rng-pattern =
+   element e:rng-pattern {
+      attribute xml:id { text }?,
+      attribute name { text },
+      attribute role { text }?,
+      empty
+   }
+
