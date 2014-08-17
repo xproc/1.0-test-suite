@@ -1,18 +1,18 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for XML Calabash</title>
-<date>2014-08-16T19:49:02</date>
+<date>2014-08-17T14:45:08</date>
 <processor>
 <name>XML Calabash</name>
 <vendor>Norman Walsh</vendor>
 <vendor-uri>http://xmlcalabash.com/</vendor-uri>
-<version>1.0.18 (for Saxon 9.5.1.5/EE)</version>
+<version>1.0.19-b1 (for Saxon 9.5.1.5/EE)</version>
 <language>en-US</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>2.0</xpath-version>
 <psvi-supported>true</psvi-supported>
 </processor>
 <test-suite>
-<title>Required tests (Revision 633)</title>
+<title>Required tests</title>
 <pass uri='http://tests.xproc.org/tests/required/add-attribute-001.xml'>
 <title>Test p:add-attribute #001</title>
 </pass>
@@ -2726,7 +2726,7 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 </test-suite>
 <test-suite>
-<title>Serialization tests (Revision 633)</title>
+<title>Serialization tests</title>
 <pass uri='http://tests.xproc.org/tests/serialization/byte-order-mark-001.xml'>
 <title>Serialization test byte-order-mark-001</title>
 <message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
@@ -2852,9 +2852,8 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 <message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 </test-suite>
- INFO Rendered page #1.
 <test-suite>
-<title>Optional tests (Revision 633)</title>
+<title>Optional tests</title>
 <pass uri='http://tests.xproc.org/tests/optional/err-c0033-001.xml'>
 <title>Test for err:XC0033 - 001</title>
 <error expected='err:XC0033'>null</error>
@@ -3250,7 +3249,7 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 </test-suite>
 <test-suite>
-<title>Extension tests (Revision 633)</title>
+<title>Extension tests</title>
 <pass uri='http://tests.xproc.org/tests/extension/unimpl-001.xml'>
 <title>Test extension elements and attributes</title>
 <error expected='err:XD0017'>null</error>
@@ -3327,42 +3326,9 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 <pass uri='http://xmlcalabash.com/tests/unzip-002.xml'>
 <title>Test unzip-002</title>
 </pass>
-<fail uri='http://xmlcalabash.com/tests/uri-info-001.xml'>
+<pass uri='http://xmlcalabash.com/tests/uri-info-001.xml'>
 <title>Test cx:uri-info</title>
-<expected>&lt;c:uri-info xmlns:c="http://www.w3.org/ns/xproc-step"
-            xmlns:t="http://xproc.org/ns/testsuite"
-            href="http://tests.xproc.org/"
-            status="200"
-            readable="true"
-            exists="true"
-            uri="http://tests.xproc.org/"
-            size="2598"&gt;
-   &lt;c:header name="Server" value="Apache"/&gt;
-   &lt;c:header name="Accept-Ranges" value="bytes"/&gt;
-   &lt;c:header name="Vary" value="Accept-Encoding"/&gt;
-   &lt;c:header name="Content-Length" value="2598"/&gt;
-   &lt;c:header name="Keep-Alive" value="timeout=2, max=99"/&gt;
-   &lt;c:header name="Connection" value="Keep-Alive"/&gt;
-   &lt;c:header name="Content-Type" value="text/html; charset=utf-8"/&gt;
-&lt;/c:uri-info&gt;
-</expected>
-<actual>&lt;c:uri-info xmlns:c="http://www.w3.org/ns/xproc-step"
-            href="http://tests.xproc.org/"
-            status="200"
-            readable="true"
-            exists="true"
-            uri="http://tests.xproc.org/"
-            size="2598"&gt;
-   &lt;c:header name="Server" value="Apache"/&gt;
-   &lt;c:header name="Accept-Ranges" value="bytes"/&gt;
-   &lt;c:header name="Vary" value="Accept-Encoding"/&gt;
-   &lt;c:header name="Content-Length" value="2598"/&gt;
-   &lt;c:header name="Keep-Alive" value="timeout=2, max=98"/&gt;
-   &lt;c:header name="Connection" value="Keep-Alive"/&gt;
-   &lt;c:header name="Content-Type" value="text/html; charset=utf-8"/&gt;
-&lt;/c:uri-info&gt;
-</actual>
-</fail>
+</pass>
 <pass uri='http://xmlcalabash.com/tests/rdf-load-001.xml'>
 <title>Test cx:rdf-load #001</title>
 </pass>
