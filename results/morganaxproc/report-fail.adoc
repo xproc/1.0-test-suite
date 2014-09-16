@@ -1,0 +1,71 @@
+
+= XProc Test Results for MorganaXProc
+
+Passed 758 of 761 tests (99.61%) on 16 Sep 2014 at 07:25p.
+
+:toc: right
+
+This report only shows failing tests.
+
+[cols="<h,<,<h,<"]
+|=============================================
+4+<h|Processor information
+|Name|MorganaXProc|Language|en
+|Vendor|xml-project Achim Berndzen|XProc version|1.0
+|Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
+|Version|0.95-3 (public beta) with SaxonXSLTConnector|PSVI Supported|false
+|=============================================
+
+
+== Required tests
+
+Passed 602 of 602 tests (100.00%).
+
+
+== Serialization tests
+
+Passed 23 of 25 tests (92.00%).
+
+[role="fail"]
+=== FAIL Serialization test undeclare-prefixes-001
+http://tests.xproc.org/tests/serialization/undeclare-prefixes-001.xml
+
+
+==== Error message
+
+
+* UnsupportedXMLVersionException:http://tests.xproc.org/tests/doc/xml11.xml is in not supported xml version 1.1
+
+[role="fail"]
+=== FAIL Serialization test version-001
+http://tests.xproc.org/tests/serialization/version-001.xml
+
+
+==== Error message
+
+
+* UnsupportedXMLVersionException:http://tests.xproc.org/tests/doc/xml11.xml is in not supported xml version 1.1
+
+
+== Optional tests
+
+Passed 113 of 114 tests (99.12%).
+
+[role="fail"]
+=== FAIL Test psvi-required-001.xml
+http://tests.xproc.org/tests/optional/psvi-required-001.xml
+
+Error: err:XD0022 was raised. 
+
+* XD0022: It is a dynamic error if a processor that does not support PSVI annotations attempts to invoke a step which asserts that they are required.
+
+== Extension tests
+
+Passed 1 of 1 tests (100.00%).
+
+
+== xml-project's additional tests
+
+Passed 19 of 19 tests (100.00%).
+
+
