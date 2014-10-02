@@ -1,18 +1,17 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for XML Calabash</title>
-<date>2014-08-17T14:45:08</date>
+<date>2014-10-02T08:59:32</date>
 <processor>
-<name>XML Calabash</name>
-<vendor>Norman Walsh</vendor>
-<vendor-uri>http://xmlcalabash.com/</vendor-uri>
-<version>1.0.19-b1 (for Saxon 9.5.1.5/EE)</version>
-<language>en-US</language>
-<xproc-version>1.0</xproc-version>
-<xpath-version>2.0</xpath-version>
-<psvi-supported>true</psvi-supported>
+  <psvi-supported>true</psvi-supported>
+  <vendor-uri>http://xmlcalabash.com/</vendor-uri>
+  <version>1.0.21 (for Saxon 9.5.1.5/EE)</version>
+  <xpath-version>2.0</xpath-version>
+  <name>XML Calabash</name>
+  <xproc-version>1.0</xproc-version>
+  <language>en-US</language>
+  <vendor>Norman Walsh</vendor>
 </processor>
 <test-suite>
-<title>Required tests</title>
 <pass uri='http://tests.xproc.org/tests/required/add-attribute-001.xml'>
 <title>Test p:add-attribute #001</title>
 </pass>
@@ -116,304 +115,9 @@
 <pass uri='http://tests.xproc.org/tests/required/data-001.xml'>
 <title>Test p:data #001</title>
 </pass>
-<fail uri='http://tests.xproc.org/tests/required/data-002.xml'>
+<pass uri='http://tests.xproc.org/tests/required/data-002.xml'>
 <title>Test p:data #002</title>
-<expected>&lt;c:data xmlns:c="http://www.w3.org/ns/xproc-step"
-        xmlns:t="http://xproc.org/ns/testsuite"
-        xmlns:p="http://www.w3.org/ns/xproc"
-        xmlns:err="http://www.w3.org/ns/xproc-error"
-        content-type="text/plain; charset=&amp;#34;utf-8&amp;#34;"&gt;Toman a lesní panna
-František Ladislav Čelakovský
-
-Večer před svatým Janem
-mluví sestra s Tomanem:
-"Kam pojedeš, bratře milý,
-v této pozdní na noc chvíli
-na koníčku sedlaném,
-čistě vyšperkovaném?"
-
-"Do Podhájí k myslivci
-musím ke své děvčici;
-znenadání nemám stání,
-zas mě čekej o svítání.
-Dej, sestřičko, dej novou
-košiličku kmentovou,
-kamizolku růžovou."
-
-Jiskra padla pod koníčkem,
-sestra volá za bratříčkem:
-"Slyš, Tománku, radou mou,
-nedávej se doubravou:
-objeď dolem k Svaté hoře,
-ať nemám po tobě hoře,
-dej se raděj v zápoli,
-ať mě srdce nebolí."
-
-Nejel Toman doubravou,
-dal se cestičkou pravou;
-a v Podhájí u myslivce
-nový domek jedna svíce,
-hostí mnoho pospolu,
-jizba plna hovoru.
-
-Smutkem Toman obklopen
-patří s koně do oken
-děvče láskou jen rozplývá,
-na ženicha se usmívá;
-otec jedná námluvy,
-matka hledí obsluhy.
-Jedli, pili, rozprávěli,
-dobrou vůli spolu měli,
-žádný na to nic nedbal,
-kůň že venku zařehtal,
-a mládenec zavzdychal.
-
-Panna jenom snoubená
-najednou se zarděla;
-svědomí ji přece tlačí,
-šeptá cosi sestře mladší.
-Sestřička od večeře
-vyšla rychle za dvéře:
-"Na věky se, Tomane,
-milá s tebou rozstane,
-jinému se dostane.
-Najezdil jsi se k nám dosti,
-dnes tu máme bližší hosti,
-hledej sobě jinde štěstí."
-
-Toman koněm zatočil,
-v šíré pole poskočil,
-zaťal zuby, smračil čelo,
-kolem všecko neveselo.
-Půlnoc byla, měsíc zašel,
-sotva jezdec cestu našel;
-prudce hned, pak loudavě
-ubíral se k doubravě.
-"Všecky krásné hvězdičky
-ze tmy jsou se prosypaly,
-proč vy, moje mladé dni,
-ve tmách jste se zasypaly!"
-
-Jede, jede doubravou,
-les šumí mu nad hlavou,
-větřík chladný z noci fouká,
-nad ouvalem sova houká;
-koník blýská očima,
-koník stříhá ušima.
-
-Cupy dupy z houštiny
-letí jelen v mejtiny,
-na jelínku podkasaná
-sedí sobě Lesní panna;
-šaty půl má zelené,
-půl kadeřmi černěné,
-a ze svatojanských broučků
-svítí pásek na kloboučku.
-
-Třikrát kolem jak střela
-v běhu koně objela,
-pak Tomanovi po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, nezoufej,
-bujným větrům žalost dej,
-jedna-li tě opustila,
-nahradí to stokrát jiná.
-Švarný hochu, nezoufej,
-bujným větrům žalost dej!"
-To když sladce zpívala,
-v oči se mu dívala
-Lesní panna na jelenu,
-Toman cítí v srdci změnu.
-
-Jedou, jedou pospolu
-měkkým mechem do dolu,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň;
-líbí-li se ti mé líce,
-dám radostí na tisíce.
-Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň!"
-To kdy panna zpívala,
-za ruku ho ujala;
-Tomanovi rozkoš proudem
-prolila se každým oudem.
-
-Jedou, jedou dál a dál
-podlé řeky, podlé skal,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, můj jsi, můj!
-K mému bytu se mnou pluj;
-světla denního v mém domě
-věčně nezachce se tobě.
-Švarný hochu, můj jsi, můj -
-k mému bytu se mnou pluj!"
-
-To kdy panna zpívala,
-v ústa jezdce líbala,
-v náručí ho objala.
-Tomanovi srdce plesá,
-uzdu pouští, s koně klesá
-pod skalami prostřed lesa.
-
-Slunce vyšlo nad horu,
-skáče koník do dvoru,
-smutně hrabe podkovou,
-řehce zprávu nedobrou.
-Sestra k oknu přiskočila,
-a rukama zalomila
-"Bratře můj, bratříčku můj,
-kde skonal jsi život svůj!"&lt;/c:data&gt;
-</expected>
-<actual>&lt;c:data xmlns:c="http://www.w3.org/ns/xproc-step"
-        content-type="text/plain; charset=utf-8"&gt;Toman a lesní panna
-František Ladislav Čelakovský
-
-Večer před svatým Janem
-mluví sestra s Tomanem:
-"Kam pojedeš, bratře milý,
-v této pozdní na noc chvíli
-na koníčku sedlaném,
-čistě vyšperkovaném?"
-
-"Do Podhájí k myslivci
-musím ke své děvčici;
-znenadání nemám stání,
-zas mě čekej o svítání.
-Dej, sestřičko, dej novou
-košiličku kmentovou,
-kamizolku růžovou."
-
-Jiskra padla pod koníčkem,
-sestra volá za bratříčkem:
-"Slyš, Tománku, radou mou,
-nedávej se doubravou:
-objeď dolem k Svaté hoře,
-ať nemám po tobě hoře,
-dej se raděj v zápoli,
-ať mě srdce nebolí."
-
-Nejel Toman doubravou,
-dal se cestičkou pravou;
-a v Podhájí u myslivce
-nový domek jedna svíce,
-hostí mnoho pospolu,
-jizba plna hovoru.
-
-Smutkem Toman obklopen
-patří s koně do oken
-děvče láskou jen rozplývá,
-na ženicha se usmívá;
-otec jedná námluvy,
-matka hledí obsluhy.
-Jedli, pili, rozprávěli,
-dobrou vůli spolu měli,
-žádný na to nic nedbal,
-kůň že venku zařehtal,
-a mládenec zavzdychal.
-
-Panna jenom snoubená
-najednou se zarděla;
-svědomí ji přece tlačí,
-šeptá cosi sestře mladší.
-Sestřička od večeře
-vyšla rychle za dvéře:
-"Na věky se, Tomane,
-milá s tebou rozstane,
-jinému se dostane.
-Najezdil jsi se k nám dosti,
-dnes tu máme bližší hosti,
-hledej sobě jinde štěstí."
-
-Toman koněm zatočil,
-v šíré pole poskočil,
-zaťal zuby, smračil čelo,
-kolem všecko neveselo.
-Půlnoc byla, měsíc zašel,
-sotva jezdec cestu našel;
-prudce hned, pak loudavě
-ubíral se k doubravě.
-"Všecky krásné hvězdičky
-ze tmy jsou se prosypaly,
-proč vy, moje mladé dni,
-ve tmách jste se zasypaly!"
-
-Jede, jede doubravou,
-les šumí mu nad hlavou,
-větřík chladný z noci fouká,
-nad ouvalem sova houká;
-koník blýská očima,
-koník stříhá ušima.
-
-Cupy dupy z houštiny
-letí jelen v mejtiny,
-na jelínku podkasaná
-sedí sobě Lesní panna;
-šaty půl má zelené,
-půl kadeřmi černěné,
-a ze svatojanských broučků
-svítí pásek na kloboučku.
-
-Třikrát kolem jak střela
-v běhu koně objela,
-pak Tomanovi po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, nezoufej,
-bujným větrům žalost dej,
-jedna-li tě opustila,
-nahradí to stokrát jiná.
-Švarný hochu, nezoufej,
-bujným větrům žalost dej!"
-To když sladce zpívala,
-v oči se mu dívala
-Lesní panna na jelenu,
-Toman cítí v srdci změnu.
-
-Jedou, jedou pospolu
-měkkým mechem do dolu,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň;
-líbí-li se ti mé líce,
-dám radostí na tisíce.
-Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň!"
-To kdy panna zpívala,
-za ruku ho ujala;
-Tomanovi rozkoš proudem
-prolila se každým oudem.
-
-Jedou, jedou dál a dál
-podlé řeky, podlé skal,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, můj jsi, můj!
-K mému bytu se mnou pluj;
-světla denního v mém domě
-věčně nezachce se tobě.
-Švarný hochu, můj jsi, můj -
-k mému bytu se mnou pluj!"
-
-To kdy panna zpívala,
-v ústa jezdce líbala,
-v náručí ho objala.
-Tomanovi srdce plesá,
-uzdu pouští, s koně klesá
-pod skalami prostřed lesa.
-
-Slunce vyšlo nad horu,
-skáče koník do dvoru,
-smutně hrabe podkovou,
-řehce zprávu nedobrou.
-Sestra k oknu přiskočila,
-a rukama zalomila
-"Bratře můj, bratříčku můj,
-kde skonal jsi život svůj!"&lt;/c:data&gt;
-</actual>
-</fail>
+</pass>
 <pass uri='http://tests.xproc.org/tests/required/data-003.xml'>
 <title>Test p:data #003</title>
 </pass>
@@ -423,304 +127,9 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 <pass uri='http://tests.xproc.org/tests/required/data-005.xml'>
 <title>Test p:data #005</title>
 </pass>
-<fail uri='http://tests.xproc.org/tests/required/data-006.xml'>
+<pass uri='http://tests.xproc.org/tests/required/data-006.xml'>
 <title>Test p:data #006</title>
-<expected>&lt;c:data xmlns:c="http://www.w3.org/ns/xproc-step"
-        xmlns:t="http://xproc.org/ns/testsuite"
-        xmlns:p="http://www.w3.org/ns/xproc"
-        xmlns:err="http://www.w3.org/ns/xproc-error"
-        content-type="text/plain; charset=&amp;#34;utf-8&amp;#34;"&gt;Toman a lesní panna
-František Ladislav Čelakovský
-
-Večer před svatým Janem
-mluví sestra s Tomanem:
-"Kam pojedeš, bratře milý,
-v této pozdní na noc chvíli
-na koníčku sedlaném,
-čistě vyšperkovaném?"
-
-"Do Podhájí k myslivci
-musím ke své děvčici;
-znenadání nemám stání,
-zas mě čekej o svítání.
-Dej, sestřičko, dej novou
-košiličku kmentovou,
-kamizolku růžovou."
-
-Jiskra padla pod koníčkem,
-sestra volá za bratříčkem:
-"Slyš, Tománku, radou mou,
-nedávej se doubravou:
-objeď dolem k Svaté hoře,
-ať nemám po tobě hoře,
-dej se raděj v zápoli,
-ať mě srdce nebolí."
-
-Nejel Toman doubravou,
-dal se cestičkou pravou;
-a v Podhájí u myslivce
-nový domek jedna svíce,
-hostí mnoho pospolu,
-jizba plna hovoru.
-
-Smutkem Toman obklopen
-patří s koně do oken
-děvče láskou jen rozplývá,
-na ženicha se usmívá;
-otec jedná námluvy,
-matka hledí obsluhy.
-Jedli, pili, rozprávěli,
-dobrou vůli spolu měli,
-žádný na to nic nedbal,
-kůň že venku zařehtal,
-a mládenec zavzdychal.
-
-Panna jenom snoubená
-najednou se zarděla;
-svědomí ji přece tlačí,
-šeptá cosi sestře mladší.
-Sestřička od večeře
-vyšla rychle za dvéře:
-"Na věky se, Tomane,
-milá s tebou rozstane,
-jinému se dostane.
-Najezdil jsi se k nám dosti,
-dnes tu máme bližší hosti,
-hledej sobě jinde štěstí."
-
-Toman koněm zatočil,
-v šíré pole poskočil,
-zaťal zuby, smračil čelo,
-kolem všecko neveselo.
-Půlnoc byla, měsíc zašel,
-sotva jezdec cestu našel;
-prudce hned, pak loudavě
-ubíral se k doubravě.
-"Všecky krásné hvězdičky
-ze tmy jsou se prosypaly,
-proč vy, moje mladé dni,
-ve tmách jste se zasypaly!"
-
-Jede, jede doubravou,
-les šumí mu nad hlavou,
-větřík chladný z noci fouká,
-nad ouvalem sova houká;
-koník blýská očima,
-koník stříhá ušima.
-
-Cupy dupy z houštiny
-letí jelen v mejtiny,
-na jelínku podkasaná
-sedí sobě Lesní panna;
-šaty půl má zelené,
-půl kadeřmi černěné,
-a ze svatojanských broučků
-svítí pásek na kloboučku.
-
-Třikrát kolem jak střela
-v běhu koně objela,
-pak Tomanovi po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, nezoufej,
-bujným větrům žalost dej,
-jedna-li tě opustila,
-nahradí to stokrát jiná.
-Švarný hochu, nezoufej,
-bujným větrům žalost dej!"
-To když sladce zpívala,
-v oči se mu dívala
-Lesní panna na jelenu,
-Toman cítí v srdci změnu.
-
-Jedou, jedou pospolu
-měkkým mechem do dolu,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň;
-líbí-li se ti mé líce,
-dám radostí na tisíce.
-Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň!"
-To kdy panna zpívala,
-za ruku ho ujala;
-Tomanovi rozkoš proudem
-prolila se každým oudem.
-
-Jedou, jedou dál a dál
-podlé řeky, podlé skal,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, můj jsi, můj!
-K mému bytu se mnou pluj;
-světla denního v mém domě
-věčně nezachce se tobě.
-Švarný hochu, můj jsi, můj -
-k mému bytu se mnou pluj!"
-
-To kdy panna zpívala,
-v ústa jezdce líbala,
-v náručí ho objala.
-Tomanovi srdce plesá,
-uzdu pouští, s koně klesá
-pod skalami prostřed lesa.
-
-Slunce vyšlo nad horu,
-skáče koník do dvoru,
-smutně hrabe podkovou,
-řehce zprávu nedobrou.
-Sestra k oknu přiskočila,
-a rukama zalomila
-"Bratře můj, bratříčku můj,
-kde skonal jsi život svůj!"&lt;/c:data&gt;
-</expected>
-<actual>&lt;c:data xmlns:c="http://www.w3.org/ns/xproc-step"
-        content-type="text/plain; charset=utf-8"&gt;Toman a lesní panna
-František Ladislav Čelakovský
-
-Večer před svatým Janem
-mluví sestra s Tomanem:
-"Kam pojedeš, bratře milý,
-v této pozdní na noc chvíli
-na koníčku sedlaném,
-čistě vyšperkovaném?"
-
-"Do Podhájí k myslivci
-musím ke své děvčici;
-znenadání nemám stání,
-zas mě čekej o svítání.
-Dej, sestřičko, dej novou
-košiličku kmentovou,
-kamizolku růžovou."
-
-Jiskra padla pod koníčkem,
-sestra volá za bratříčkem:
-"Slyš, Tománku, radou mou,
-nedávej se doubravou:
-objeď dolem k Svaté hoře,
-ať nemám po tobě hoře,
-dej se raděj v zápoli,
-ať mě srdce nebolí."
-
-Nejel Toman doubravou,
-dal se cestičkou pravou;
-a v Podhájí u myslivce
-nový domek jedna svíce,
-hostí mnoho pospolu,
-jizba plna hovoru.
-
-Smutkem Toman obklopen
-patří s koně do oken
-děvče láskou jen rozplývá,
-na ženicha se usmívá;
-otec jedná námluvy,
-matka hledí obsluhy.
-Jedli, pili, rozprávěli,
-dobrou vůli spolu měli,
-žádný na to nic nedbal,
-kůň že venku zařehtal,
-a mládenec zavzdychal.
-
-Panna jenom snoubená
-najednou se zarděla;
-svědomí ji přece tlačí,
-šeptá cosi sestře mladší.
-Sestřička od večeře
-vyšla rychle za dvéře:
-"Na věky se, Tomane,
-milá s tebou rozstane,
-jinému se dostane.
-Najezdil jsi se k nám dosti,
-dnes tu máme bližší hosti,
-hledej sobě jinde štěstí."
-
-Toman koněm zatočil,
-v šíré pole poskočil,
-zaťal zuby, smračil čelo,
-kolem všecko neveselo.
-Půlnoc byla, měsíc zašel,
-sotva jezdec cestu našel;
-prudce hned, pak loudavě
-ubíral se k doubravě.
-"Všecky krásné hvězdičky
-ze tmy jsou se prosypaly,
-proč vy, moje mladé dni,
-ve tmách jste se zasypaly!"
-
-Jede, jede doubravou,
-les šumí mu nad hlavou,
-větřík chladný z noci fouká,
-nad ouvalem sova houká;
-koník blýská očima,
-koník stříhá ušima.
-
-Cupy dupy z houštiny
-letí jelen v mejtiny,
-na jelínku podkasaná
-sedí sobě Lesní panna;
-šaty půl má zelené,
-půl kadeřmi černěné,
-a ze svatojanských broučků
-svítí pásek na kloboučku.
-
-Třikrát kolem jak střela
-v běhu koně objela,
-pak Tomanovi po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, nezoufej,
-bujným větrům žalost dej,
-jedna-li tě opustila,
-nahradí to stokrát jiná.
-Švarný hochu, nezoufej,
-bujným větrům žalost dej!"
-To když sladce zpívala,
-v oči se mu dívala
-Lesní panna na jelenu,
-Toman cítí v srdci změnu.
-
-Jedou, jedou pospolu
-měkkým mechem do dolu,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň;
-líbí-li se ti mé líce,
-dám radostí na tisíce.
-Švarný hochu, skloň se, skloň,
-jenom dále se mnou hoň!"
-To kdy panna zpívala,
-za ruku ho ujala;
-Tomanovi rozkoš proudem
-prolila se každým oudem.
-
-Jedou, jedou dál a dál
-podlé řeky, podlé skal,
-panna Tomanu po boku
-vyrovnává v plavném skoku:
-"Švarný hochu, můj jsi, můj!
-K mému bytu se mnou pluj;
-světla denního v mém domě
-věčně nezachce se tobě.
-Švarný hochu, můj jsi, můj -
-k mému bytu se mnou pluj!"
-
-To kdy panna zpívala,
-v ústa jezdce líbala,
-v náručí ho objala.
-Tomanovi srdce plesá,
-uzdu pouští, s koně klesá
-pod skalami prostřed lesa.
-
-Slunce vyšlo nad horu,
-skáče koník do dvoru,
-smutně hrabe podkovou,
-řehce zprávu nedobrou.
-Sestra k oknu přiskočila,
-a rukama zalomila
-"Bratře můj, bratříčku můj,
-kde skonal jsi život svůj!"&lt;/c:data&gt;
-</actual>
-</fail>
+</pass>
 <pass uri='http://tests.xproc.org/tests/required/data-007.xml'>
 <title>Test p:data #007</title>
 </pass>
@@ -1151,7 +560,7 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0022-001.xml'>
 <title>Test for err:XD0022 #001</title>
-<error expected='err:XD0022'>null</error>
+<message>XD0022</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0023-001.xml'>
 <title>Test err:XD0023 - #001</title>
@@ -2726,41 +2135,26 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 </test-suite>
 <test-suite>
-<title>Serialization tests</title>
 <pass uri='http://tests.xproc.org/tests/serialization/byte-order-mark-001.xml'>
 <title>Serialization test byte-order-mark-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/byte-order-mark-002.xml'>
 <title>Serialization test byte-order-mark-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/cdata-section-elements-001.xml'>
 <title>Serialization test cdata-section-elements-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/cdata-section-elements-002.xml'>
 <title>Serialization test cdata-section-elements-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/doctype-public-001.xml'>
 <title>Serialization test doctype-public-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/doctype-system-001.xml'>
 <title>Serialization test doctype-system-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/encoding-001.xml'>
 <title>Serialization test encoding-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/err-d0020-001.xml'>
 <title>Test for err:XD0020 #001</title>
@@ -2768,92 +2162,57 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/escape-uri-001.xml'>
 <title>Serialization test escape-uri-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/escape-uri-002.xml'>
 <title>Serialization test escape-uri-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/include-content-type-001.xml'>
 <title>Serialization test include-content-type #001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/include-content-type-002.xml'>
 <title>Serialization test include-content-type #002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/indent-001.xml'>
 <title>Serialization test indent #001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/indent-002.xml'>
 <title>Serialization test indent #002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/media-type-001.xml'>
 <title>Serialization test media-type #001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/normalization-form-001.xml'>
 <title>Serialization test normalization-form-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/normalization-form-002.xml'>
 <title>Serialization test normalization-form-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/normalization-form-003.xml'>
 <title>Serialization test normalization-form-003</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/omit-xml-declaration-001.xml'>
 <title>Serialization test omit-xml-declaration-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/omit-xml-declaration-002.xml'>
 <title>Serialization test omit-xml-declaration-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/standalone-001.xml'>
 <title>Serialization test standalone-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/standalone-002.xml'>
 <title>Serialization test standalone-002</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/standalone-003.xml'>
 <title>Serialization test standalone-003</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/undeclare-prefixes-001.xml'>
 <title>Serialization test undeclare-prefixes-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/serialization/version-001.xml'>
 <title>Serialization test version-001</title>
-<message>java.io.IOException: Cannot run program "serdiff": java.io.IOException: error=2, No such file or directory</message>
-<message>Compare pipelines failed: this shouldn't happen.</message>
 </pass>
 </test-suite>
 <test-suite>
-<title>Optional tests</title>
 <pass uri='http://tests.xproc.org/tests/optional/err-c0033-001.xml'>
 <title>Test for err:XC0033 - 001</title>
 <error expected='err:XC0033'>null</error>
@@ -3228,16 +2587,9 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 <pass uri='http://tests.xproc.org/tests/optional/xquery-006.xml'>
 <title>Test xquery-006</title>
 </pass>
-<fail uri='http://tests.xproc.org/tests/optional/xsl-formatter-001.xml'>
+<pass uri='http://tests.xproc.org/tests/optional/xsl-formatter-001.xml'>
 <title>Test XSL Formatter #001</title>
-<expected>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"
-          xmlns:t="http://xproc.org/ns/testsuite"
-          xmlns:p="http://www.w3.org/ns/xproc"
-          xmlns:err="http://www.w3.org/ns/xproc-error"&gt;file:///tmp/out.pdf&lt;/c:result&gt;
-</expected>
-<actual>&lt;c:result xmlns:c="http://www.w3.org/ns/xproc-step"&gt;file:/tmp/out.pdf&lt;/c:result&gt;
-</actual>
-</fail>
+</pass>
 <pass uri='http://tests.xproc.org/tests/optional/xslt2-001.xml'>
 <title>Test XSLT 2.0 #001</title>
 </pass>
@@ -3249,14 +2601,12 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 </test-suite>
 <test-suite>
-<title>Extension tests</title>
 <pass uri='http://tests.xproc.org/tests/extension/unimpl-001.xml'>
 <title>Test extension elements and attributes</title>
 <error expected='err:XD0017'>null</error>
 </pass>
 </test-suite>
 <test-suite>
-<title>XML Calabash extension tests</title>
 <pass uri='http://xmlcalabash.com/tests/adhoc-query-001.xml'>
 <title>Test ml:adhoc-query-001</title>
 </pass>
@@ -3334,6 +2684,9 @@ kde skonal jsi život svůj!"&lt;/c:data&gt;
 </pass>
 <pass uri='http://xmlcalabash.com/tests/sparql-001.xml'>
 <title>Test cx:sparql #001</title>
+</pass>
+<pass uri='http://xmlcalabash.com/tests/xinclude-001.xml'>
+<title>Test p:xinclude 1.1 support</title>
 </pass>
 </test-suite>
 </test-report>
