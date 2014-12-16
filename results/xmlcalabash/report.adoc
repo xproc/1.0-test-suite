@@ -1,7 +1,7 @@
 
 = XProc Test Results for XML Calabash
 
-Passed 769 of 769 tests (100.00%) on 02 Oct 2014 at 08:59a.
+Passed 769 of 769 tests (100.00%) on 16 Dec 2014 at 08:05a.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 769 of 769 tests (100.00%) on 02 Oct 2014 at 08:59a.
 |Name|XML Calabash|Language|en-US
 |Vendor|Norman Walsh|XProc version|1.0
 |Vendor URI|http://xmlcalabash.com/|XPath version|2.0
-|Version|1.0.21 (for Saxon 9.5.1.5/EE)|PSVI Supported|true
+|Version|1.0.22 (for Saxon 9.6.0.3/EE)|PSVI Supported|true
 |=============================================
 
 
