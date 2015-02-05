@@ -1,7 +1,7 @@
 
 = XProc Test Results for XML Calabash
 
-Passed 769 of 769 tests (100.00%) on 16 Dec 2014 at 08:05a.
+Passed 769 of 769 tests (100.00%) on 05 Feb 2015 at 08:52a.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 769 of 769 tests (100.00%) on 16 Dec 2014 at 08:05a.
 |Name|XML Calabash|Language|en-US
 |Vendor|Norman Walsh|XProc version|1.0
 |Vendor URI|http://xmlcalabash.com/|XPath version|2.0
-|Version|1.0.22 (for Saxon 9.6.0.3/EE)|PSVI Supported|true
+|Version|1.0.24 (for Saxon 9.6.0.3/EE)|PSVI Supported|true
 |=============================================
 
 
@@ -861,7 +861,7 @@ Wrong error: expected err:XD0006 but err:XD0007 was raised.
 ==== Error message
 
 
-* XD0007
+* com.xmlcalabash.core.XProcException
 
 [role="pass"]
 === PASS Test err:XD0007
@@ -871,7 +871,7 @@ http://tests.xproc.org/tests/required/err-d0007-001.xml
 ==== Error message
 
 
-* XD0007
+* com.xmlcalabash.core.XProcException
 
 [role="pass"]
 === PASS Test err:XD0007 (p:viewport)
@@ -895,7 +895,7 @@ Wrong error: expected err:XD0007 but err:XD0006 was raised.
 ==== Error message
 
 
-* XD0006
+* Writing to out on loop
 
 [role="pass"]
 === PASS Test output-003
@@ -905,7 +905,7 @@ http://tests.xproc.org/tests/required/err-d0007-004.xml
 ==== Error message
 
 
-* XD0007
+* Reading result on !1.3.1
 
 [role="pass"]
 === PASS Test err:XD0008
@@ -2899,7 +2899,7 @@ Wrong error: expected err:XS0058 but err:XD0007 was raised.
 ==== Error message
 
 
-* XD0007
+* Reading result on !1.3.1
 
 [role="pass"]
 === PASS Test for err:XS0059 #001
@@ -4559,7 +4559,7 @@ http://tests.xproc.org/tests/optional/exec-015.xml
 ==== Error message
 
 
-* XD0006
+* Reading source on exec
 
 [role="pass"]
 === PASS Test exec-016

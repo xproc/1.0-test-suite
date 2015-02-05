@@ -1,10 +1,10 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for XML Calabash</title>
-<date>2014-12-16T08:05:51</date>
+<date>2015-02-05T08:52:40</date>
 <processor>
   <psvi-supported>true</psvi-supported>
   <vendor-uri>http://xmlcalabash.com/</vendor-uri>
-  <version>1.0.22 (for Saxon 9.6.0.3/EE)</version>
+  <version>1.0.24 (for Saxon 9.6.0.3/EE)</version>
   <xpath-version>2.0</xpath-version>
   <name>XML Calabash</name>
   <xproc-version>1.0</xproc-version>
@@ -433,11 +433,11 @@
 <pass uri='http://tests.xproc.org/tests/required/err-d0006-001.xml'>
 <title>Test err:XD0006 #001</title>
 <error expected='err:XD0006'>err:XD0007</error>
-<message>XD0007</message>
+<message>com.xmlcalabash.core.XProcException</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0007-001.xml'>
 <title>Test err:XD0007</title>
-<message>XD0007</message>
+<message>com.xmlcalabash.core.XProcException</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0007-002.xml'>
 <title>Test err:XD0007 (p:viewport)</title>
@@ -446,11 +446,11 @@
 <pass uri='http://tests.xproc.org/tests/required/err-d0007-003.xml'>
 <title>Test err:XD0007 #003</title>
 <error expected='err:XD0007'>err:XD0006</error>
-<message>XD0006</message>
+<message>Writing to out on loop</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0007-004.xml'>
 <title>Test output-003</title>
-<message>XD0007</message>
+<message>Reading result on !1.3.1</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-d0008-001.xml'>
 <title>Test err:XD0008</title>
@@ -1243,7 +1243,7 @@
 <pass uri='http://tests.xproc.org/tests/required/err-s0058-001.xml'>
 <title>Test err:XS0058 #001</title>
 <error expected='err:XS0058'>err:XD0007</error>
-<message>XD0007</message>
+<message>Reading result on !1.3.1</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/err-s0059-001.xml'>
 <title>Test for err:XS0059 #001</title>
@@ -2362,7 +2362,7 @@
 </pass>
 <pass uri='http://tests.xproc.org/tests/optional/exec-015.xml'>
 <title>Test exec-015</title>
-<message>XD0006</message>
+<message>Reading source on exec</message>
 </pass>
 <pass uri='http://tests.xproc.org/tests/optional/exec-016.xml'>
 <title>Test exec-016</title>
