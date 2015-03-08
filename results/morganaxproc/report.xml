@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2014-09-16T19:25:08</date>
+<date>2015-03-08T11:53:56</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-3 (public beta) with SaxonXSLTConnector</version>
+<version>0.95-4 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.4)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
@@ -2054,7 +2054,7 @@
 </pass>
 <fail uri='http://tests.xproc.org/tests/optional/psvi-required-001.xml'>
 <title>Test psvi-required-001.xml</title>
-<error >err:XD0022</error>
+<error >err:err:XD0022</error>
 </fail>
 <pass uri='http://tests.xproc.org/tests/optional/template-001.xml'>
 <title>Test p:template-001</title>
