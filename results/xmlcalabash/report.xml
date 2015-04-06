@@ -1,10 +1,10 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for XML Calabash</title>
-<date>2015-02-10T18:04:56</date>
+<date>2015-04-06T12:04:11</date>
 <processor>
   <psvi-supported>true</psvi-supported>
   <vendor-uri>http://xmlcalabash.com/</vendor-uri>
-  <version>1.0.25 (for Saxon 9.6.0.3/EE)</version>
+  <version>1.0.32 (for Saxon 9.6.0.4/EE)</version>
   <xpath-version>2.0</xpath-version>
   <name>XML Calabash</name>
   <xproc-version>1.0</xproc-version>
