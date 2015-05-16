@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 758 of 761 tests (99.61%) on 08 Mar 2015 at 11:53a.
+Passed 810 of 813 tests (99.63%) on 16 May 2015 at 05:43p.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 758 of 761 tests (99.61%) on 08 Mar 2015 at 11:53a.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-4 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.4)|PSVI Supported|false
+|Version|0.95-5 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
 |=============================================
 
 
@@ -3020,82 +3020,295 @@ http://tests.xproc.org/tests/extension/unimpl-001.xml
 
 == xml-project's additional tests
 
-Passed 19 of 19 tests (100.00%).
+Passed 21 of 21 tests (100.00%).
 
 [role="pass"]
 === PASS Test for-each #013
-http://www.xml-project.com/files/xproc-tests/for-each-013.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/for-each-013.xml
 
 [role="pass"]
 === PASS Test viewport #012
-http://www.xml-project.com/files/xproc-tests/viewport-012.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/viewport-012.xml
 
 [role="pass"]
 === PASS Test additional pipe 001
-http://www.xml-project.com/files/xproc-tests/add-pipe-001.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-001.xml
 
 [role="pass"]
 === PASS Test additional pipe 002
-http://www.xml-project.com/files/xproc-tests/add-pipe-002.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-002.xml
 
 [role="pass"]
 === PASS Test additional pipe 003
-http://www.xml-project.com/files/xproc-tests/add-pipe-003.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-003.xml
 
 [role="pass"]
 === PASS Test additional pipe 004
-http://www.xml-project.com/files/xproc-tests/add-pipe-004.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-004.xml
 
 [role="pass"]
 === PASS Test additional pipe 005
-http://www.xml-project.com/files/xproc-tests/add-pipe-005.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-005.xml
 
 [role="pass"]
 === PASS Test additional pipe 006
-http://www.xml-project.com/files/xproc-tests/add-pipe-006.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-006.xml
 
 [role="pass"]
 === PASS Test additional pipe 007
-http://www.xml-project.com/files/xproc-tests/add-pipe-007.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-007.xml
 
 [role="pass"]
 === PASS Test additional pipe 008
-http://www.xml-project.com/files/xproc-tests/add-pipe-008.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-008.xml
 
 [role="pass"]
 === PASS Test additional pipe 009
-http://www.xml-project.com/files/xproc-tests/add-pipe-009.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-009.xml
 
 [role="pass"]
 === PASS Test additional pipe-010
-http://www.xml-project.com/files/xproc-tests/add-pipe-010.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-010.xml
 
 [role="pass"]
 === PASS Test additional pipe 011
-http://www.xml-project.com/files/xproc-tests/add-pipe-011.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-011.xml
 
 [role="pass"]
 === PASS Test additional pipe 012
-http://www.xml-project.com/files/xproc-tests/add-pipe-012.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-012.xml
 
 [role="pass"]
 === PASS Test additional pipe 013
-http://www.xml-project.com/files/xproc-tests/add-pipe-013.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-013.xml
 
 [role="pass"]
 === PASS Test additional output pipe 001
-http://www.xml-project.com/files/xproc-tests/add-output-pipe-001.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-001.xml
 
 [role="pass"]
 === PASS Test additional output pipe 002
-http://www.xml-project.com/files/xproc-tests/add-output-pipe-002.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-002.xml
 
 [role="pass"]
 === PASS Test additional output pipe 003
-http://www.xml-project.com/files/xproc-tests/add-output-pipe-003.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-003.xml
 
 [role="pass"]
 === PASS Test p:data - csv
-http://www.xml-project.com/files/xproc-tests/data-csv.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/data-csv.xml
+
+[role="pass"]
+=== PASS Test extensions-001: Test presence of loaded extension step
+http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-001.xml
+
+[role="pass"]
+=== PASS Test extensions-002: Test presence of loaded extension function
+http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-002.xml
+
+
+== xml-project's additional tests for proposed File System Extensions and Operating System Utilities
+
+Passed 50 of 50 tests (100.00%).
+
+[role="pass"]
+=== PASS pos:cwd-001 - tests pos:cwd return same result as pos:info
+http://www.xml-project.com/files/xproc-tests/extension-tests/pos_cwd001.xml
+
+[role="pass"]
+=== PASS pos:env-001 - tests pos:env return same result as pos:info for user and home
+http://www.xml-project.com/files/xproc-tests/extension-tests/pos_env001.xml
+
+[role="pass"]
+=== PASS pos:info-001 - get system info
+http://www.xml-project.com/files/xproc-tests/extension-tests/pos_info001.xml
+
+[role="pass"]
+=== PASS pxf:copy-001 - simple copy
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy001.xml
+
+[role="pass"]
+=== PASS pxf:copy-002 - copy to non existing folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy002.xml
+
+[role="pass"]
+=== PASS pxf:copy-003 - copy non existing file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy003.xml
+
+[role="pass"]
+=== PASS pxf:copy-004 - copy to folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy004.xml
+
+[role="pass"]
+=== PASS pxf:copy-005 - copy non existing file, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy005.xml
+
+[role="pass"]
+=== PASS pxf:delete001 - delete a file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete001.xml
+
+[role="pass"]
+=== PASS pxf:delete002 - try to delete non existing file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete002.xml
+
+[role="pass"]
+=== PASS pxf:delete003 - delete non existing file, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete003.xml
+
+[role="pass"]
+=== PASS pxf:delete004 - delete empty folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete004.xml
+
+[role="pass"]
+=== PASS pxf:delete005 - delete a non empty folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete005.xml
+
+[role="pass"]
+=== PASS pxf:delete006 - delete a non empty folder with recursive=false
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete006.xml
+
+[role="pass"]
+=== PASS pxf:delete007 - delete a non empty folder with recursive=false, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete007.xml
+
+[role="pass"]
+=== PASS pxf:head001
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head001.xml
+
+[role="pass"]
+=== PASS pxf:head002 - not existing
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head002.xml
+
+[role="pass"]
+=== PASS pxf:head003 - no file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head003.xml
+
+[role="pass"]
+=== PASS pxf:head004 negative count
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head004.xml
+
+[role="pass"]
+=== PASS pxf:head005 - not existing, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head005.xml
+
+[role="pass"]
+=== PASS pxf:info_001, a file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info001.xml
+
+[role="pass"]
+=== PASS pxf:info_002, not existing file, no failure
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info002.xml
+
+[role="pass"]
+=== PASS pxf:info_003, Non existing file, fail-on-error
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info003.xml
+
+[role="pass"]
+=== PASS pxf:info_004, a directory
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info004.xml
+
+[role="pass"]
+=== PASS pxf:info_005 - extension attribute 'content-type'
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info005.xml
+
+[role="pass"]
+=== PASS pxf:mkdir-001 - create a folder in tmp
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir001.xml
+
+[role="pass"]
+=== PASS pxf:mkdir-002 - create an already existing folder in tmp
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir002.xml
+
+[role="pass"]
+=== PASS pxf:mkdir-003 - create an already existing folder in tmp, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir003.xml
+
+[role="pass"]
+=== PASS pxf:move-001 - simple move in same folder (rename)
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move001.xml
+
+[role="pass"]
+=== PASS pxf:move-002 - move to non existing folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move002.xml
+
+[role="pass"]
+=== PASS pxf:move-003 - move non existing file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move003.xml
+
+[role="pass"]
+=== PASS pxf:move-004 - move to folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move004.xml
+
+[role="pass"]
+=== PASS pxf:move-005 - move non existing file, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move005.xml
+
+[role="pass"]
+=== PASS pxf:tail001
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail001.xml
+
+[role="pass"]
+=== PASS pxf:tail002 - not existing
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail002.xml
+
+[role="pass"]
+=== PASS pxf:tail003 - no file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail003.xml
+
+[role="pass"]
+=== PASS pxf:tail004 negative count
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail004.xml
+
+[role="pass"]
+=== PASS pxf:tail005 - not existing, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail005.xml
+
+[role="pass"]
+=== PASS pxf:tempdir001 - create temp dir
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir001.xml
+
+[role="pass"]
+=== PASS pxf:tempdir002 - create temp dir in non existing folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir002.xml
+
+[role="pass"]
+=== PASS pxf:tempdir003 - create temp dir in non writable folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir003.xml
+
+[role="pass"]
+=== PASS pxf:tempdir004 - create temp dir with prefix and suffix
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir004.xml
+
+[role="pass"]
+=== PASS pxf:tempfile001 - create temp file
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile001.xml
+
+[role="pass"]
+=== PASS pxf:tempfile002 - create temp file in non existing folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile002.xml
+
+[role="pass"]
+=== PASS pxf:tempfile003 - create temp file in non writable folder
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile003.xml
+
+[role="pass"]
+=== PASS pxf:tempfile004 - create temp file with prefix and suffix
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile004.xml
+
+[role="pass"]
+=== PASS pxf:touch001 - set date to noon of epoch
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch001.xml
+
+[role="pass"]
+=== PASS pxf:touch002 - not existing
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch002.xml
+
+[role="pass"]
+=== PASS pxf:touch003 - illegal time stamp
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch003.xml
+
+[role="pass"]
+=== PASS pxf:touch004 - not existing, no fail
+http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch004.xml
 
 
