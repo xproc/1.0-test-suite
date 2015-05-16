@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2015-03-08T11:53:56</date>
+<date>2015-05-16T17:43:07</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-4 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.4)</version>
+<version>0.95-5 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
@@ -2254,62 +2254,221 @@
 </test-suite>
 <test-suite>
 <title>xml-project's additional tests</title>
-<pass uri='http://www.xml-project.com/files/xproc-tests/for-each-013.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/for-each-013.xml'>
 <title>Test for-each #013</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/viewport-012.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/viewport-012.xml'>
 <title>Test viewport #012</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-001.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-001.xml'>
 <title>Test additional pipe 001</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-002.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-002.xml'>
 <title>Test additional pipe 002</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-003.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-003.xml'>
 <title>Test additional pipe 003</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-004.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-004.xml'>
 <title>Test additional pipe 004</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-005.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-005.xml'>
 <title>Test additional pipe 005</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-006.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-006.xml'>
 <title>Test additional pipe 006</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-007.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-007.xml'>
 <title>Test additional pipe 007</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-008.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-008.xml'>
 <title>Test additional pipe 008</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-009.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-009.xml'>
 <title>Test additional pipe 009</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-010.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-010.xml'>
 <title>Test additional pipe-010</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-011.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-011.xml'>
 <title>Test additional pipe 011</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-012.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-012.xml'>
 <title>Test additional pipe 012</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-pipe-013.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-pipe-013.xml'>
 <title>Test additional pipe 013</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-output-pipe-001.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-001.xml'>
 <title>Test additional output pipe 001</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-output-pipe-002.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-002.xml'>
 <title>Test additional output pipe 002</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-output-pipe-003.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-003.xml'>
 <title>Test additional output pipe 003</title>
 </pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/data-csv.xml'>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/data-csv.xml'>
 <title>Test p:data - csv</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-001.xml'>
+<title>Test extensions-001: Test presence of loaded extension step</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-002.xml'>
+<title>Test extensions-002: Test presence of loaded extension function</title>
+</pass>
+</test-suite>
+<test-suite>
+<title>xml-project's additional tests for proposed File System Extensions and Operating System Utilities</title>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pos_cwd001.xml'>
+<title>pos:cwd-001 - tests pos:cwd return same result as pos:info</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pos_env001.xml'>
+<title>pos:env-001 - tests pos:env return same result as pos:info for user and home</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pos_info001.xml'>
+<title>pos:info-001 - get system info</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy001.xml'>
+<title>pxf:copy-001 - simple copy</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy002.xml'>
+<title>pxf:copy-002 - copy to non existing folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy003.xml'>
+<title>pxf:copy-003 - copy non existing file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy004.xml'>
+<title>pxf:copy-004 - copy to folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy005.xml'>
+<title>pxf:copy-005 - copy non existing file, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete001.xml'>
+<title>pxf:delete001 - delete a file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete002.xml'>
+<title>pxf:delete002 - try to delete non existing file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete003.xml'>
+<title>pxf:delete003 - delete non existing file, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete004.xml'>
+<title>pxf:delete004 - delete empty folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete005.xml'>
+<title>pxf:delete005 - delete a non empty folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete006.xml'>
+<title>pxf:delete006 - delete a non empty folder with recursive=false</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_delete007.xml'>
+<title>pxf:delete007 - delete a non empty folder with recursive=false, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head001.xml'>
+<title>pxf:head001</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head002.xml'>
+<title>pxf:head002 - not existing</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head003.xml'>
+<title>pxf:head003 - no file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head004.xml'>
+<title>pxf:head004 negative count</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_head005.xml'>
+<title>pxf:head005 - not existing, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info001.xml'>
+<title>pxf:info_001, a file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info002.xml'>
+<title>pxf:info_002, not existing file, no failure</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info003.xml'>
+<title>pxf:info_003, Non existing file, fail-on-error</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info004.xml'>
+<title>pxf:info_004, a directory</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_info005.xml'>
+<title>pxf:info_005 - extension attribute 'content-type'</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir001.xml'>
+<title>pxf:mkdir-001 - create a folder in tmp</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir002.xml'>
+<title>pxf:mkdir-002 - create an already existing folder in tmp</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_mkdir003.xml'>
+<title>pxf:mkdir-003 - create an already existing folder in tmp, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move001.xml'>
+<title>pxf:move-001 - simple move in same folder (rename)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move002.xml'>
+<title>pxf:move-002 - move to non existing folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move003.xml'>
+<title>pxf:move-003 - move non existing file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move004.xml'>
+<title>pxf:move-004 - move to folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move005.xml'>
+<title>pxf:move-005 - move non existing file, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail001.xml'>
+<title>pxf:tail001</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail002.xml'>
+<title>pxf:tail002 - not existing</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail003.xml'>
+<title>pxf:tail003 - no file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail004.xml'>
+<title>pxf:tail004 negative count</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tail005.xml'>
+<title>pxf:tail005 - not existing, no fail</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir001.xml'>
+<title>pxf:tempdir001 - create temp dir</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir002.xml'>
+<title>pxf:tempdir002 - create temp dir in non existing folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir003.xml'>
+<title>pxf:tempdir003 - create temp dir in non writable folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempdir004.xml'>
+<title>pxf:tempdir004 - create temp dir with prefix and suffix</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile001.xml'>
+<title>pxf:tempfile001 - create temp file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile002.xml'>
+<title>pxf:tempfile002 - create temp file in non existing folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile003.xml'>
+<title>pxf:tempfile003 - create temp file in non writable folder</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_tempfile004.xml'>
+<title>pxf:tempfile004 - create temp file with prefix and suffix</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch001.xml'>
+<title>pxf:touch001 - set date to noon of epoch</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch002.xml'>
+<title>pxf:touch002 - not existing</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch003.xml'>
+<title>pxf:touch003 - illegal time stamp</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch004.xml'>
+<title>pxf:touch004 - not existing, no fail</title>
 </pass>
 </test-suite>
 </test-report>
