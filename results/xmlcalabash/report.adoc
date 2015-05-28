@@ -1,7 +1,7 @@
 
 = XProc Test Results for XML Calabash
 
-Passed 770 of 770 tests (100.00%) on 06 Apr 2015 at 12:04p.
+Passed 770 of 770 tests (100.00%) on 28 May 2015 at 10:55a.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 770 of 770 tests (100.00%) on 06 Apr 2015 at 12:04p.
 |Name|XML Calabash|Language|en-US
 |Vendor|Norman Walsh|XProc version|1.0
 |Vendor URI|http://xmlcalabash.com/|XPath version|2.0
-|Version|1.0.32 (for Saxon 9.6.0.4/EE)|PSVI Supported|true
+|Version|1.1.4 (for Saxon 9.6.0.4/EE)|PSVI Supported|true
 |=============================================
 
 
@@ -4099,16 +4099,10 @@ http://tests.xproc.org/tests/required/xslt-001.xml
 === PASS Test xslt-002
 http://tests.xproc.org/tests/required/xslt-002.xml
 
-Wrong error: expected err:XC0038 but err:XD0001 was raised.
+Wrong error: expected err:XC0038 but null was raised.
 
 * XC0038: It is a dynamic error if the specified version of XSLT is not available.
-* XD0001: It is a dynamic error if a non-XML resource is produced on a step output or arrives on a step input.
-
-==== Error message
-
-
-* Only whitespace text nodes can appear at the top level in a document
-
+* null: 
 [role="pass"]
 === PASS Test xslt-003
 http://tests.xproc.org/tests/required/xslt-003.xml

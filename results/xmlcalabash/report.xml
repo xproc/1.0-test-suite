@@ -1,10 +1,10 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for XML Calabash</title>
-<date>2015-04-06T12:04:11</date>
+<date>2015-05-28T10:55:47</date>
 <processor>
   <psvi-supported>true</psvi-supported>
   <vendor-uri>http://xmlcalabash.com/</vendor-uri>
-  <version>1.0.32 (for Saxon 9.6.0.4/EE)</version>
+  <version>1.1.4 (for Saxon 9.6.0.4/EE)</version>
   <xpath-version>2.0</xpath-version>
   <name>XML Calabash</name>
   <xproc-version>1.0</xproc-version>
@@ -2118,8 +2118,7 @@
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/xslt-002.xml'>
 <title>Test xslt-002</title>
-<error expected='err:XC0038'>err:XD0001</error>
-<message>Only whitespace text nodes can appear at the top level in a document</message>
+<error expected='err:XC0038'>null</error>
 </pass>
 <pass uri='http://tests.xproc.org/tests/required/xslt-003.xml'>
 <title>Test xslt-003</title>
