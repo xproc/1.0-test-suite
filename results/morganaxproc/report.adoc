@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 810 of 813 tests (99.63%) on 16 May 2015 at 05:43p.
+Passed 810 of 813 tests (99.63%) on 30 May 2015 at 04:03p.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 810 of 813 tests (99.63%) on 16 May 2015 at 05:43p.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-5 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
+|Version|0.95-6 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
 |=============================================
 
 

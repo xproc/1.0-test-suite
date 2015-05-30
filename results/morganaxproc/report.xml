@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2015-05-16T17:43:07</date>
+<date>2015-05-30T16:03:30</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-5 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)</version>
+<version>0.95-6 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
