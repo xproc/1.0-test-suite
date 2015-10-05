@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 810 of 813 tests (99.63%) on 30 May 2015 at 04:03p.
+Passed 850 of 853 tests (99.65%) on 04 Oct 2015 at 02:30p.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 810 of 813 tests (99.63%) on 30 May 2015 at 04:03p.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-6 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
+|Version|0.95-8 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
 |=============================================
 
 
@@ -2753,9 +2753,9 @@ http://tests.xproc.org/tests/optional/in-scope-names-002.xml
 === FAIL Test psvi-required-001.xml
 http://tests.xproc.org/tests/optional/psvi-required-001.xml
 
-Error: err:err:XD0022 was raised. 
+Error: err:XD0022 was raised. 
 
-* err:XD0022: 
+* XD0022: It is a dynamic error if a processor that does not support PSVI annotations attempts to invoke a step which asserts that they are required.
 [role="pass"]
 === PASS Test p:template-001
 http://tests.xproc.org/tests/optional/template-001.xml
@@ -3020,15 +3020,27 @@ http://tests.xproc.org/tests/extension/unimpl-001.xml
 
 == xml-project's additional tests
 
-Passed 21 of 21 tests (100.00%).
+Passed 22 of 22 tests (100.00%).
 
 [role="pass"]
 === PASS Test for-each #013
 http://www.xml-project.com/files/xproc-tests/additional-tests/for-each-013.xml
 
 [role="pass"]
+=== PASS Test for-each #014
+http://www.xml-project.com/files/xproc-tests/additional-tests/for-each-014.xml
+
+[role="pass"]
 === PASS Test viewport #012
 http://www.xml-project.com/files/xproc-tests/additional-tests/viewport-012.xml
+
+[role="pass"]
+=== PASS Test viewport #013
+http://www.xml-project.com/files/xproc-tests/additional-tests/viewport-013.xml
+
+[role="pass"]
+=== PASS Test viewport #014
+http://www.xml-project.com/files/xproc-tests/additional-tests/viewport-014.xml
 
 [role="pass"]
 === PASS Test additional pipe 001
@@ -3095,16 +3107,8 @@ http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-00
 http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-003.xml
 
 [role="pass"]
-=== PASS Test p:data - csv
-http://www.xml-project.com/files/xproc-tests/additional-tests/data-csv.xml
-
-[role="pass"]
-=== PASS Test extensions-001: Test presence of loaded extension step
-http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-001.xml
-
-[role="pass"]
-=== PASS Test extensions-002: Test presence of loaded extension function
-http://www.xml-project.com/files/xproc-tests/additional-tests/extensions-002.xml
+=== PASS Test xslt-add-001.xml
+http://www.xml-project.com/files/xproc-tests/additional-tests/xslt-add-001.xml
 
 
 == xml-project's additional tests for proposed File System Extensions and Operating System Utilities
@@ -3310,5 +3314,166 @@ http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch003.xml
 [role="pass"]
 === PASS pxf:touch004 - not existing, no fail
 http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch004.xml
+
+
+== Tests for additional features of MorganaXProc
+
+Passed 39 of 39 tests (100.00%).
+
+[role="pass"]
+=== PASS Test additional choose-add-001 - test correct handling of p:choose without an output port
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/choose-add-001.xml
+
+[role="pass"]
+=== PASS Test additional try/catch 001 - test correct handling of p:try without an output port
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/try-catch-add-001.xml
+
+[role="pass"]
+=== PASS Test xquery functions 001 - importing xquery functions to xproc context
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-001.xml
+
+[role="pass"]
+=== PASS Test xquery functions 002 - importing xquery functions to xproc context checking namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-002.xml
+
+[role="pass"]
+=== PASS Test xquery functions 003 - importing xquery functions to xproc context, wrong namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-003.xml
+
+[role="pass"]
+=== PASS Test xquery functions 004 - importing xquery functions to xproc context, wrong uri
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-004.xml
+
+[role="pass"]
+=== PASS Test xquery functions 005 - importing xquery functions to xproc context, function not visible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-005.xml
+
+[role="pass"]
+=== PASS Test xquery functions 006 - importing xquery functions to xproc context, variables not visible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-006.xml
+
+[role="pass"]
+=== PASS Test xquery functions 007 - importing xquery functions to xproc context, circular import fails
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-007.xml
+
+[role="pass"]
+=== PASS Test xquery functions 008 - importing xquery functions to xproc context, checking scope - visible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-008.xml
+
+[role="pass"]
+=== PASS Test xquery functions 009 - importing xquery functions to xproc context, checking scope - invisible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-009.xml
+
+[role="pass"]
+=== PASS Test xquery functions 010 - importing xquery functions to xproc context, does not leak to imports
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-010.xml
+
+[role="pass"]
+=== PASS Test java functions 001 - importing java functions to xproc context
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-001.xml
+
+[role="pass"]
+=== PASS Test java functions 002 - importing java functions to xproc context checking namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-002.xml
+
+[role="pass"]
+=== PASS Test java functions 003 - importing java functions to xproc context, wrong namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-003.xml
+
+[role="pass"]
+=== PASS Test java functions 004 - importing java functions to xproc context, wrong uri
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-004.xml
+
+[role="pass"]
+=== PASS Test java functions 005 - importing java functions to xproc context, checking scope - visible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-005.xml
+
+[role="pass"]
+=== PASS Test java functions 006 - importing java functions to xproc context, checking scope - not visible
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-006.xml
+
+[role="pass"]
+=== PASS Test java functions 007- importing java functions to xproc context, checking scope, does not leak to imports
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-functions-007.xml
+
+[role="pass"]
+=== PASS Test java step 001 - importing xproc step from java library
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-step-001.xml
+
+[role="pass"]
+=== PASS Test java step 002 - importing xproc step from java library with namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-step-002.xml
+
+[role="pass"]
+=== PASS Test java step 003 - importing xproc step from java library with wrong namespace
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-step-003.xml
+
+[role="pass"]
+=== PASS Test java step 004 - importing xproc step from java library with wrong class name
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-step-004.xml
+
+[role="pass"]
+=== PASS Test java step 005 - importing xproc step from java library, also importing by uri
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/java-step-005.xml
+
+[role="pass"]
+=== PASS Test cwd-test - make sure, cwd function and cwd step return the same result
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/cwd-test.xml
+
+[role="pass"]
+=== PASS Test p:data - csv
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/data-csv.xml
+
+[role="pass"]
+=== PASS Test extensions-001: Test presence of loaded extension step
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/extensions-001.xml
+
+[role="pass"]
+=== PASS Test extensions-002: Test presence of loaded extension function
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/extensions-002.xml
+
+[role="pass"]
+=== PASS Test extensions-003: Test presence of loaded extension step, flags import with p:import
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/extensions-003.xml
+
+[role="pass"]
+=== PASS Test extensions-004: Test presence of loaded extension function, flags import with p:import
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/extensions-004.xml
+
+[role="pass"]
+=== PASS Tests depends-on-001: Tests setting dependency between steps with extension attribute
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-001.xml
+
+[role="pass"]
+=== PASS Tests depends-on-002: Tests setting dependency between steps with extension attribute. Useless depends-on
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-002.xml
+
+[role="pass"]
+=== PASS Tests depends-on-003: Tests setting dependency between steps with extension attribute: unknown step
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-003.xml
+
+[role="pass"]
+=== PASS Tests depends-on-004: Tests setting dependency between steps with extension attribute: circular dependency
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-004.xml
+
+[role="pass"]
+=== PASS Tests depends-on-005: Tests setting dependency between steps with extension attribute: Port dependency not affected
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-005.xml
+
+[role="pass"]
+=== PASS Tests depends-on-006: Tests setting dependency between steps with extension attribute: Forbidden dependency
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-006.xml
+
+[role="pass"]
+=== PASS Tests depends-on-007: Tests setting dependency between steps with extension attribute: Correct dependency
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-007.xml
+
+[role="pass"]
+=== PASS Tests depends-on-008: Tests setting dependency between steps with extension attribute: Circular dependency
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-008.xml
+
+[role="pass"]
+=== PASS Tests depends-on-009: Tests setting dependency between steps with extension attribute: testing step list
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-009.xml
 
 

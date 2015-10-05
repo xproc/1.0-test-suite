@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 810 of 813 tests (99.63%) on 30 May 2015 at 04:03p.
+Passed 850 of 853 tests (99.65%) on 04 Oct 2015 at 02:30p.
 
 :toc: right
 
@@ -13,7 +13,7 @@ This report only shows failing tests.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-6 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
+|Version|0.95-8 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
 |=============================================
 
 
@@ -55,9 +55,9 @@ Passed 113 of 114 tests (99.12%).
 === FAIL Test psvi-required-001.xml
 http://tests.xproc.org/tests/optional/psvi-required-001.xml
 
-Error: err:err:XD0022 was raised. 
+Error: err:XD0022 was raised. 
 
-* err:XD0022: 
+* XD0022: It is a dynamic error if a processor that does not support PSVI annotations attempts to invoke a step which asserts that they are required.
 
 == Extension tests
 
@@ -66,11 +66,16 @@ Passed 1 of 1 tests (100.00%).
 
 == xml-project's additional tests
 
-Passed 21 of 21 tests (100.00%).
+Passed 22 of 22 tests (100.00%).
 
 
 == xml-project's additional tests for proposed File System Extensions and Operating System Utilities
 
 Passed 50 of 50 tests (100.00%).
+
+
+== Tests for additional features of MorganaXProc
+
+Passed 39 of 39 tests (100.00%).
 
 
