@@ -23,12 +23,12 @@
       </p:identity>
 
       <p:string-replace match="/c:data/@content-type"
-                        replace="translate(.,'&quot; ','')"/>
+                        replace="replace(., '&quot;', '')"/>
     </p:declare-step>
   </t:pipeline>
   
   <t:output port='result'>
-    <c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type='text/plain;charset=utf-8'>Toman a lesní panna
+    <c:data xmlns:c="http://www.w3.org/ns/xproc-step" content-type='text/plain; charset=utf-8'>Toman a lesní panna
 František Ladislav Čelakovský
 
 Večer před svatým Janem

@@ -28,7 +28,7 @@
 </p:xsl-formatter>
 
 <p:string-replace match="/c:result/text()"
-                  replace="translate(normalize-space(translate(.,'/',' ')),' ','/')">
+                  replace="replace(., 'file:///', 'file:/')">
   <p:input port="source">
     <p:pipe step="xsl-fo" port="result"/>
   </p:input>
