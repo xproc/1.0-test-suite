@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2015-10-04T14:30:45</date>
+<date>2016-01-17T17:51:28</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-8 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)</version>
+<version>0.95-9 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.8)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
@@ -2254,6 +2254,12 @@
 </test-suite>
 <test-suite>
 <title>xml-project's additional tests</title>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/choose-add-001.xml'>
+<title>Test additional choose-add-001 - test correct handling of p:choose without an output port</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/try-catch-add-001.xml'>
+<title>Test additional try/catch 001 - test correct handling of p:try without an output port</title>
+</pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/for-each-013.xml'>
 <title>Test for-each #013</title>
 </pass>
@@ -2322,7 +2328,7 @@
 </pass>
 </test-suite>
 <test-suite>
-<title>xml-project's additional tests for proposed File System Extensions and Operating System Utilities</title>
+<title>xml-project's additional tests for proposed extension steps of http://exproc.org/proposed/steps/</title>
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pos_cwd001.xml'>
 <title>pos:cwd-001 - tests pos:cwd return same result as pos:info</title>
 </pass>
@@ -2473,15 +2479,189 @@
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_touch004.xml'>
 <title>pxf:touch004 - not existing, no fail</title>
 </pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_set_base_uri001.xml'>
+<title>pxp:set-base-uri 001. Tests pxp:set-base-uri</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_set_base_uri002.xml'>
+<title>pxp:set-base-uri 002. Tests pxp:set-base-uri</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_set_base_uri003.xml'>
+<title>pxp:set-base-uri 003. Tests pxp:set-base-uri</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress001.xml'>
+<title>pxp:un-/compress001 - tests pxp:compress and pxp:uncompress with default method</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress002.xml'>
+<title>pxp:un-/compress002 - tests pxp:compress and pxp:uncompress (default/gzip)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress003.xml'>
+<title>pxp:un-/compress003 - tests pxp:compress and pxp:uncompress (gzip/guess)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress004.xml'>
+<title>pxp:un-/compress004 - tests pxp:compress and pxp:uncompress (gzip/gzip)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress005.xml'>
+<title>pxp:un-/compress005 - tests pxp:compress and pxp:uncompress (bzip2/guess)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress006.xml'>
+<title>pxp:un-/compress006 - tests pxp:compress and pxp:uncompress (bzip2/bzip2)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress007.xml'>
+<title>pxp:un-/compress007 - tests pxp:compress and pxp:uncompress (deflate/guess)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress008.xml'>
+<title>pxp:un-/compress008 - tests pxp:compress and pxp:uncompress (deflate/deflate)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress009.xml'>
+<title>pxp:un-/compress009 - tests pxp:compress and pxp:uncompress (xz/guess)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress010.xml'>
+<title>pxp:un-/compress010 - tests pxp:compress and pxp:uncompress (xz/xz)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_un_compress011.xml'>
+<title>pxp:un-/compress011 - tests pxp:compress and pxp:uncompress from intermediate file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress001.xml'>
+<title>pxp:compress001 - tests pxp:compress content-type (default)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress002.xml'>
+<title>pxp:compress002 - tests pxp:compress content-type (gzip)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress003.xml'>
+<title>pxp:compress003 - tests pxp:compress content-type (bzip2)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress004.xml'>
+<title>pxp:compress004 - tests pxp:compress content-type (xz)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress005.xml'>
+<title>pxp:compress005 - tests pxp:compress with unknown method. Expected to fail with XD0030</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_compress006.xml'>
+<title>pxp:compress006 - tests pxp:compress with href attribute.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_uncompress001.xml'>
+<title>pxp:uncompress001 - tests pxp:uncompress with wrong method</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_uncompress002.xml'>
+<title>pxp:uncompress002 - tests pxp:uncompress with unknown method</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_uncompress003.xml'>
+<title>pxp:uncompress003 - tests pxp:uncompress with defect data</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_uncompress004.xml'>
+<title>pxp:uncompress004 - tests pxp:uncompress: unencoded data flying through</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip001.xml'>
+<title>pxp:unzip001 - tests pxp:unzip, correct table of content</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip002.xml'>
+<title>pxp:unzip002 - tests pxp:unzip, zip file does not exist</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip003.xml'>
+<title>pxp:unzip003 - tests pxp:unzip, listing a non zip file</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip004.xml'>
+<title>pxp:unzip004 - tests pxp:unzip, getting a document from the zip</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip005.xml'>
+<title>pxp:unzip005 - tests pxp:unzip, getting a document from the zip with xml content-type</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip006.xml'>
+<title>pxp:unzip006 - tests pxp:unzip, getting a document from the zip with application/octet-stream</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip007.xml'>
+<title>pxp:unzip007 - tests pxp:unzip, getting png from the zip with application/xml</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip008.xml'>
+<title>pxp:unzip008 - tests pxp:unzip, getting png from the zip with no content-type</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip009.xml'>
+<title>pxp:unzip009 - tests pxp:unzip, getting png from the zip with correct content-type</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip010.xml'>
+<title>pxp:unzip010 - tests pxp:unzip, try getting folder a zip.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip011.xml'>
+<title>pxp:unzip011 - tests pxp:unzip, try getting non existing file from a zip.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip012.xml'>
+<title>pxp:unzip012 - tests pxp:unzip, checks base-uri of unzipped document</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_unzip013.xml'>
+<title>pxp:unzip013 - tests pxp:unzip, getting a document from the zip with content-type text/plain</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip001.xml'>
+<title>pxp:zip001 - tests pxp:zip, create zip from source port and check step result.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip002.xml'>
+<title>pxp:zip002 - tests pxp:zip, create zip from source port and compare result with pxp:unzip</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip003.xml'>
+<title>pxp:zip003 - tests pxp:zip, create zip from file and check step result.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip004.xml'>
+<title>pxp:zip004 - tests pxp:zip, create zip from source port, then update and check step result.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip005.xml'>
+<title>pxp:zip005 - tests pxp:zip, create zip from source port, then delete one and check step result.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip006.xml'>
+<title>pxp:zip006 - tests pxp:zip, create zip from document on source port, unzip it from zip and compare.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip007.xml'>
+<title>pxp:zip007 - tests pxp:zip, checks method 'deflated'.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip008.xml'>
+<title>pxp:zip008 - tests pxp:zip, checks method 'stored'.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip009.xml'>
+<title>pxp:zip009 - tests pxp:zip, checks manifest method overwrites global.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip010.xml'>
+<title>pxp:zip010 - tests pxp:zip, raise error when compression method is unknown.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip011.xml'>
+<title>pxp:zip011 - tests pxp:zip, raise error when value of compression-level is unknown.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip012.xml'>
+<title>pxp:zip012 - tests pxp:zip, raise error when command is unknown.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip013.xml'>
+<title>pxp:zip013 - tests pxp:zip, raise error when document referenced by manifest is unknown.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip014.xml'>
+<title>pxp:zip014 - tests pxp:zip, raise error when @name is missing in manifest.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip015.xml'>
+<title>pxp:zip015 - tests pxp:zip, raise error when @href is missing in manifest.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip016.xml'>
+<title>pxp:zip016 - tests pxp:zip, raise error when target resource is not available.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_zip017.xml'>
+<title>pxp:zip017 - tests pxp:zip, raise error when source is not available.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl001.xml'>
+<title>pxp:nvdl001 - tests pxp:nvdl, valid document.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl002.xml'>
+<title>pxp:nvdl002 - tests pxp:nvdl, invalid document.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl003.xml'>
+<title>pxp:nvdl003 - tests pxp:nvdl, invalid document, but passing</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl004.xml'>
+<title>pxp:nvdl004 - tests pxp:nvdl, invalid nvdl.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl005.xml'>
+<title>pxp:nvdl005 - tests pxp:nvdl, missing schema.</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl006.xml'>
+<title>pxp:nvdl006 - tests pxp:nvdl, invalid schema.</title>
+</pass>
 </test-suite>
 <test-suite>
 <title>Tests for additional features of MorganaXProc</title>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/choose-add-001.xml'>
-<title>Test additional choose-add-001 - test correct handling of p:choose without an output port</title>
-</pass>
-<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/try-catch-add-001.xml'>
-<title>Test additional try/catch 001 - test correct handling of p:try without an output port</title>
-</pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xquery-functions-001.xml'>
 <title>Test xquery functions 001 - importing xquery functions to xproc context</title>
 </pass>

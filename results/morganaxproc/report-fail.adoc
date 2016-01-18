@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 850 of 853 tests (99.65%) on 04 Oct 2015 at 02:30p.
+Passed 910 of 913 tests (99.67%) on 17 Jan 2016 at 05:51p.
 
 :toc: right
 
@@ -13,7 +13,7 @@ This report only shows failing tests.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-8 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.5)|PSVI Supported|false
+|Version|0.95-9 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.8)|PSVI Supported|false
 |=============================================
 
 
@@ -66,16 +66,16 @@ Passed 1 of 1 tests (100.00%).
 
 == xml-project's additional tests
 
-Passed 22 of 22 tests (100.00%).
+Passed 24 of 24 tests (100.00%).
 
 
-== xml-project's additional tests for proposed File System Extensions and Operating System Utilities
+== xml-project's additional tests for proposed extension steps of http://exproc.org/proposed/steps/
 
-Passed 50 of 50 tests (100.00%).
+Passed 110 of 110 tests (100.00%).
 
 
 == Tests for additional features of MorganaXProc
 
-Passed 39 of 39 tests (100.00%).
+Passed 37 of 37 tests (100.00%).
 
 
