@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2016-01-17T17:51:28</date>
+<date>2016-07-27T17:36:15</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-9 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.8)</version>
+<version>0.95-11 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.9)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
@@ -2323,6 +2323,15 @@
 <pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/add-output-pipe-003.xml'>
 <title>Test additional output pipe 003</title>
 </pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/option-005.xml'>
+<title>Test option #005</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/option-006.xml'>
+<title>Test option #006</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/http-request-add-001.xml'>
+<title>Test http-request-add-001</title>
+</pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/additional-tests/xslt-add-001.xml'>
 <title>Test xslt-add-001.xml</title>
 </pass>
@@ -2342,7 +2351,7 @@
 <title>pxf:copy-001 - simple copy</title>
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy002.xml'>
-<title>pxf:copy-002 - copy to non existing folder</title>
+<title>pxf:copy-002 - copy to a forbidden folder</title>
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_copy003.xml'>
 <title>pxf:copy-003 - copy non existing file</title>
@@ -2417,7 +2426,7 @@
 <title>pxf:move-001 - simple move in same folder (rename)</title>
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move002.xml'>
-<title>pxf:move-002 - move to non existing folder</title>
+<title>pxf:move-002 - move to a forbidden folder</title>
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/extension-tests/pxf_move003.xml'>
 <title>pxf:move-003 - move non existing file</title>
@@ -2772,6 +2781,192 @@
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/depends-on-009.xml'>
 <title>Tests depends-on-009: Tests setting dependency between steps with extension attribute: testing step list</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-001.xml'>
+<title>Test XMLCatalog 001 - tests pipeline import from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-002.xml'>
+<title>Test XMLCatalog 002 - tests loading document from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-003.xml'>
+<title>Test XMLCatalog 003 - tests p:document from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-004.xml'>
+<title>Test XMLCatalog 004 - tests doc() in XPath from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-005.xml'>
+<title>Test XMLCatalog 005 - tests import of stylesheet in p:xslt from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-006.xml'>
+<title>Test XMLCatalog 006 - tests doc() in stylesheet in p:xslt from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-007.xml'>
+<title>Test XMLCatalog 007 -  tests doc() in p:xquery from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-008.xml'>
+<title>Test XMLCatalog 008 - tests function import in p:xquery from an xml-catalog (using location-hint)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-009.xml'>
+<title>Test XMLCatalog 009 - tests loading document (relative dtd) from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-010.xml'>
+<title>Test XMLCatalog 010 - tests loading document (absolute dtd) from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-011.xml'>
+<title>Test XMLCatalog 011 - tests loading invalid document (relative dtd) from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-012.xml'>
+<title>Test XMLCatalog-012 - tests import schema in p:validate-with-relax-ng from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-013.xml'>
+<title>Test XMLCatalog-013 - tests import compact schema in p:validate-with-relax-ng from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-014.xml'>
+<title>Test XMLCatalog-014 - tests include schema in p:validate-with-schematron from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-015.xml'>
+<title>Test XMLCatalog 015 - tests include schema in p:validate-with-xml-schema from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-016.xml'>
+<title>Test XMLCatalog-016 - tests include document in p:xinclude from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-017.xml'>
+<title>Test XMLCatalog-017 - tests fn:unparsed-text in p:xslt from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-018.xml'>
+<title>Test XMLCatalog-018 - tests import of XQuery functions from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-019.xml'>
+<title>Test XMLCatalog-019 - tests import nvdl and schemas in pxp:nvdl from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-020.xml'>
+<title>Test XMLCatalaog 020 - tests import just nvdl in pxp:nvdl from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-021.xml'>
+<title>Test XMLCatalog 021 - tests import just schemas in pxp:nvdl from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-022.xml'>
+<title>Test XMLCatalog 022 - tests import of document with entity from xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-023.xml'>
+<title>Test XMLCatalog 023 - tests http-request from an xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/XMLCatalog-024.xml'>
+<title>Test XMLCatalog 024 - tests http-request to load xquery from an xml-catalog. Fails</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load001.xml'>
+<title>Test EXPath-package load 001 - tests loading stylesheet in p:xslt (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load002.xml'>
+<title>Test EXPath-package load 002 - tests loading query in p:xquery (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load003.xml'>
+<title>Test EXPath-package load 003 - tests loading schema in p:validate-with-schematron (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load004.xml'>
+<title>Test EXPath-package load 004 - tests loading schema in p:validate-with-xml-schema (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load005.xml'>
+<title>Test EXPath-package load 005 - tests loading schema in p:validate-with-relax-ng (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load006.xml'>
+<title>Test EXPath-package load 006 - tests loading compact schema in p:validate-with-relax-ng (no pkg:kind) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load007.xml'>
+<title>Test EXPath-package load 007 - tests loading xslt as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load008.xml'>
+<title>Test EXPath-package load 008 - tests loading xproc as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load009.xml'>
+<title>Test EXPath-package load 009 - tests loading xquery as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load010.xml'>
+<title>Test EXPath-package load 010 - tests loading schema as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load011.xml'>
+<title>Test EXPath-package load 011 - tests loading rng as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load012.xml'>
+<title>Test EXPath-package load 012 - tests loading rnc as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load013.xml'>
+<title>Test EXPath-package load 013 - tests loading schematron as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage-load014.xml'>
+<title>Test EXPath-package load 014 - tests loading nvdl as document with pkg:kind from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage001.xml'>
+<title>Test EXPath-package 001 - tests pipeline import from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage002.xml'>
+<title>Test EXPath-package 002 - tests loading document from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage003.xml'>
+<title>Test EXPath-package 003 - tests p:document from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage004.xml'>
+<title>Test EXPath-package 004 - tests doc() in XPath from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage005.xml'>
+<title>Test EXPath-package 005 - tests import of stylesheet in p:xslt from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage006.xml'>
+<title>Test EXPath-package 006 - tests doc() in stylesheet in p:xslt from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage007.xml'>
+<title>Test EXPath-package 007 - tests doc() in p:xquery from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage008.xml'>
+<title>Test EXPath-package 008 - tests function import in p:xquery from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage009.xml'>
+<title>Test EXPath-package 009 - tests loading document (relative dtd) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage010.xml'>
+<title>Test EXPath-package 010 - tests loading document (absolute dtd) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage011.xml'>
+<title>Test EXPath-package 011 - tests loading invalid document (relative dtd) from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage012.xml'>
+<title>Test EXPath-package 012 - tests import schema in p:validate-with-relax-ng from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage013.xml'>
+<title>Test EXPath-package 013 - tests import compact schema in p:validate-with-relax-ng from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage014.xml'>
+<title>Test EXPath-package 014 - tests include schema in p:validate-with-schematron from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage015.xml'>
+<title>Test EXPath-package 015 - tests include schema in p:validate-with-xml-schema from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage016.xml'>
+<title>Test EXPath-package 016 - tests include document in p:xinclude from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage017.xml'>
+<title>Test EXPath-package 017 - tests fn:unparsed-text in p:xslt from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage018.xml'>
+<title>Test EXPath-package 018 - tests import of XQuery functions from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage019.xml'>
+<title>Test EXPath-package 019 - tests import nvdl and schemas in pxp:nvdl from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage020.xml'>
+<title>Test EXPath-package 020 - tests import just nvdl in pxp:nvdl from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage021.xml'>
+<title>Test EXPath-package 021 - tests import just schemas in pxp:nvdl from an EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage022.xml'>
+<title>Test EXPath-package 022 - tests import of document with entity from EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage023.xml'>
+<title>Test EXPath-package 023 - tests http-request from EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage024.xml'>
+<title>Test EXPath-package 024 - tests http-request with pkg:kind="xquery" from EXPath-package</title>
 </pass>
 </test-suite>
 </test-report>
