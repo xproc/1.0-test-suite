@@ -1,7 +1,7 @@
 
 = XProc Test Results for MorganaXProc
 
-Passed 975 of 978 tests (99.69%) on 27 Jul 2016 at 05:36p.
+Passed 985 of 988 tests (99.70%) on 26 Oct 2016 at 05:31p.
 
 :toc: right
 
@@ -11,7 +11,7 @@ Passed 975 of 978 tests (99.69%) on 27 Jul 2016 at 05:36p.
 |Name|MorganaXProc|Language|en
 |Vendor|xml-project Achim Berndzen|XProc version|1.0
 |Vendor URI|http://www.xml-project.com|XPath version|1.0 2.0
-|Version|0.95-11 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.9)|PSVI Supported|false
+|Version|1.0 with SaxonXSLTConnector(Saxon HE 9.7.0.10)|PSVI Supported|false
 |=============================================
 
 
@@ -3578,7 +3578,7 @@ http://www.xml-project.com/files/xproc-tests/extension-tests/pxp_nvdl006.xml
 
 == Tests for additional features of MorganaXProc
 
-Passed 99 of 99 tests (100.00%).
+Passed 109 of 109 tests (100.00%).
 
 [role="pass"]
 === PASS Test xquery functions 001 - importing xquery functions to xproc context
@@ -3976,4 +3976,43 @@ http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage023.
 === PASS Test EXPath-package 024 - tests http-request with pkg:kind="xquery" from EXPath-package
 http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage024.xml
 
+[role="pass"]
+=== PASS Test xslt functions 001 - importing xslt functions to xproc context
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-001.xml
+
+[role="pass"]
+=== PASS Test xslt functions 002 - calling non existing xslt function in xproc context
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-002.xml
+
+[role="pass"]
+=== PASS Test xslt functions 003 - trying to import non existing xslt stylesheet in xproc context
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-003.xml
+
+[role="pass"]
+=== PASS Test xslt functions 004 - import functions from xslt stylesheet in xproc context: typing-error
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-004.xml
+
+[role="pass"]
+=== PASS Test xslt functions 005 - import functions from xslt stylesheet in xproc context: recursive import
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-005.xml
+
+[role="pass"]
+=== PASS Test xslt functions 006 - import functions from xslt stylesheet in xproc context: double signature
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-006.xml
+
+[role="pass"]
+=== PASS Test xslt functions 007 - importing xslt functions to xproc context from xml-catalog
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-007.xml
+
+[role="pass"]
+=== PASS Test xslt functions 008 - importing xslt functions to xproc context from xml-catalog (recursive)
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-008.xml
+
+[role="pass"]
+=== PASS Test xslt functions 009 - importing xslt functions to xproc context from EXPath package
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-009.xml
+
+[role="pass"]
+=== PASS Test xslt functions 010 - importing xslt functions to xproc context from EXPath package (recursive)
+http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-010.xml
 

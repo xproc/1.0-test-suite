@@ -1,11 +1,11 @@
 <test-report xmlns='http://xproc.org/ns/testreport'>
 <title>XProc Test Results for MorganaXProc</title>
-<date>2016-07-27T17:36:15</date>
+<date>2016-10-26T17:31:02</date>
 <processor>
 <name>MorganaXProc</name>
 <vendor>xml-project Achim Berndzen</vendor>
 <vendor-uri>http://www.xml-project.com</vendor-uri>
-<version>0.95-11 (public beta) with SaxonXSLTConnector(Saxon HE 9.6.0.9)</version>
+<version>1.0 with SaxonXSLTConnector(Saxon HE 9.7.0.10)</version>
 <language>en</language>
 <xproc-version>1.0</xproc-version>
 <xpath-version>1.0 2.0</xpath-version>
@@ -2967,6 +2967,36 @@
 </pass>
 <pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/EXPathPackage024.xml'>
 <title>Test EXPath-package 024 - tests http-request with pkg:kind="xquery" from EXPath-package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-001.xml'>
+<title>Test xslt functions 001 - importing xslt functions to xproc context</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-002.xml'>
+<title>Test xslt functions 002 - calling non existing xslt function in xproc context</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-003.xml'>
+<title>Test xslt functions 003 - trying to import non existing xslt stylesheet in xproc context</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-004.xml'>
+<title>Test xslt functions 004 - import functions from xslt stylesheet in xproc context: typing-error</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-005.xml'>
+<title>Test xslt functions 005 - import functions from xslt stylesheet in xproc context: recursive import</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-006.xml'>
+<title>Test xslt functions 006 - import functions from xslt stylesheet in xproc context: double signature</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-007.xml'>
+<title>Test xslt functions 007 - importing xslt functions to xproc context from xml-catalog</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-008.xml'>
+<title>Test xslt functions 008 - importing xslt functions to xproc context from xml-catalog (recursive)</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-009.xml'>
+<title>Test xslt functions 009 - importing xslt functions to xproc context from EXPath package</title>
+</pass>
+<pass uri='http://www.xml-project.com/files/xproc-tests/add-feature-tests/xslt-functions-010.xml'>
+<title>Test xslt functions 010 - importing xslt functions to xproc context from EXPath package (recursive)</title>
 </pass>
 </test-suite>
 </test-report>
