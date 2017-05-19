@@ -1,0 +1,14 @@
+<t:test xmlns:t="http://xproc.org/ns/testsuite">
+  <t:title>p:hash replaces the entire processing-instruction node</t:title>
+  <t:input port="source">
+    <document><?pi ?></document>
+  </t:input>
+  <t:pipeline>
+    <p:pipeline xmlns:p="http://www.w3.org/ns/xproc" version="1.0">
+      <p:hash algorithm="md" version="5" match="processing-instruction()" value="test"/>
+    </p:pipeline>
+  </t:pipeline>
+  <t:output port="result">
+    <document>098f6bcd4621d373cade4e832627b4f6</document>
+  </t:output>
+</t:test>
